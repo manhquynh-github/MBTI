@@ -1,0 +1,87 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:MBTI"
+                    xmlns:sys="clr-namespace:System;assembly=System.Runtime">
+  <x:Array x:Key="ISTJ.vi"
+           Type="{x:Type sys:String}">
+    <sys:String>Nghiêm túc, trầm lặng, có được thành công nhờ sự kiên trì, tỉ mỉ, quyết tâm&amp;Suy nghĩ thực tế, logic, có kỷ luật và đáng tin cậy, luôn muốn thấy mọi thứ được sắp xếp cẩn thận&amp;Tự lên tinh thần để hoàn thành công việc mà không cần nghỉ ngơi, thư giãn&amp;Hướng đến chi tiết và ổn định&amp;Có trách nhiệm, không ưa tiểu thuyết và những điều phù phiếm&amp;Trân trọng các giá trị truyền thống và lòng chân thành</sys:String>
+    <sys:String>Bí thư, Thư ký, Doanh nhân&amp;Nhà khí tượng học&amp;Quản trị dữ liệu&amp;Chuyên viên chăm sóc sức khỏe&amp;Kế toán viên&amp;Môi giới bất động sản&amp;Kỹ sư xây dựng, Giám sát công trình&amp;Thám tử&amp;Kỹ sư nông nghiệp&amp;Giám đốc điều hành</sys:String>
+  </x:Array>
+  <x:Array x:Key="ISTP.vi"
+           Type="{x:Type sys:String}">
+    <sys:String>Điềm tĩnh, trầm lặng, kín đáo&amp;Là người khách quan trong các nhận định và không phải là người dễ xúc động&amp;Quan sát và phân tích cuộc sống một cách sâu sắc, tiếp cận các vấn đề bằng nhãn quan khoa học, thường phân tích các vấn đề thông qua hàng núi các dữ liệu thống kê, bằng kinh nghiệm thực tiễn đã tích lũy được&amp;Tập trung vào những việc cần làm, thích các giải pháp đơn giản mà hiệu quả, rất sáng tạo trong việc giải quyết các công việc trong tình trạng khẩn cấp</sys:String>
+    <sys:String>Lập trình viên&amp;Phi công&amp;Người trực đường dây nóng&amp;Nhân viên cảnh sát&amp;Chuyên viên phát triển phần mềm&amp;Trưởng phòng dịch vụ thông tin&amp;Thám tử tư&amp;Dược sĩ</sys:String>
+  </x:Array>
+  <x:Array x:Key="ISFJ.vi"
+           Type="{x:Type sys:String}">
+    <sys:String>Điềm đạm, sống tình cảm, có trách nhiệm, quan tâm và sẵn lòng giúp đỡ người khác&amp;Rất quan tâm xem người khác nghĩ về mình&amp;Tận tụy, chăm chỉ để hoàn thành công việc đúng thời hạn&amp;Tỉ mỉ, để tâm đến các chi tiết&amp;Muốn sống cuộc sống ổn định, sống rất thực tế, thích các giải pháp đơn giản, dễ áp dụng nhưng hiệu quả&amp;Bạn tôn trọng các nguyên tắc, truyền thống và muốn mọi người cũng như vậy&amp;Luôn cố gắng để có được sự hài hòa giữa công việc và gia đình</sys:String>
+    <sys:String>Chuyên gia về vấn đề dinh dưỡng&amp;Quản thư, Chuyên viên lưu trữ văn thư&amp;Trang trí nội thất&amp;Nhân viên tín dụng&amp;Dịch vụ chăm sóc khách hàng&amp;Nhân viên kế toán&amp;Tư vấn viên&amp;Giáo viên</sys:String>
+  </x:Array>
+  <x:Array x:Key="ISFP.vi"
+           Type="{x:Type sys:String}">
+    <sys:String>Điềm đạm, kín đáo, nhạy cảm, chu đáo và tốt bụng&amp;Khá nhạy cảm nên rất dễ bị tổn thương&amp;Thường lảng tránh tranh cãi, không áp đặt ý kiến, giá trị lên người khác&amp;Trong công việc bạn thường giải quyết thông qua kinh nghiệm theo hướng đơn giản và thiết thực nhất&amp;Bạn thích quan tâm đến chi tiết, tỉ mỉ&amp;Bạn thường không muốn gò bó mình vào các khuôn mẫu, kế hoạch đã định sẵn, dễ thích ứng với sự thay đổi</sys:String>
+    <sys:String>Bác sĩ điều trị&amp;Trang trí nội thất&amp;Dịch vụ chăm sóc khách hàng&amp;Thiết kế thời trang&amp;Nhân viên giám định&amp;Y tá&amp;Nha sĩ&amp;Đại lý du lịch, Điều hạnh tour&amp;Trợ lý y khoa</sys:String>
+  </x:Array>
+  <x:Array x:Key="INTJ.vi"
+           Type="{x:Type sys:String}">
+    <sys:String>Có nhiều ý tưởng sáng tạo, luôn tìm kiếm những phương thức mới để giải quyết vấn đề&amp;Có khả năng bao quất vấn đề, có tầm nhìn dài hạn, có khả năng lập kế hoạch và kiên định thực hiện để đạt được mục tiêu đề ra&amp;Thường đặt tiêu chuẩn cao cho chính bạn và những người xung quanh&amp;Thường lý giải mọi vấn đề dưới con mắt khoa học, quyết định mọi việc khách quan&amp;Khá kín đáo, suy nghĩ sâu sắc, sống động lập và ngăn nắp</sys:String>
+    <sys:String>Kỹ sư thiết kế&amp;Chuyên gia tích hợp mạng&amp;Nhân viên phát triển phần mềm&amp;Bác sĩ thần kinh&amp;Bác sĩ chuyên khoa tim&amp;Nhà văn&amp;Nhà phát minh, sáng chế&amp;Giám đốc tài chính&amp;Quản trị trang web&amp;Kiến trúc sư</sys:String>
+  </x:Array>
+  <x:Array x:Key="INTP.vi"
+           Type="{x:Type sys:String}">
+    <sys:String>Trầm lặng, khép kín, luôn xuất sắc trong các kì thi, đặc biệt là về các bộ môn khoa học và học thuyết&amp;Khả năng sáng tạo cao, thường rất hứng thú với các ý tưởng mới thay vì các bữa tiệc hay việc chuyện trò&amp;Cá tính, vì vậy cần chọn nghề nghiệp dựa trên hứng thú mạnh mẽ&amp;Suy nghĩ logic, bao quát vấn đề và có tầm nhìn dài hạn, tuy nhiên cũng không thích sự gò bó bởi các khuôn mẫu, linh hoạt và thích nghi nhanh với những thay đổi</sys:String>
+    <sys:String>Chuyên viên thiết kế phần mềm&amp;Nhà tư bản liều lĩnh&amp;Chuyên viên phân tích tài chính&amp;Nhà kinh tế học&amp;Giáo sư đại học:Triết học, Kinh tế học&amp;Nhạc sĩ&amp;Chuyên viên thiết kế trang web&amp;Thám tử&amp;Chuyên viên chiến lược&amp;Nhà thần kinh học&amp;Chuyên viên nghiên cứu dược phẩm</sys:String>
+  </x:Array>
+  <x:Array x:Key="INFJ.vi"
+           Type="{x:Type sys:String}">
+    <sys:String>Hơi ít nói, sống thiên về nội tâm và hay suy tư về nhân sinh quan, thế giới quan. Có thể vẻ bề ngoài bạn giữ một vẻ lạnh lùng và chẳng quan tâm đến bất cứ gì ngoài sự &amp;quot;im lặng&amp;quot;. Nhưng thực ra, bạn là người hay quan sát, luôn để mắt theo dõi từng diễn biến nhỏ nhặt xảy ra xung quanh mình. Các mối quan hệ được bạn vun trồng theo cách &amp;quot;chậm mà chắc&amp;quot;. Một chút bí ẩn rắc rối tồn tại trong con người bạn làm mọi người muốn khám phá và giải mã. Chính điều này tạo ra &amp;quot;sự cuốn hút&amp;quot; của bạn&amp;Khả năng sáng tạo và có khả năng làm việc độc lập. Bạn luôn luôn suy nghĩ kĩ trước khi làm bất cứ việc gì. Bạn luôn dành hết đam mê cho những gì mình làm&amp;Biết tổ chức và kiên quyết thực hiện ước vọng. Có khả năng triển khai ước vọng qua tầm nhìn bao quát một cách rõ ràng để phục vụ tốt nhất sự nghiệp nhân loại</sys:String>
+    <sys:String>Giáo viên&amp;Kiến trúc sư&amp;Trưởng phòng/bộ phận, Nhà đào tạo&amp;Nhà diễn thuyết, Nhà ngôn ngữ học&amp;Chuyên viên tư vấn việc làm&amp;Chuyên viên môi trường&amp;Bác sĩ chuyên khoa&amp;Nhà biên tập, Giám đốc Nghệ thuật&amp;Nhà văn&amp;Nhân viên kế hoạch</sys:String>
+  </x:Array>
+  <x:Array x:Key="INFP.vi"
+           Type="{x:Type sys:String}">
+    <sys:String>Cầu toàn và đầy đam mê sáng tạo, không gò bó mình trong những khuôn mẫu có sẵn, trong những phương thức giải quyết vấn đề kiểu &amp;quot;truyền thống&amp;quot; mà luôn suy nghĩ tìm giải pháp mới để áp dụng lâu dài&amp;Không chú trọng đến việc lập những kế hoạch quá chi tiết mà thường tùy cơ ứng biến&amp;Trong các mối quan hệ với bạn bè hay trong công việc, bạn luôn thể hiện được mình là một người tin cậy, sẵn sàng quan tâm, giúp đỡ người khác&amp;Nhạy cảm, cũng vì lẽ đó mà bạn cũng dễ bị tổn thương vì những lý do không lớn lắm</sys:String>
+    <sys:String>Nhà tâm lý học&amp;Quản lý Nhân sự&amp;Bác sĩ chuyên khoa&amp;Nhà nghiên cứu&amp;Phiên dịch viên, Thông dịch viên&amp;Chuyên gia đào tạo và phát triển nhân viên&amp;Giáo sư đại học: Khoa học Nhân văn&amp;Nhân viên hoạt động xã hội&amp;Thủ/Quản thư&amp;Thiết kế thời trang&amp;Tổng biên tập/Giám đốc nghệ thuật (website)</sys:String>
+  </x:Array>
+  <x:Array x:Key="ESTJ.vi"
+           Type="{x:Type sys:String}">
+    <sys:String>Mang tố chất của một nhà lãnh đạo, có khả năng sắp xếp công việc một cách tuyệt vời, thích gánh vác trách nhiệm&amp;Là mẫu người của công việc, luôn phân tích và áp dụng những điều mình cho là logic vào công việc, quyết định mọi việc nhanh, luôn cố gắng hoàn thành công việc hiệu quả, để sau đó tiếp tục nhanh chóng chuyển tới những công việc tiếp theo&amp;Có trách nhiệm và mong muốn người khác cũng được như mình&amp;Có khả năng tổ chức, điều hành, thích tham gia các công việc của cộng đồng&amp;Có khuynh hướng thích nói thẳng những điều mình nghĩ, sẵn sàng phê bình khi thấy cần thiết</sys:String>
+    <sys:String>Điều hành kinh doanh&amp;Sĩ quan quân đội&amp;Giám đốc Thông tin&amp;Nhân viên kinh doanh sản phẩm thể thao&amp;Kinh doanh bất động sản&amp;Chuyên gia hoạch định ngân sách&amp;Hành chánh: Chăm sóc sức khỏe&amp;Trưởng bộ phận Quản lý cơ sở dữ liệu&amp;Chuyên viên tài chính&amp;Dược sĩ&amp;Tư vấn tín dụng&amp;Đại lý bảo hiểm&amp;Giáo viên: Kinh thương, Công nghệ, Kỹ thuật&amp;Trưởng phòng Tài sản</sys:String>
+  </x:Array>
+  <x:Array x:Key="ESTP.vi"
+           Type="{x:Type sys:String}">
+    <sys:String>Năng động, mạnh mẽ, sống thực tế&amp;Thường tìm những giải pháp đơn giản, dễ áp dụng để giải quyết công việc&amp;Thích hành động hơn là suy nghĩ tìm hiểu về những lý thuyết, học thuyết mới&amp;Thích gặp gỡ, giao lưu cùng mọi người, hòa đồng, chân thành, dễ tính nhưng đôi khi bị &amp;quot;chê&amp;quot; là thiếu tinh tế</sys:String>
+    <sys:String>Nhân viên y tế&amp;Môi giới chứng khoán&amp;Nhà sinh lý học&amp;Đại lý bảo hiểm&amp;Kỹ sư&amp;Nhà doanh nghiệp&amp;Nhà nghiên cứu về sinh vật biển&amp;Thám tử tư&amp;Đại lý du lịch&amp;Vận động viên chuyên nghiệp, Huấn luyện viên&amp;Thầu khoán&amp;Phát triển trò chơi điện tử&amp;Chuyên viên địa ốc</sys:String>
+  </x:Array>
+  <x:Array x:Key="ESFJ.vi"
+           Type="{x:Type sys:String}">
+    <sys:String>Nhân hậu, tận tâm, có tinh thần hợp tác&amp;Quan tâm và giúp đỡ nhu cầu người khác trong cuộc sống hằng ngày&amp;Yêu thích môi trường sống hài hòa, làm việc để thiết lập môi trường như vậy&amp;Thích làm việc với những ai hoàn thành công việc chính xác và đúng hạn&amp;Rất giỏi áp dụng những kinh nghiệm đã tích lũy được từ thực tế cuộc sống và công việc&amp;Mối quan tâm lớn nhất của bạn là những thứ ảnh hưởng trực tiếp và rõ ràng đến đời sống con người, không hứng thú với những học thuyết trừu tượng</sys:String>
+    <sys:String>Kinh doanh bất động sản&amp;Huấn luyện viên thể hình&amp;Bác sĩ thú y&amp;Giáo viên&amp;Người bán lẻ&amp;Tư vấn tín dụng&amp;Y tá&amp;Nhân viên chăm sóc sức khỏe tại nhà&amp;Nhân viên thu mua&amp;Huấn luyện viên điền kinh&amp;Dịch vụ ăn uống, nhà trọ&amp;Đại lý du lịch</sys:String>
+  </x:Array>
+  <x:Array x:Key="ESFP.vi"
+           Type="{x:Type sys:String}">
+    <sys:String>Thích giao du, thích kết nhiều bạn mới và mở rộng các mối quan hệ&amp;Luôn quan tâm đến người khác và thể hiện sự quan tâm đó bằng hành động thực tế khi hết mình giúp đỡ họ&amp;Thích thâm nhập và trải nghiệm cuộc sống hơn là chỉ ngồi và đánh giá chúng&amp;Thoải mái, khôi hài, đôi khi cũng có những hành động hơi bốc đồng. Luôn biết điều gì đang diễn ra và tham gia một cách vui vẻ và phấn khích, thích tham gia thể thao hay công tác xã hội&amp;Thích đúc rút kinh nghiệm từ thực tế hơn là nghiên cứu các học thuyết</sys:String>
+    <sys:String>Giáo viên tiểu học&amp;Trợ lý phòng Nha&amp;Nhân viên chăm sóc sức khỏe tại nhà&amp;Chuyên viên PR, Giao tế nhân sự&amp;Bác sĩ X-quang&amp;Bác sĩ điều trị&amp;Đại lý du lịch, Điều hành tour&amp;Người sáng lập&amp;Diễn viên&amp;Bác sĩ thú y&amp;Chuyên viên tổ chức sự kiện&amp;Nhà nghiên cứu về sinh vật biển&amp;Kinh doanh: Thiết bị thể thao</sys:String>
+  </x:Array>
+  <x:Array x:Key="ENTJ.vi"
+           Type="{x:Type sys:String}">
+    <sys:String>Có đầy đủ tố chất để trở thành một nhà lãnh đạo tài năng&amp;Nhanh ý nhận ra tiến trình, chính sách không logic, thiếu hiệu quả&amp;Biết cách triển khai hệ thống, giải quyết các khó khăn của tổ chức. Yêu thích hoạch định dài hạn&amp;Biết động viên, khích lệ và hướng dẫn người khác người khác làm việc để hoàn thành mục tiêu&amp;Bạn sống chân thành, khá thân thiện, tuy nhiên bạn cũng rất thẳng tính nên đôi khi làm tổn thương người khác</sys:String>
+    <sys:String>Giám đốc Điều hành&amp;Chuyên viên quản trị mạng&amp;Tư vấn quản lý&amp;Chính trị gia&amp;Nhà kinh doanh&amp;Chuyên viên tài chính&amp;Nhà hoạch định tài chính&amp;Nhân viên địa ốc&amp;Nhân viên Marketing&amp;Quản lý tài sản trí tuệ&amp;Nhà hoạch định/tư vấn đầu tư&amp;Phân tích Tài chính&amp;Kỹ sư hóa&amp;Tư vấn giáo dục&amp;Quan tòa</sys:String>
+  </x:Array>
+  <x:Array x:Key="ENTP.vi"
+           Type="{x:Type sys:String}">
+    <sys:String>Nhanh nhẹn, tài trí, biết cách truyền cảm hứng, lanh lợi và trực tính&amp;Thích giải quyết vấn đề mới lạ và đầy thử thách. Tài giỏi trong việc tạo ra các triển vọng và phân tích trên các quan điểm chiến lược&amp;Đọc được ý tưởng của người khác&amp;Không thích thủ tục, ít khi làm việc theo lối mòn&amp;Bạn luôn có những niềm đam mê và luôn trong tình trạng cố gắng và nỗ lực không ngừng để đạt được mục tiêu</sys:String>
+    <sys:String>Nhà doanh nghiệp, Thầu khoán&amp;Nhà đầu tư Ngân hàng&amp;Nhà đầu tư mạo hiểm&amp;Quản lý/tư vấn Marketing&amp;Người viết bài quảng cáo&amp;Phát thanh viên (Radio/TV), MC điều khiển chương trình&amp;Kinh doanh bất động sản&amp;Diễn viên&amp;Nhà hoạch định, phát triển chiến lược&amp;Hiệu trưởng trường Đại học/Cao đẳng&amp;Tư vấn tâm lý, Chuyên gia động viên tinh thần nhân viên&amp;Nhân viên Tiếp thị&amp;Giám đốc Quảng cáo/Creative</sys:String>
+  </x:Array>
+  <x:Array x:Key="ENFJ.vi"
+           Type="{x:Type sys:String}">
+    <sys:String>Nhiệt tình, có trách nhiệm đáng và đáng tin cậy&amp;Có khả năng giao tiếp, dễ đồng cảm, hiểu nhu cầu người khác và động viên họ. Dễ nhận ra năng lực mọi người và giúp năng lực phát huy&amp;Là chất xúc tác để từng cá nhân và nhóm phát triển&amp;Bặt thiệp, giúp mọi người tìm thấy sự thoải mải và tạo được sức mạnh tinh thần của tập thể&amp;Có khả năng sáng tạo, không bó mình trong những nếp nghĩ &amp;quot;thông thường&amp;quot;</sys:String>
+    <sys:String>Người tổ chức sự kiện&amp;Nhà tư vấn&amp;Nhà tâm lý học&amp;Nhà công tác xã hội, Luật sư&amp;Giáo viên&amp;Đại lý bán hàng&amp;Nhân sự&amp;Giám đốc&amp;Chính trị gia, Nhà ngoại gia&amp;Nhà văn</sys:String>
+  </x:Array>
+  <x:Array x:Key="ENFP.vi"
+           Type="{x:Type sys:String}">
+    <sys:String>Thích sự mới mẻ: ý tưởng mới, hoạt động mới, con người mới,...&amp;Giỏi trong giao tiếp, ấm áp, thân thiện và biết quan tâm tới mọi người xung quanh&amp;Luôn lạc quan và hướng tới tương lai. Đây là mẫu người &amp;quot;nhiều năng lượng&amp;quot;, mạnh mẽ, nhiệt tình và có một cuộc sống không gò bó, dễ thích nghi với sự thay đổi&amp;Có khả năng liên kết các sự kiện để đưa ra các nhận định, các giải pháp cho bất cứ khó khăn nào</sys:String>
+    <sys:String>
+      Quản lý khách hàng&amp;Chuyên viên tư vấn nghề nghiệp&amp;Tư vấn quản lý&amp;Phát triển phần mềm&amp;Diễn viên&amp;Thiết kế đồ họa&amp;Giám đốc nghệ thuật&amp;Người viết bài quảng cáo&amp;Người huấn luyện, đào tạo&amp;Nhà tâm lý học&amp;Nhà phát minh, sáng chế&amp;Quản lý Nhân sự&amp;Chuyên viên tư vấn quyền trẻ em
+    </sys:String>
+  </x:Array>
+</ResourceDictionary>

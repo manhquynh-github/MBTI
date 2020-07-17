@@ -1,0 +1,29 @@
+﻿<Window x:Class="MBTI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:MBTI"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="MBTI"
+        Width="800"
+        Height="600"
+        MinWidth="700"
+        MinHeight="500"
+        Style="{StaticResource ChromedWindowStyle}"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d">
+  <WindowChrome.WindowChrome>
+    <WindowChrome CaptionHeight="40"
+                  ResizeBorderThickness="5" />
+  </WindowChrome.WindowChrome>
+  <Grid>
+    <Grid.Background>
+      <ImageBrush ImageSource="/MBTI;component/Resources/background.png" />
+    </Grid.Background>
+    <Frame x:Name="MainFrame"
+           Focusable="False"
+           Navigated="MainFrame_Navigated"
+           NavigationUIVisibility="Hidden"
+           Source="StudyPage.xaml" />
+  </Grid>
+</Window>
