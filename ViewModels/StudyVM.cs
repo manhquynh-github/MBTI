@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 
 using MBTI.Logic;
@@ -10,13 +11,17 @@ namespace MBTI.ViewModels
 {
   public class StudyVM : VMBase
   {
+    public Task OnPersonalityTypeChanging;
     private PersonalityTypeDescription _content;
     private PersonalityType _personalityType;
 
     public StudyVM(PersonalityType type)
     {
       PersonalityType = type;
+      NeedsRefreshUI = true;
     }
+
+    public event EventHandler OnNeedsRefreshUI;
 
     public PersonalityTypeDescription Content
     {
@@ -28,6 +33,7 @@ namespace MBTI.ViewModels
     public string DisplayPrefix2 => PersonalityType.Prefix2.ToString().ToUpper();
     public string DisplayPrefix3 => PersonalityType.Prefix3.ToString().ToUpper();
     public string DisplayPrefix4 => PersonalityType.Prefix4.ToString().ToUpper();
+    public bool NeedsRefreshUI { get; private set; }
 
     public PersonalityType PersonalityType
     {
@@ -35,17 +41,8 @@ namespace MBTI.ViewModels
       set
       {
         SetProperty(ref _personalityType, value);
-        _personalityType = value;
-        NotifyPropertyChanged(nameof(TypeAcronym));
-        UpdateDescription(value);
-        NotifyPropertyChanged(nameof(DisplayPrefix1));
-        NotifyPropertyChanged(nameof(DisplayPrefix2));
-        NotifyPropertyChanged(nameof(DisplayPrefix3));
-        NotifyPropertyChanged(nameof(DisplayPrefix4));
-        NotifyPropertyChanged(nameof(SelectedPrefix1));
-        NotifyPropertyChanged(nameof(SelectedPrefix2));
-        NotifyPropertyChanged(nameof(SelectedPrefix3));
-        NotifyPropertyChanged(nameof(SelectedPrefix4));
+        NeedsRefreshUI = true;
+        OnNeedsRefreshUI?.Invoke(this, EventArgs.Empty);
       }
     }
 
@@ -130,6 +127,26 @@ namespace MBTI.ViewModels
     }
 
     public string TypeAcronym => PersonalityType.GetAcronym();
+
+    public void RefreshUI()
+    {
+      if (!NeedsRefreshUI)
+      {
+        return;
+      }
+
+      NotifyPropertyChanged(nameof(TypeAcronym));
+      UpdateDescription(PersonalityType);
+      NotifyPropertyChanged(nameof(DisplayPrefix1));
+      NotifyPropertyChanged(nameof(DisplayPrefix2));
+      NotifyPropertyChanged(nameof(DisplayPrefix3));
+      NotifyPropertyChanged(nameof(DisplayPrefix4));
+      NotifyPropertyChanged(nameof(SelectedPrefix1));
+      NotifyPropertyChanged(nameof(SelectedPrefix2));
+      NotifyPropertyChanged(nameof(SelectedPrefix3));
+      NotifyPropertyChanged(nameof(SelectedPrefix4));
+      NeedsRefreshUI = false;
+    }
 
     private void UpdateDescription(PersonalityType type)
     {

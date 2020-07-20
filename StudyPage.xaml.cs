@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -44,6 +46,8 @@ namespace MBTI
       _fadeOutStoryboard = (Storyboard)Application.Current.Resources["FadeOutStoryboard"];
 
       StudyVM = new StudyVM(type);
+      StudyVM.RefreshUI();
+      StudyVM.OnNeedsRefreshUI += StudyVM_OnNeedsRefreshUI;
       DataContext = StudyVM;
     }
 
@@ -52,6 +56,31 @@ namespace MBTI
     private async void BackButton_Click(object sender, RoutedEventArgs e)
     {
       await App.MainWindow.Navigate(new WelcomePage());
+    }
+
+    private async void StudyVM_OnNeedsRefreshUI(object sender, EventArgs e)
+    {
+      await Transition(() => StudyVM.RefreshUI());
+    }
+
+    private async Task Transition(Action onFadedOut)
+    {
+      _fadeOutStoryboard.Begin(TblAcronym);
+      _fadeOutStoryboard.Begin(TblPrefix1);
+      _fadeOutStoryboard.Begin(TblPrefix2);
+      _fadeOutStoryboard.Begin(TblPrefix3);
+      _fadeOutStoryboard.Begin(TblPrefix4);
+      _fadeOutStoryboard.Begin(DescriptionArea);
+      _fadeOutStoryboard.Begin(JobsArea);
+      await Task.Delay(400);
+      onFadedOut?.Invoke();
+      _fadeInStoryboard.Begin(TblAcronym);
+      _fadeInStoryboard.Begin(TblPrefix1);
+      _fadeInStoryboard.Begin(TblPrefix2);
+      _fadeInStoryboard.Begin(TblPrefix3);
+      _fadeInStoryboard.Begin(TblPrefix4);
+      _fadeInStoryboard.Begin(DescriptionArea);
+      _fadeInStoryboard.Begin(JobsArea);
     }
   }
 }
