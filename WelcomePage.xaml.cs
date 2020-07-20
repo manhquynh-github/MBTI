@@ -30,5 +30,10 @@ namespace MBTI
         "Chọn câu mô tả rõ nét về bạn nhất",
         "Hãy thành thật với chính mình"));
     }
+
+    private async void BtnStudy_Click(object sender, RoutedEventArgs e)
+    {
+      await App.MainWindow.Navigate(new StudyPage());
+    }
   }
 }

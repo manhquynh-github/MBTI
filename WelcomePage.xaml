@@ -83,7 +83,9 @@
                 Click="BtnQuiz_Click"
                 Content="trắc nghiệm"
                 Style="{StaticResource CustomButtonStyle}" />
-        <Button Content="tìm hiểu"
+        <Button x:Name="BtnStudy"
+                Click="BtnStudy_Click"
+                Content="tìm hiểu"
                 Style="{StaticResource CustomButtonStyle}" />
       </StackPanel>
     </StackPanel>

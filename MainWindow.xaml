@@ -24,6 +24,6 @@
            Focusable="False"
            Navigated="MainFrame_Navigated"
            NavigationUIVisibility="Hidden"
-           Source="StudyPage.xaml" />
+           Source="WelcomePage.xaml" />
   </Grid>
 </Window>
