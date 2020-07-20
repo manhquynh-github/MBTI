@@ -26,7 +26,7 @@
       <Setter Property="HorizontalContentAlignment"
               Value="Stretch" />
       <Setter Property="Margin"
-              Value="0,5" />
+              Value="15,15,15,0" />
       <Setter Property="Padding"
               Value="10,5" />
       <Setter Property="Template">
@@ -62,6 +62,8 @@
           </ControlTemplate>
         </Setter.Value>
       </Setter>
+      <Setter Property="VerticalContentAlignment"
+              Value="Top" />
       <Style.Triggers>
         <Trigger Property="IsMouseOver"
                  Value="True">
@@ -101,7 +103,6 @@
               <Setter Property="Background"
                       Value="DodgerBlue" />
               <Style.Triggers>
-
                 <Trigger Property="IsMouseOver"
                          Value="True">
                   <Setter Property="Background"
@@ -139,32 +140,43 @@
               Style="{StaticResource WindowButtonStyle}"
               WindowChrome.IsHitTestVisibleInChrome="True" />
     </Grid>
-    <StackPanel x:Name="QuizArea"
-                Grid.Row="1"
-                MinWidth="650"
-                MinHeight="300"
-                MaxWidth="800"
-                Margin="25,60,25,10"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center">
-      <TextBlock FontFamily="Segoe UI Semilight"
+    <Grid x:Name="QuizArea"
+          Grid.Row="1"
+          MinWidth="650"
+          MinHeight="300"
+          MaxWidth="800"
+          Margin="25,60,25,10"
+          HorizontalAlignment="Center"
+          VerticalAlignment="Center">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="auto" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <TextBlock Grid.ColumnSpan="2"
+                 FontFamily="Segoe UI Semilight"
                  FontSize="36"
                  Text="{Binding DisplayQuestionContent}"
                  TextWrapping="Wrap" />
-      <StackPanel Margin="0,15">
-        <Button x:Name="BtnFirstChoice"
-                Click="BtnFirstChoice_Click"
-                Style="{StaticResource ChoiceButtonStyle}">
-          <TextBlock Text="{Binding CurrentQuestion.FirstChoice.Content}"
-                     TextWrapping="Wrap" />
-        </Button>
-        <Button x:Name="BtnSecondChoice"
-                Click="BtnSecondChoice_Click"
-                Style="{StaticResource ChoiceButtonStyle}">
-          <TextBlock Text="{Binding CurrentQuestion.SecondChoice.Content}"
-                     TextWrapping="Wrap" />
-        </Button>
-      </StackPanel>
-    </StackPanel>
+      <Button x:Name="BtnFirstChoice"
+              Grid.Row="1"
+              Grid.Column="0"
+              Click="BtnFirstChoice_Click"
+              Style="{StaticResource ChoiceButtonStyle}">
+        <TextBlock Text="{Binding CurrentQuestion.FirstChoice.Content}"
+                   TextWrapping="Wrap" />
+      </Button>
+      <Button x:Name="BtnSecondChoice"
+              Grid.Row="1"
+              Grid.Column="1"
+              Click="BtnSecondChoice_Click"
+              Style="{StaticResource ChoiceButtonStyle}">
+        <TextBlock Text="{Binding CurrentQuestion.SecondChoice.Content}"
+                   TextWrapping="Wrap" />
+      </Button>
+    </Grid>
   </Grid>
 </Page>
