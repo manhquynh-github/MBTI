@@ -45,7 +45,6 @@
               </Border>
             </Border>
             <ControlTemplate.Triggers>
-
               <Trigger Property="IsMouseOver"
                        Value="true">
                 <Setter TargetName="arrow"
@@ -195,7 +194,6 @@
               <Setter Property="Background"
                       Value="DodgerBlue" />
               <Style.Triggers>
-
                 <Trigger Property="IsMouseOver"
                          Value="True">
                   <Setter Property="Background"
@@ -278,14 +276,12 @@
                        FontSize="18"
                        FontWeight="Light"
                        Text="{Binding DisplayPrefix4}" />
-
             <ComboBox Grid.Row="2"
                       Grid.Column="0"
                       SelectedIndex="{Binding SelectedPrefix1,
                                               Mode=TwoWay}"
                       Style="{StaticResource CustomComboBoxStyle}">
               <ComboBoxItem Content="Hướng ngoại" />
-
               <ComboBoxItem Content="Hướng nội" />
             </ComboBox>
             <ComboBox Grid.Row="2"

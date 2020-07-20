@@ -61,13 +61,35 @@ namespace MBTI
     private async void BtnFirstChoice_Click(object sender, RoutedEventArgs e)
     {
       QuizVM.CurrentQuestion.SelectedIndex = 1;
-      await Transition(() => QuizVM.MoveNext());
+
+      if (QuizVM.DisplayCurrentIndex == QuizVM.Quiz.Count)
+      {
+        await App.MainWindow.Navigate(new InstructionPage(
+          new StudyPage(new Mbti(QuizVM.Quiz)),
+          "Bạn đã hoàn thành trắc nghiệm",
+          "Tính cách đại diện của bạn là"));
+      }
+      else
+      {
+        await Transition(() => QuizVM.MoveNext());
+      }
     }
 
     private async void BtnSecondChoice_Click(object sender, RoutedEventArgs e)
     {
       QuizVM.CurrentQuestion.SelectedIndex = 2;
-      await Transition(() => QuizVM.MoveNext());
+
+      if (QuizVM.DisplayCurrentIndex == QuizVM.Quiz.Count)
+      {
+        await App.MainWindow.Navigate(new InstructionPage(
+          new StudyPage(),
+          "Bạn đã hoàn thành trắc nghiệm",
+          "Tính cách đại diện của bạn là"));
+      }
+      else
+      {
+        await Transition(() => QuizVM.MoveNext());
+      }
     }
 
     private async void HomeButton_Click(object sender, RoutedEventArgs e)

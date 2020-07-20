@@ -28,6 +28,10 @@ namespace MBTI
     private readonly Storyboard _fadeInStoryboard;
     private readonly Storyboard _fadeOutStoryboard;
 
+    public StudyPage(Mbti mbti) : this(mbti.GetFinalType())
+    {
+    }
+
     public StudyPage() : this(
       new PersonalityType()
       {
