@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -27,6 +28,8 @@ namespace MBTI
   {
     private readonly Storyboard _fadeInStoryboard;
     private readonly Storyboard _fadeOutStoryboard;
+    private readonly List<(TextBlock Tbl, Func<string> PrefixFunc)> _tblPrefixes;
+    private readonly List<FrameworkElement> _transitionElements;
 
     public StudyPage(Mbti mbti) : this(mbti.GetFinalType())
     {
@@ -48,11 +51,30 @@ namespace MBTI
       InitializeComponent();
       _fadeInStoryboard = (Storyboard)Application.Current.Resources["FadeInStoryboard"];
       _fadeOutStoryboard = (Storyboard)Application.Current.Resources["FadeOutStoryboard"];
+      _transitionElements = new List<FrameworkElement>()
+      {
+        TblAcronym,
+        TblPrefix1,
+        TblPrefix2,
+        TblPrefix3,
+        TblPrefix4,
+        DescriptionArea,
+        JobsArea,
+      };
+      _tblPrefixes = new List<(TextBlock, Func<string>)>()
+      {
+        (TblPrefix1, () => StudyVM.DisplayPrefix1 ),
+        (TblPrefix2, () => StudyVM.DisplayPrefix2 ),
+        (TblPrefix3, () => StudyVM.DisplayPrefix3 ),
+        (TblPrefix4, () => StudyVM.DisplayPrefix4 ),
+      };
 
       StudyVM = new StudyVM(type);
       StudyVM.RefreshUI();
       StudyVM.OnNeedsRefreshUI += StudyVM_OnNeedsRefreshUI;
       DataContext = StudyVM;
+
+      UpdatePrefixes();
     }
 
     public StudyVM StudyVM { get; }
@@ -65,26 +87,60 @@ namespace MBTI
     private async void StudyVM_OnNeedsRefreshUI(object sender, EventArgs e)
     {
       await Transition(() => StudyVM.RefreshUI());
+      UpdatePrefixes();
     }
 
     private async Task Transition(Action onFadedOut)
     {
-      _fadeOutStoryboard.Begin(TblAcronym);
-      _fadeOutStoryboard.Begin(TblPrefix1);
-      _fadeOutStoryboard.Begin(TblPrefix2);
-      _fadeOutStoryboard.Begin(TblPrefix3);
-      _fadeOutStoryboard.Begin(TblPrefix4);
-      _fadeOutStoryboard.Begin(DescriptionArea);
-      _fadeOutStoryboard.Begin(JobsArea);
+      foreach (FrameworkElement element in _transitionElements)
+      {
+        _fadeOutStoryboard.Begin(element);
+      }
       await Task.Delay(400);
       onFadedOut?.Invoke();
-      _fadeInStoryboard.Begin(TblAcronym);
-      _fadeInStoryboard.Begin(TblPrefix1);
-      _fadeInStoryboard.Begin(TblPrefix2);
-      _fadeInStoryboard.Begin(TblPrefix3);
-      _fadeInStoryboard.Begin(TblPrefix4);
-      _fadeInStoryboard.Begin(DescriptionArea);
-      _fadeInStoryboard.Begin(JobsArea);
+      foreach (FrameworkElement element in _transitionElements)
+      {
+        _fadeInStoryboard.Begin(element);
+      }
+    }
+
+    private void UpdatePrefixes()
+    {
+      bool specialPrefix2 = StudyVM.SelectedPrefix2 == 1;
+
+      for (int i = 0; i < _tblPrefixes.Count; i++)
+      {
+        if (i == 1
+          && specialPrefix2)
+        {
+          continue;
+        }
+
+        (TextBlock Tbl, Func<string> PrefixFunc) = _tblPrefixes[i];
+        Tbl.Inlines.Clear();
+        string prefix = PrefixFunc();
+        Tbl.Inlines.Add(new Run(prefix[0].ToString())
+        {
+          FontWeight = FontWeights.Bold,
+          TextDecorations = TextDecorations.Underline,
+        });
+        Tbl.Inlines.Add(new Run(prefix.Substring(1)));
+      }
+
+      if (!specialPrefix2)
+      {
+        return;
+      }
+
+      TblPrefix2.Inlines.Clear();
+      string prefix2 = _tblPrefixes[1].PrefixFunc();
+      TblPrefix2.Inlines.Add(new Run(prefix2[0].ToString()));
+      TblPrefix2.Inlines.Add(new Run(prefix2[1].ToString())
+      {
+        FontWeight = FontWeights.Bold,
+        TextDecorations = TextDecorations.Underline,
+      });
+      TblPrefix2.Inlines.Add(new Run(prefix2.Substring(2)));
     }
   }
 }
