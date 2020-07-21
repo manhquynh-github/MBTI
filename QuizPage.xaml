@@ -88,7 +88,7 @@
                  VerticalAlignment="Center"
                  FontSize="21"
                  FontWeight="Light"
-                 Text="Chỉ số MBTI" />
+                 Text="{DynamicResource STitleNormal}" />
       <StackPanel Orientation="Horizontal">
         <Button x:Name="BackButton"
                 Width="45"
@@ -121,15 +121,19 @@
                    VerticalAlignment="Center"
                    FontSize="21"
                    FontWeight="Light">
-          <TextBlock.Text>
-            <MultiBinding StringFormat="{}Câu {0}/{1}">
-              <Binding FallbackValue="0"
-                       Path="DisplayCurrentIndex" />
-              <Binding FallbackValue="0"
-                       Path="Quiz.Count" />
-            </MultiBinding>
-          </TextBlock.Text>
-        </TextBlock>
+          <Run Text="{DynamicResource SQuestion}" />
+          <Run>
+            <Run.Text>
+              <MultiBinding StringFormat="{}{0}/{1}">
+                <Binding FallbackValue="0"
+                         Mode="OneWay"
+                         Path="DisplayCurrentIndex" />
+                <Binding FallbackValue="0"
+                         Mode="OneTime"
+                         Path="Quiz.Count" />
+              </MultiBinding>
+            </Run.Text>
+          </Run></TextBlock>
       </StackPanel>
       <Button x:Name="HomeButton"
               Width="45"
@@ -138,6 +142,7 @@
               Click="HomeButton_Click"
               Content="&#xE80F;"
               Style="{StaticResource WindowButtonStyle}"
+              ToolTip="{DynamicResource SHomeTooltip}"
               WindowChrome.IsHitTestVisibleInChrome="True" />
     </Grid>
     <Grid x:Name="QuizArea"

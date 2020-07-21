@@ -64,10 +64,13 @@ namespace MBTI
 
       if (QuizVM.DisplayCurrentIndex == QuizVM.Quiz.Count)
       {
+        string instruction3 = (string)Application.Current.Resources["SInstruction3"];
+        string instruction4 = (string)Application.Current.Resources["SInstruction4"];
+
         await App.MainWindow.Navigate(new InstructionPage(
           new ResultPage(new Mbti(QuizVM.Quiz)),
-          "Bạn đã hoàn thành trắc nghiệm",
-          "Tính cách đại diện của bạn là"));
+          instruction3,
+          instruction4));
       }
       else
       {

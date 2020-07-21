@@ -20,19 +20,19 @@
       </StackPanel.Resources>
       <TextBlock FontSize="64"
                  Foreground="DodgerBlue"
-                 Text="CHỈ SỐ MBTI" />
+                 Text="{DynamicResource STitle}" />
       <TextBlock FontSize="32"
                  FontWeight="Light"
-                 Text="Hiểu bạn &amp; Chọn nghề thích hợp với bạn" />
+                 Text="{DynamicResource SSubtitle}" />
       <StackPanel Margin="0,75,0,-75"
                   HorizontalAlignment="Center">
         <Button x:Name="BtnQuiz"
                 Click="BtnQuiz_Click"
-                Content="trắc nghiệm"
+                Content="{DynamicResource SQuiz}"
                 Style="{StaticResource CustomButtonStyle}" />
         <Button x:Name="BtnStudy"
                 Click="BtnStudy_Click"
-                Content="tìm hiểu"
+                Content="{DynamicResource SStudy}"
                 Style="{StaticResource CustomButtonStyle}" />
       </StackPanel>
     </StackPanel>

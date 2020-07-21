@@ -30,7 +30,7 @@
   <x:Array x:Key="INTP.vi"
            Type="{x:Type sys:String}">
     <sys:String>Trầm lặng, khép kín, luôn xuất sắc trong các kì thi, đặc biệt là về các bộ môn khoa học và học thuyết&amp;Khả năng sáng tạo cao, thường rất hứng thú với các ý tưởng mới thay vì các bữa tiệc hay việc chuyện trò&amp;Cá tính, vì vậy cần chọn nghề nghiệp dựa trên hứng thú mạnh mẽ&amp;Suy nghĩ logic, bao quát vấn đề và có tầm nhìn dài hạn, tuy nhiên cũng không thích sự gò bó bởi các khuôn mẫu, linh hoạt và thích nghi nhanh với những thay đổi</sys:String>
-    <sys:String>Chuyên viên thiết kế phần mềm&amp;Nhà tư bản liều lĩnh&amp;Chuyên viên phân tích tài chính&amp;Nhà kinh tế học&amp;Giáo sư đại học:Triết học, Kinh tế học&amp;Nhạc sĩ&amp;Chuyên viên thiết kế trang web&amp;Thám tử&amp;Chuyên viên chiến lược&amp;Nhà thần kinh học&amp;Chuyên viên nghiên cứu dược phẩm</sys:String>
+    <sys:String>Chuyên viên thiết kế phần mềm&amp;Nhà tư bản liều lĩnh&amp;Chuyên viên phân tích tài chính&amp;Nhà kinh tế học&amp;Giáo sư đại học: Triết học, Kinh tế học&amp;Nhạc sĩ&amp;Chuyên viên thiết kế trang web&amp;Thám tử&amp;Chuyên viên chiến lược&amp;Nhà thần kinh học&amp;Chuyên viên nghiên cứu dược phẩm</sys:String>
   </x:Array>
   <x:Array x:Key="INFJ.vi"
            Type="{x:Type sys:String}">
@@ -80,8 +80,6 @@
   <x:Array x:Key="ENFP.vi"
            Type="{x:Type sys:String}">
     <sys:String>Thích sự mới mẻ: ý tưởng mới, hoạt động mới, con người mới,...&amp;Giỏi trong giao tiếp, ấm áp, thân thiện và biết quan tâm tới mọi người xung quanh&amp;Luôn lạc quan và hướng tới tương lai. Đây là mẫu người &amp;quot;nhiều năng lượng&amp;quot;, mạnh mẽ, nhiệt tình và có một cuộc sống không gò bó, dễ thích nghi với sự thay đổi&amp;Có khả năng liên kết các sự kiện để đưa ra các nhận định, các giải pháp cho bất cứ khó khăn nào</sys:String>
-    <sys:String>
-      Quản lý khách hàng&amp;Chuyên viên tư vấn nghề nghiệp&amp;Tư vấn quản lý&amp;Phát triển phần mềm&amp;Diễn viên&amp;Thiết kế đồ họa&amp;Giám đốc nghệ thuật&amp;Người viết bài quảng cáo&amp;Người huấn luyện, đào tạo&amp;Nhà tâm lý học&amp;Nhà phát minh, sáng chế&amp;Quản lý Nhân sự&amp;Chuyên viên tư vấn quyền trẻ em
-    </sys:String>
+    <sys:String>Quản lý khách hàng&amp;Chuyên viên tư vấn nghề nghiệp&amp;Tư vấn quản lý&amp;Phát triển phần mềm&amp;Diễn viên&amp;Thiết kế đồ họa&amp;Giám đốc nghệ thuật&amp;Người viết bài quảng cáo&amp;Người huấn luyện, đào tạo&amp;Nhà tâm lý học&amp;Nhà phát minh, sáng chế&amp;Quản lý Nhân sự&amp;Chuyên viên tư vấn quyền trẻ em</sys:String>
   </x:Array>
 </ResourceDictionary>

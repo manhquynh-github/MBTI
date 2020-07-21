@@ -13,6 +13,13 @@
       <RowDefinition Height="30" />
       <RowDefinition Height="*" />
     </Grid.RowDefinitions>
+    <Grid>
+      <TextBlock HorizontalAlignment="Center"
+                 VerticalAlignment="Center"
+                 FontSize="21"
+                 FontWeight="Light"
+                 Text="{DynamicResource STitleNormal}" />
+    </Grid>
     <Grid Grid.Row="1"
           HorizontalAlignment="Center"
           VerticalAlignment="Center">
@@ -57,7 +64,7 @@
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Row="0"
                    Grid.Column="0"
-                   Text="Hướng ngoại" />
+                   Text="{DynamicResource SExtrovert}" />
         <TextBlock Grid.Row="0"
                    Grid.Column="2"
                    Text="{Binding PercentExtrovert,
@@ -65,7 +72,7 @@
                                   FallbackValue=0%}" />
         <TextBlock Grid.Row="0"
                    Grid.Column="4"
-                   Text="Hướng nội" />
+                   Text="{DynamicResource SIntrovert}" />
         <TextBlock Grid.Row="0"
                    Grid.Column="6"
                    Text="{Binding PercentIntrovert,
@@ -73,7 +80,7 @@
                                   FallbackValue=0%}" />
         <TextBlock Grid.Row="1"
                    Grid.Column="0"
-                   Text="Thực tế" />
+                   Text="{DynamicResource SSensing}" />
         <TextBlock Grid.Row="1"
                    Grid.Column="2"
                    Text="{Binding PercentSensing,
@@ -81,7 +88,7 @@
                                   FallbackValue=0%}" />
         <TextBlock Grid.Row="1"
                    Grid.Column="4"
-                   Text="Trực giác" />
+                   Text="{DynamicResource SIntuition}" />
         <TextBlock Grid.Row="1"
                    Grid.Column="6"
                    Text="{Binding PercentIntuition,
@@ -89,7 +96,7 @@
                                   FallbackValue=0%}" />
         <TextBlock Grid.Row="2"
                    Grid.Column="0"
-                   Text="Lý trí" />
+                   Text="{DynamicResource SThinking}" />
         <TextBlock Grid.Row="2"
                    Grid.Column="2"
                    Text="{Binding PercentThinking,
@@ -97,7 +104,7 @@
                                   FallbackValue=0%}" />
         <TextBlock Grid.Row="2"
                    Grid.Column="4"
-                   Text="Tình cảm" />
+                   Text="{DynamicResource SFeeling}" />
         <TextBlock Grid.Row="2"
                    Grid.Column="6"
                    Text="{Binding PercentFeeling,
@@ -105,7 +112,7 @@
                                   FallbackValue=0%}" />
         <TextBlock Grid.Row="3"
                    Grid.Column="0"
-                   Text="Kế hoạch" />
+                   Text="{DynamicResource SJudging}" />
         <TextBlock Grid.Row="3"
                    Grid.Column="2"
                    Text="{Binding PercentJudging,
@@ -113,7 +120,7 @@
                                   FallbackValue=0%}" />
         <TextBlock Grid.Row="3"
                    Grid.Column="4"
-                   Text="Linh hoạt" />
+                   Text="{DynamicResource SPerceptive}" />
         <TextBlock Grid.Row="3"
                    Grid.Column="6"
                    Text="{Binding PercentPerceptive,
@@ -124,7 +131,7 @@
               Grid.Row="2"
               Margin="0,20,0,0"
               Click="BtnStudy_Click"
-              Content="tìm hiểu"
+              Content="{DynamicResource SStudy}"
               Style="{StaticResource CustomButtonStyle}" />
     </Grid>
   </Grid>

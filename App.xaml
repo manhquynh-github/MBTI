@@ -6,6 +6,7 @@
   <Application.Resources>
     <ResourceDictionary>
       <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/MBTI;component/ResourceDictionaries/UIContent/UIContent.vi.xaml" />
         <ResourceDictionary Source="/MBTI;component/ResourceDictionaries/Content/Questions.vi.xaml" />
         <ResourceDictionary Source="/MBTI;component/ResourceDictionaries/Content/Descriptions.vi.xaml" />
       </ResourceDictionary.MergedDictionaries>

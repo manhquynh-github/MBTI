@@ -25,10 +25,13 @@ namespace MBTI
 
     private async void BtnQuiz_Click(object sender, RoutedEventArgs e)
     {
+      string instruction1 = (string)Application.Current.Resources["SInstruction1"];
+      string instruction2 = (string)Application.Current.Resources["SInstruction2"];
+
       await App.MainWindow.Navigate(new InstructionPage(
         new QuizPage(),
-        "Chọn câu mô tả rõ nét về bạn nhất",
-        "Hãy thành thật với chính mình"));
+        instruction1,
+        instruction2));
     }
 
     private async void BtnStudy_Click(object sender, RoutedEventArgs e)
