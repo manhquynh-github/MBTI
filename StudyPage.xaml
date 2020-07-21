@@ -180,35 +180,41 @@
                  FontSize="18"
                  FontWeight="Light"
                  Text="Chỉ số MBTI" />
-      <StackPanel Orientation="Horizontal">
-        <Button x:Name="BackButton"
-                Width="45"
-                HorizontalAlignment="Left"
-                Click="BackButton_Click"
-                Content="&#xE0A6;"
-                Foreground="White"
-                WindowChrome.IsHitTestVisibleInChrome="True">
-          <Button.Style>
-            <Style BasedOn="{StaticResource WindowButtonStyle}"
-                   TargetType="{x:Type Button}">
-              <Setter Property="Background"
-                      Value="DodgerBlue" />
-              <Style.Triggers>
-                <Trigger Property="IsMouseOver"
-                         Value="True">
-                  <Setter Property="Background"
-                          Value="RoyalBlue" />
-                </Trigger>
-                <Trigger Property="IsPressed"
-                         Value="True">
-                  <Setter Property="Background"
-                          Value="MidnightBlue" />
-                </Trigger>
-              </Style.Triggers>
-            </Style>
-          </Button.Style>
-        </Button>
-      </StackPanel>
+      <Button x:Name="BackButton"
+              Width="45"
+              HorizontalAlignment="Left"
+              Click="BackButton_Click"
+              Content="&#xE0A6;"
+              Foreground="White"
+              WindowChrome.IsHitTestVisibleInChrome="True">
+        <Button.Style>
+          <Style BasedOn="{StaticResource WindowButtonStyle}"
+                 TargetType="{x:Type Button}">
+            <Setter Property="Background"
+                    Value="DodgerBlue" />
+            <Style.Triggers>
+              <Trigger Property="IsMouseOver"
+                       Value="True">
+                <Setter Property="Background"
+                        Value="RoyalBlue" />
+              </Trigger>
+              <Trigger Property="IsPressed"
+                       Value="True">
+                <Setter Property="Background"
+                        Value="MidnightBlue" />
+              </Trigger>
+            </Style.Triggers>
+          </Style>
+        </Button.Style>
+      </Button>
+      <Button x:Name="HomeButton"
+              Width="45"
+              Margin="0,0,135,0"
+              HorizontalAlignment="Right"
+              Click="HomeButton_Click"
+              Content="&#xE80F;"
+              Style="{StaticResource WindowButtonStyle}"
+              WindowChrome.IsHitTestVisibleInChrome="True" />
     </Grid>
     <Grid Grid.Row="1">
       <Grid.RowDefinitions>

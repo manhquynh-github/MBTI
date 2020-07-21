@@ -28,11 +28,17 @@ namespace MBTI
   {
     private readonly Storyboard _fadeInStoryboard;
     private readonly Storyboard _fadeOutStoryboard;
+    private readonly ResultPage _resultPage;
     private readonly List<(TextBlock Tbl, Func<string> PrefixFunc)> _tblPrefixes;
     private readonly List<FrameworkElement> _transitionElements;
 
     public StudyPage(Mbti mbti) : this(mbti.GetFinalType())
     {
+    }
+
+    public StudyPage(ResultPage resultPage) : this(resultPage.MbtiVM.Mbti)
+    {
+      _resultPage = resultPage;
     }
 
     public StudyPage() : this(
@@ -80,6 +86,18 @@ namespace MBTI
     public StudyVM StudyVM { get; }
 
     private async void BackButton_Click(object sender, RoutedEventArgs e)
+    {
+      if (_resultPage != null)
+      {
+        await App.MainWindow.Navigate(_resultPage);
+      }
+      else
+      {
+        await App.MainWindow.Navigate(new WelcomePage());
+      }
+    }
+
+    private async void HomeButton_Click(object sender, RoutedEventArgs e)
     {
       await App.MainWindow.Navigate(new WelcomePage());
     }

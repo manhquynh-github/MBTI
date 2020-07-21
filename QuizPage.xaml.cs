@@ -65,7 +65,7 @@ namespace MBTI
       if (QuizVM.DisplayCurrentIndex == QuizVM.Quiz.Count)
       {
         await App.MainWindow.Navigate(new InstructionPage(
-          new StudyPage(new Mbti(QuizVM.Quiz)),
+          new ResultPage(new Mbti(QuizVM.Quiz)),
           "Bạn đã hoàn thành trắc nghiệm",
           "Tính cách đại diện của bạn là"));
       }
