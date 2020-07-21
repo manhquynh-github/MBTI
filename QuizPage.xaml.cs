@@ -34,7 +34,7 @@ namespace MBTI
       _fadeInStoryboard = (Storyboard)Application.Current.Resources["FadeInStoryboard"];
       _fadeOutStoryboard = (Storyboard)Application.Current.Resources["FadeOutStoryboard"];
 
-      string[] questions = (string[])Application.Current.Resources["Questions.vi"];
+      string[] questions = (string[])Application.Current.Resources["Questions"];
       if (questions == null || questions.Length == 0)
       {
         throw new InvalidOperationException();
@@ -51,7 +51,7 @@ namespace MBTI
     {
       if (QuizVM.CurrentIndex == 0)
       {
-        await App.MainWindow.Navigate(new WelcomePage());
+        await App.Current.MainWindow.Navigate(new WelcomePage());
         return;
       }
 
@@ -67,7 +67,7 @@ namespace MBTI
         string instruction3 = (string)Application.Current.Resources["SInstruction3"];
         string instruction4 = (string)Application.Current.Resources["SInstruction4"];
 
-        await App.MainWindow.Navigate(new InstructionPage(
+        await App.Current.MainWindow.Navigate(new InstructionPage(
           new ResultPage(new Mbti(QuizVM.Quiz)),
           instruction3,
           instruction4));
@@ -84,7 +84,7 @@ namespace MBTI
 
       if (QuizVM.DisplayCurrentIndex == QuizVM.Quiz.Count)
       {
-        await App.MainWindow.Navigate(new InstructionPage(
+        await App.Current.MainWindow.Navigate(new InstructionPage(
           new StudyPage(),
           "Bạn đã hoàn thành trắc nghiệm",
           "Tính cách đại diện của bạn là"));
@@ -97,7 +97,7 @@ namespace MBTI
 
     private async void HomeButton_Click(object sender, RoutedEventArgs e)
     {
-      await App.MainWindow.Navigate(new WelcomePage());
+      await App.Current.MainWindow.Navigate(new WelcomePage());
     }
 
     private async Task Transition(Action onFadedOut)

@@ -150,7 +150,7 @@ namespace MBTI.ViewModels
 
     private void UpdateDescription(PersonalityType type)
     {
-      string[] descriptionResource = (string[])Application.Current.Resources[$"{TypeAcronym}.vi"];
+      string[] descriptionResource = (string[])Application.Current.Resources[TypeAcronym];
       if (descriptionResource == null || descriptionResource.Length == 0)
       {
         throw new InvalidOperationException();

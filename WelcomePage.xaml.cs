@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -21,6 +23,8 @@ namespace MBTI
     public WelcomePage()
     {
       InitializeComponent();
+
+      CbbLanguage.ItemsSource = App.Current.SupportedLanguages;
     }
 
     private async void BtnQuiz_Click(object sender, RoutedEventArgs e)
@@ -28,7 +32,7 @@ namespace MBTI
       string instruction1 = (string)Application.Current.Resources["SInstruction1"];
       string instruction2 = (string)Application.Current.Resources["SInstruction2"];
 
-      await App.MainWindow.Navigate(new InstructionPage(
+      await App.Current.MainWindow.Navigate(new InstructionPage(
         new QuizPage(),
         instruction1,
         instruction2));
@@ -36,7 +40,15 @@ namespace MBTI
 
     private async void BtnStudy_Click(object sender, RoutedEventArgs e)
     {
-      await App.MainWindow.Navigate(new StudyPage());
+      await App.Current.MainWindow.Navigate(new StudyPage());
+    }
+
+    private void CbbLanguage_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+      if (e.AddedItems.Count == 1)
+      {
+        App.Current.UpdateLanguage((CultureInfo)e.AddedItems[0]);
+      }
     }
   }
 }

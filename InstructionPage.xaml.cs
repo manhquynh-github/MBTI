@@ -68,7 +68,7 @@ namespace MBTI
       else
       {
         _timer.Stop();
-        await App.MainWindow.Navigate(_nextPage);
+        await App.Current.MainWindow.Navigate(_nextPage);
       }
     }
 

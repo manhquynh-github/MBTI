@@ -89,17 +89,17 @@ namespace MBTI
     {
       if (_resultPage != null)
       {
-        await App.MainWindow.Navigate(_resultPage);
+        await App.Current.MainWindow.Navigate(_resultPage);
       }
       else
       {
-        await App.MainWindow.Navigate(new WelcomePage());
+        await App.Current.MainWindow.Navigate(new WelcomePage());
       }
     }
 
     private async void HomeButton_Click(object sender, RoutedEventArgs e)
     {
-      await App.MainWindow.Navigate(new WelcomePage());
+      await App.Current.MainWindow.Navigate(new WelcomePage());
     }
 
     private async void StudyVM_OnNeedsRefreshUI(object sender, EventArgs e)

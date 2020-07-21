@@ -36,7 +36,7 @@ namespace MBTI
 
     private async void BtnStudy_Click(object sender, RoutedEventArgs e)
     {
-      await App.MainWindow.Navigate(new StudyPage(this));
+      await App.Current.MainWindow.Navigate(new StudyPage(this));
     }
   }
 }

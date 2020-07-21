@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:MBTI"
                     xmlns:sys="clr-namespace:System;assembly=System.Runtime">
-  <x:Array x:Key="Questions.vi"
+  <x:Array x:Key="Questions"
            Type="{x:Type sys:String}">
     <sys:String>bạn thường dành nhiều thời gian cho</sys:String>
     <sys:String>việc hội họp với nhiều người</sys:String>
