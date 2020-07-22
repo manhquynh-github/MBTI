@@ -17,8 +17,6 @@ namespace MBTI
   /// </summary>
   public partial class StudyPage : Page
   {
-    private readonly Storyboard _fadeInStoryboard;
-    private readonly Storyboard _fadeOutStoryboard;
     private readonly ResultPage _resultPage;
     private readonly List<(TextBlock Tbl, Func<string> PrefixFunc)> _tblPrefixes;
     private readonly List<FrameworkElement> _transitionElements;
@@ -46,8 +44,6 @@ namespace MBTI
     public StudyPage(PersonalityType type)
     {
       InitializeComponent();
-      _fadeInStoryboard = (Storyboard)Application.Current.Resources["FadeInStoryboard"];
-      _fadeOutStoryboard = (Storyboard)Application.Current.Resources["FadeOutStoryboard"];
       _transitionElements = new List<FrameworkElement>()
       {
         TblAcronym,
@@ -103,13 +99,13 @@ namespace MBTI
     {
       foreach (FrameworkElement element in _transitionElements)
       {
-        _fadeOutStoryboard.Begin(element);
+        App.Current.FadeOutStoryboard.Begin(element);
       }
       await Task.Delay(400);
       onFadedOut?.Invoke();
       foreach (FrameworkElement element in _transitionElements)
       {
-        _fadeInStoryboard.Begin(element);
+        App.Current.FadeInStoryboard.Begin(element);
       }
     }
 

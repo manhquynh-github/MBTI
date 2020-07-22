@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Windows;
+using System.Windows.Media.Animation;
 
 namespace MBTI
 {
@@ -28,12 +29,16 @@ namespace MBTI
          info => $"/{nameof(MBTI)};component/ResourceDictionaries/Content/Questions.{info.TwoLetterISOLanguageName}.xaml",
          info => $"/{nameof(MBTI)};component/ResourceDictionaries/Content/Descriptions.{info.TwoLetterISOLanguageName}.xaml",
       };
+
+      FadeInStoryboard = (Storyboard)Resources["FadeInStoryboard"];
+      FadeOutStoryboard = (Storyboard)Resources["FadeOutStoryboard"];
     }
 
+    public Storyboard FadeInStoryboard { get; }
+    public Storyboard FadeOutStoryboard { get; }
     public IEnumerable<CultureInfo> SupportedLanguages { get; }
     public static new App Current => (App)Application.Current;
     public new MainWindow MainWindow => (MainWindow)Application.Current.MainWindow;
-
     protected IList<Func<CultureInfo, string>> LanguageSources { get; }
 
     public void UpdateLanguage(CultureInfo cultureInfo)

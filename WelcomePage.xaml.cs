@@ -1,4 +1,6 @@
-﻿using System.Globalization;
+﻿using System;
+using System.Globalization;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -32,11 +34,20 @@ namespace MBTI
       await App.Current.MainWindow.Navigate(new StudyPage());
     }
 
-    private void CbbLanguage_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    private async void CbbLanguage_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
       if (e.AddedItems.Count == 1)
       {
+        if (!IsLoaded)
+        {
+          App.Current.UpdateLanguage((CultureInfo)e.AddedItems[0]);
+          return;
+        }
+
+        App.Current.FadeOutStoryboard.Begin(ContentArea);
+        await Task.Delay(TimeSpan.FromMilliseconds(400));
         App.Current.UpdateLanguage((CultureInfo)e.AddedItems[0]);
+        App.Current.FadeInStoryboard.Begin(ContentArea);
       }
     }
   }

@@ -7,7 +7,7 @@
   <sys:String x:Key="SQuiz">take a quiz</sys:String>
   <sys:String x:Key="SStudy">learn</sys:String>
   <sys:String x:Key="SInstruction1">Click on the sentence that best describes you</sys:String>
-  <sys:String x:Key="SInstruction2">Be honest with yourself</sys:String>
+  <sys:String x:Key="SInstruction2">Be true to yourself</sys:String>
   <sys:String x:Key="SQuestion">Question</sys:String>
   <sys:String x:Key="SInstruction3">You have completed the quiz</sys:String>
   <sys:String x:Key="SInstruction4">Your personality type is</sys:String>

@@ -13,8 +13,6 @@ namespace MBTI
   /// </summary>
   public partial class InstructionPage : Page
   {
-    private readonly Storyboard _fadeInStoryboard;
-    private readonly Storyboard _fadeOutStoryboard;
     private readonly Queue<string> _messages;
     private readonly Page _nextPage;
     private readonly DispatcherTimer _timer;
@@ -39,8 +37,6 @@ namespace MBTI
         Interval = TimeSpan.FromSeconds(3),
       };
       _timer.Tick += _timer_Tick;
-      _fadeInStoryboard = (Storyboard)Application.Current.Resources["FadeInStoryboard"];
-      _fadeOutStoryboard = (Storyboard)Application.Current.Resources["FadeOutStoryboard"];
 
       if (_messages.Count > 0)
       {
@@ -52,10 +48,10 @@ namespace MBTI
     {
       if (_messages.Count > 0)
       {
-        _fadeOutStoryboard.Begin(TBlMessage);
+        App.Current.FadeOutStoryboard.Begin(TBlMessage);
         await Task.Delay(TimeSpan.FromMilliseconds(400));
         TBlMessage.Text = _messages.Dequeue();
-        _fadeInStoryboard.Begin(TBlMessage);
+        App.Current.FadeInStoryboard.Begin(TBlMessage);
       }
       else
       {

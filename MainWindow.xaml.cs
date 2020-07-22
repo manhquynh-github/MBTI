@@ -11,26 +11,21 @@ namespace MBTI
   /// </summary>
   public partial class MainWindow : Window
   {
-    private readonly Storyboard _fadeInStoryboard;
-    private readonly Storyboard _fadeOutStoryboard;
-
     public MainWindow()
     {
       InitializeComponent();
-      _fadeInStoryboard = (Storyboard)Application.Current.Resources["FadeInStoryboard"];
-      _fadeOutStoryboard = (Storyboard)Application.Current.Resources["FadeOutStoryboard"];
     }
 
     public async Task Navigate(Page page)
     {
-      _fadeOutStoryboard.Begin(MainFrame);
+      App.Current.FadeOutStoryboard.Begin(MainFrame);
       await Task.Delay(400);
       MainFrame.Navigate(page);
     }
 
     private void MainFrame_Navigated(object sender, NavigationEventArgs e)
     {
-      _fadeInStoryboard.Begin(MainFrame);
+      App.Current.FadeInStoryboard.Begin(MainFrame);
       if (MainFrame.CanGoBack)
       {
         MainFrame.RemoveBackEntry();

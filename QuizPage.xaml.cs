@@ -16,14 +16,9 @@ namespace MBTI
   /// </summary>
   public partial class QuizPage : Page
   {
-    private readonly Storyboard _fadeInStoryboard;
-    private readonly Storyboard _fadeOutStoryboard;
-
     public QuizPage()
     {
       InitializeComponent();
-      _fadeInStoryboard = (Storyboard)Application.Current.Resources["FadeInStoryboard"];
-      _fadeOutStoryboard = (Storyboard)Application.Current.Resources["FadeOutStoryboard"];
 
       string[] questions = (string[])Application.Current.Resources["Questions"];
       if (questions == null || questions.Length == 0)
@@ -95,10 +90,10 @@ namespace MBTI
 
     private async Task Transition(Action onFadedOut)
     {
-      _fadeOutStoryboard.Begin(QuizArea);
+      App.Current.FadeOutStoryboard.Begin(QuizArea);
       await Task.Delay(400);
       onFadedOut();
-      _fadeInStoryboard.Begin(QuizArea);
+      App.Current.FadeInStoryboard.Begin(QuizArea);
     }
   }
 }
