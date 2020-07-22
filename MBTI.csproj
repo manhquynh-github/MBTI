@@ -29,4 +29,10 @@
     <Resource Include="Resources\background.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Page Update="ResourceDictionaries\Content\Questions.en.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
 </Project>

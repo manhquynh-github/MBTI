@@ -20,10 +20,10 @@ namespace MBTI.Logic
       {
         Description = string.Join(
           Environment.NewLine,
-          source[0].Split('&', StringSplitOptions.RemoveEmptyEntries).Select(v => $"- {v}.")),
+          source[0].Split('&', StringSplitOptions.RemoveEmptyEntries).Select(v => $"- {v.Trim()}.")),
         SuggestedJobs = string.Join(
           Environment.NewLine,
-          source[1].Split('&', StringSplitOptions.RemoveEmptyEntries).Select(v => $"- {v}.")),
+          source[1].Split('&', StringSplitOptions.RemoveEmptyEntries).Select(v => $"- {v.Trim()}.")),
       };
     }
 
@@ -40,14 +40,14 @@ namespace MBTI.Logic
       {
         value.Add(new Question()
         {
-          Content = source[i * 3],
+          Content = source[i * 3].Trim(),
           FirstChoice = new Choice()
           {
-            Content = source[i * 3 + 1],
+            Content = source[i * 3 + 1].Trim(),
           },
           SecondChoice = new Choice()
           {
-            Content = source[i * 3 + 2],
+            Content = source[i * 3 + 2].Trim(),
           },
         });
       }

@@ -1,6 +1,5 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:MBTI"
                     xmlns:sys="clr-namespace:System;assembly=System.Runtime">
   <x:Array x:Key="Questions"
            Type="{x:Type sys:String}">
@@ -34,7 +33,7 @@
     <sys:String>đối với các buổi tiệc tùng</sys:String>
     <sys:String>bạn luôn thấy vui và hào hứng</sys:String>
     <sys:String>đôi khi bạn cảm thấy chán và mệt mỏi</sys:String>
-    <sys:String>đa số những người chung quanh nhận xét bạn là</sys:String>
+    <sys:String>đa số những người xung quanh nhận xét bạn là</sys:String>
     <sys:String>người có đầu óc thực tế</sys:String>
     <sys:String>người khéo léo, giàu trí tưởng tượng</sys:String>
     <sys:String>bạn muốn cấp trên của bạn là</sys:String>

@@ -64,13 +64,7 @@ namespace MBTI
 
       if (QuizVM.DisplayCurrentIndex == QuizVM.Quiz.Count)
       {
-        string instruction3 = (string)Application.Current.Resources["SInstruction3"];
-        string instruction4 = (string)Application.Current.Resources["SInstruction4"];
-
-        await App.Current.MainWindow.Navigate(new InstructionPage(
-          new ResultPage(new Mbti(QuizVM.Quiz)),
-          instruction3,
-          instruction4));
+        await OnQuizFinished();
       }
       else
       {
@@ -84,10 +78,7 @@ namespace MBTI
 
       if (QuizVM.DisplayCurrentIndex == QuizVM.Quiz.Count)
       {
-        await App.Current.MainWindow.Navigate(new InstructionPage(
-          new StudyPage(),
-          "Bạn đã hoàn thành trắc nghiệm",
-          "Tính cách đại diện của bạn là"));
+        await OnQuizFinished();
       }
       else
       {
@@ -98,6 +89,17 @@ namespace MBTI
     private async void HomeButton_Click(object sender, RoutedEventArgs e)
     {
       await App.Current.MainWindow.Navigate(new WelcomePage());
+    }
+
+    private async Task OnQuizFinished()
+    {
+      string instruction3 = (string)Application.Current.Resources["SInstruction3"];
+      string instruction4 = (string)Application.Current.Resources["SInstruction4"];
+
+      await App.Current.MainWindow.Navigate(new InstructionPage(
+        new ResultPage(new Mbti(QuizVM.Quiz)),
+        instruction3,
+        instruction4));
     }
 
     private async Task Transition(Action onFadedOut)
