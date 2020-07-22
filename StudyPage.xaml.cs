@@ -80,13 +80,13 @@ namespace MBTI
       }
       else
       {
-        await App.Current.MainWindow.Navigate(new WelcomePage());
+        await App.Current.MainWindow.Navigate(() => new WelcomePage());
       }
     }
 
     private async void HomeButton_Click(object sender, RoutedEventArgs e)
     {
-      await App.Current.MainWindow.Navigate(new WelcomePage());
+      await App.Current.MainWindow.Navigate(() => new WelcomePage());
     }
 
     private async void StudyVM_OnNeedsRefreshUI(object sender, EventArgs e)
@@ -102,7 +102,12 @@ namespace MBTI
         App.Current.FadeOutStoryboard.Begin(element);
       }
       await Task.Delay(400);
-      onFadedOut?.Invoke();
+
+      if (!(onFadedOut is null))
+      {
+        await Dispatcher.InvokeAsync(onFadedOut);
+      }
+
       foreach (FrameworkElement element in _transitionElements)
       {
         App.Current.FadeInStoryboard.Begin(element);

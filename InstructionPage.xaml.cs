@@ -14,34 +14,61 @@ namespace MBTI
   public partial class InstructionPage : Page
   {
     private readonly Queue<string> _messages;
-    private readonly Page _nextPage;
     private readonly DispatcherTimer _timer;
+    private Func<Page> _getNextPageCallback;
 
-    public InstructionPage(Page nextPage, params string[] messages)
+    public InstructionPage()
     {
-      if (nextPage is null)
-      {
-        throw new ArgumentNullException(nameof(nextPage));
-      }
-
-      if (messages is null)
-      {
-        throw new ArgumentNullException(nameof(messages));
-      }
-
       InitializeComponent();
-      _nextPage = nextPage;
-      _messages = new Queue<string>(messages);
+      _messages = new Queue<string>();
       _timer = new DispatcherTimer()
       {
         Interval = TimeSpan.FromSeconds(3),
       };
       _timer.Tick += _timer_Tick;
+    }
 
-      if (_messages.Count > 0)
+    public InstructionPage DisplayMessages(params string[] messages)
+    {
+      if (messages is null
+        || messages.Length == 0)
+      {
+        return this;
+      }
+
+      foreach (string message in messages)
+      {
+        if (string.IsNullOrEmpty(message))
+        {
+          continue;
+        }
+
+        _messages.Enqueue(message);
+      }
+
+      if (string.IsNullOrEmpty(TBlMessage.Text)
+        && _messages.Count > 0)
       {
         TBlMessage.Text = _messages.Dequeue();
       }
+
+      return this;
+    }
+
+    public InstructionPage ThenShowPage(Func<Page> getNextPageCallback)
+    {
+      if (getNextPageCallback is null)
+      {
+        throw new ArgumentNullException(nameof(getNextPageCallback));
+      }
+
+      if (!(_getNextPageCallback is null))
+      {
+        throw new InvalidOperationException();
+      }
+
+      _getNextPageCallback = getNextPageCallback;
+      return this;
     }
 
     private async void _timer_Tick(object sender, EventArgs e)
@@ -56,7 +83,7 @@ namespace MBTI
       else
       {
         _timer.Stop();
-        await App.Current.MainWindow.Navigate(_nextPage);
+        await App.Current.MainWindow.Navigate(_getNextPageCallback);
       }
     }
 

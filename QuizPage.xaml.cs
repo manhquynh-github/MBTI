@@ -37,7 +37,7 @@ namespace MBTI
     {
       if (QuizVM.CurrentIndex == 0)
       {
-        await App.Current.MainWindow.Navigate(new WelcomePage());
+        await App.Current.MainWindow.Navigate(() => new WelcomePage());
         return;
       }
 
@@ -74,7 +74,7 @@ namespace MBTI
 
     private async void HomeButton_Click(object sender, RoutedEventArgs e)
     {
-      await App.Current.MainWindow.Navigate(new WelcomePage());
+      await App.Current.MainWindow.Navigate(() => new WelcomePage());
     }
 
     private async Task OnQuizFinished()
@@ -82,10 +82,11 @@ namespace MBTI
       string instruction3 = (string)Application.Current.Resources["SInstruction3"];
       string instruction4 = (string)Application.Current.Resources["SInstruction4"];
 
-      await App.Current.MainWindow.Navigate(new InstructionPage(
-        new ResultPage(new Mbti(QuizVM.Quiz)),
-        instruction3,
-        instruction4));
+      await App.Current.MainWindow.Navigate(() => new InstructionPage()
+        .DisplayMessages(
+          instruction3,
+          instruction4)
+        .ThenShowPage(() => new ResultPage(new Mbti(QuizVM.Quiz))));
     }
 
     private async Task Transition(Action onFadedOut)

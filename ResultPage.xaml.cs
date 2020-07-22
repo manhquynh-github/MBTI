@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 
 using MBTI.Logic;
@@ -26,7 +27,7 @@ namespace MBTI
 
     private async void BtnStudy_Click(object sender, RoutedEventArgs e)
     {
-      await App.Current.MainWindow.Navigate(new StudyPage(this));
+      await App.Current.MainWindow.Navigate(() => new StudyPage(this));
     }
   }
 }

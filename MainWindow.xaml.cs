@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Animation;
@@ -14,6 +15,12 @@ namespace MBTI
     public MainWindow()
     {
       InitializeComponent();
+    }
+
+    public async Task Navigate(Func<Page> getPageCallBack)
+    {
+      Page page = await Dispatcher.InvokeAsync(getPageCallBack);
+      await Navigate(page);
     }
 
     public async Task Navigate(Page page)

@@ -23,15 +23,16 @@ namespace MBTI
       string instruction1 = (string)Application.Current.Resources["SInstruction1"];
       string instruction2 = (string)Application.Current.Resources["SInstruction2"];
 
-      await App.Current.MainWindow.Navigate(new InstructionPage(
-        new QuizPage(),
-        instruction1,
-        instruction2));
+      await App.Current.MainWindow.Navigate(() => new InstructionPage()
+        .DisplayMessages(
+          instruction1,
+          instruction2)
+        .ThenShowPage(() => new QuizPage()));
     }
 
     private async void BtnStudy_Click(object sender, RoutedEventArgs e)
     {
-      await App.Current.MainWindow.Navigate(new StudyPage());
+      await App.Current.MainWindow.Navigate(() => new StudyPage());
     }
 
     private async void CbbLanguage_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -46,7 +47,7 @@ namespace MBTI
 
         App.Current.FadeOutStoryboard.Begin(ContentArea);
         await Task.Delay(TimeSpan.FromMilliseconds(400));
-        App.Current.UpdateLanguage((CultureInfo)e.AddedItems[0]);
+        await Task.Run(() => App.Current.UpdateLanguage((CultureInfo)e.AddedItems[0]));
         App.Current.FadeInStoryboard.Begin(ContentArea);
       }
     }
