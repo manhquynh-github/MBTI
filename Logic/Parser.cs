@@ -19,10 +19,14 @@ namespace MBTI.Logic
       {
         Description = string.Join(
           Environment.NewLine,
-          source[0].Split('&', StringSplitOptions.RemoveEmptyEntries).Select(v => $"- {v.Trim()}.")),
+          source[0].Trim()
+                   .Split("\n", StringSplitOptions.RemoveEmptyEntries)
+                   .Select(v => $"- {v.Trim()}.")),
         SuggestedJobs = string.Join(
           Environment.NewLine,
-          source[1].Split('&', StringSplitOptions.RemoveEmptyEntries).Select(v => $"- {v.Trim()}.")),
+          source[1].Trim()
+                   .Split("\n", StringSplitOptions.RemoveEmptyEntries)
+                   .Select(v => $"- {v.Trim()}.")),
       };
     }
 

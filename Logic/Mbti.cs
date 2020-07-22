@@ -67,8 +67,8 @@ namespace MBTI.Logic
           throw new InvalidOperationException("Unexpected selected index.");
         }
 
-        int x = i % 8;
-        switch ((x % 2 == 1 ? x : x - 1) + selectedIndex)
+        int column = i % 8;
+        switch ((column % 2 == 1 ? column : column - 1) + selectedIndex)
         {
           case 2:
             Extrovert += 1; break;
