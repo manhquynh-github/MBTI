@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-using MBTI.Models;
+﻿using MBTI.Models;
 
 namespace MBTI.Logic
 {

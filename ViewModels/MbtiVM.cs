@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-using MBTI.Logic;
+﻿using MBTI.Logic;
 
 namespace MBTI.ViewModels
 {
