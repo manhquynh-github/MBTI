@@ -83,7 +83,7 @@
       Nhân viên giám định
       Y tá
       Nha sĩ
-      Đại lý du lịch, Điều hạnh tour
+      Đại lý du lịch, Điều hành tour
       Trợ lý y khoa
     </sys:String>
   </x:Array>
@@ -91,7 +91,7 @@
            Type="{x:Type sys:String}">
     <sys:String xml:space="preserve">
       Có nhiều ý tưởng sáng tạo, luôn tìm kiếm những phương thức mới để giải quyết vấn đề
-      Có khả năng bao quất vấn đề, có tầm nhìn dài hạn, có khả năng lập kế hoạch và kiên định thực hiện để đạt được mục tiêu đề ra
+      Có khả năng bao quát vấn đề, có tầm nhìn dài hạn, có khả năng lập kế hoạch và kiên định thực hiện để đạt được mục tiêu đề ra
       Thường đặt tiêu chuẩn cao cho chính bạn và những người xung quanh
       Thường lý giải mọi vấn đề dưới con mắt khoa học, quyết định mọi việc khách quan
       Khá kín đáo, suy nghĩ sâu sắc, sống động lập và ngăn nắp
@@ -154,9 +154,7 @@
   <x:Array x:Key="INFP"
            Type="{x:Type sys:String}">
     <sys:String xml:space="preserve">
-      Cầu toàn và đầy đam mê sáng tạo, không gò bó mình trong những khuôn mẫu có sẵn, trong những phương thức giải quyết vấn đề kiểu
-      quot;truyền thống
-      quot; mà luôn suy nghĩ tìm giải pháp mới để áp dụng lâu dài
+      Cầu toàn và đầy đam mê sáng tạo, không gò bó mình trong những khuôn mẫu có sẵn, trong những phương thức giải quyết vấn đề kiểu &quot;truyền thốngquot; mà luôn suy nghĩ tìm giải pháp mới để áp dụng lâu dài
       Không chú trọng đến việc lập những kế hoạch quá chi tiết mà thường tùy cơ ứng biến
       Trong các mối quan hệ với bạn bè hay trong công việc, bạn luôn thể hiện được mình là một người tin cậy, sẵn sàng quan tâm, giúp đỡ người khác
       Nhạy cảm, cũng vì lẽ đó mà bạn cũng dễ bị tổn thương vì những lý do không lớn lắm
@@ -207,9 +205,7 @@
       Năng động, mạnh mẽ, sống thực tế
       Thường tìm những giải pháp đơn giản, dễ áp dụng để giải quyết công việc
       Thích hành động hơn là suy nghĩ tìm hiểu về những lý thuyết, học thuyết mới
-      Thích gặp gỡ, giao lưu cùng mọi người, hòa đồng, chân thành, dễ tính nhưng đôi khi bị
-      quot;chê
-      quot; là thiếu tinh tế
+      Thích gặp gỡ, giao lưu cùng mọi người, hòa đồng, chân thành, dễ tính nhưng đôi khi bị &quot;chêquot; là thiếu tinh tế
     </sys:String>
     <sys:String xml:space="preserve">
       Nhân viên y tế
@@ -265,7 +261,7 @@
       Giáo viên tiểu học
       Trợ lý phòng Nha
       Nhân viên chăm sóc sức khỏe tại nhà
-      Chuyên viên PR, Giao tế nhân sự
+      Chuyên viên PR, Giao tiếp nhân sự
       Bác sĩ X-quang
       Bác sĩ điều trị
       Đại lý du lịch, Điều hành tour
@@ -332,13 +328,11 @@
   <x:Array x:Key="ENFJ"
            Type="{x:Type sys:String}">
     <sys:String xml:space="preserve">
-      Nhiệt tình, có trách nhiệm đáng và đáng tin cậy
+      Nhiệt tình, có trách nhiệm và đáng tin cậy
       Có khả năng giao tiếp, dễ đồng cảm, hiểu nhu cầu người khác và động viên họ. Dễ nhận ra năng lực mọi người và giúp năng lực phát huy
       Là chất xúc tác để từng cá nhân và nhóm phát triển
       Bặt thiệp, giúp mọi người tìm thấy sự thoải mải và tạo được sức mạnh tinh thần của tập thể
-      Có khả năng sáng tạo, không bó mình trong những nếp nghĩ
-      quot;thông thường
-      quot;
+      Có khả năng sáng tạo, không bó mình trong những nếp nghĩ &quot;thông thườngquot;
     </sys:String>
     <sys:String xml:space="preserve">
       Người tổ chức sự kiện
@@ -349,7 +343,7 @@
       Đại lý bán hàng
       Nhân sự
       Giám đốc
-      Chính trị gia, Nhà ngoại gia
+      Chính trị gia, Nhà ngoại giao
       Nhà văn
     </sys:String>
   </x:Array>
@@ -358,9 +352,7 @@
     <sys:String xml:space="preserve">
       Thích sự mới mẻ: ý tưởng mới, hoạt động mới, con người mới,...
       Giỏi trong giao tiếp, ấm áp, thân thiện và biết quan tâm tới mọi người xung quanh
-      Luôn lạc quan và hướng tới tương lai. Đây là mẫu người
-      quot;nhiều năng lượng
-      quot;, mạnh mẽ, nhiệt tình và có một cuộc sống không gò bó, dễ thích nghi với sự thay đổi
+      Luôn lạc quan và hướng tới tương lai. Đây là mẫu người &quot;nhiều năng lượng&quot;, mạnh mẽ, nhiệt tình và có một cuộc sống không gò bó, dễ thích nghi với sự thay đổi
       Có khả năng liên kết các sự kiện để đưa ra các nhận định, các giải pháp cho bất cứ khó khăn nào
     </sys:String>
     <sys:String xml:space="preserve">

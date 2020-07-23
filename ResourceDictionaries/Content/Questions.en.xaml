@@ -10,7 +10,7 @@
     <sys:String>excited, happier, better</sys:String>
     <sys:String>suffocated, tired, exhausted</sys:String>
     <sys:String>you always like</sys:String>
-    <sys:String>being able to see all problems</sys:String>
+    <sys:String>being able to see all issues</sys:String>
     <sys:String>changes</sys:String>
     <sys:String>you like</sys:String>
     <sys:String>plans and detailed processes</sys:String>
@@ -58,8 +58,8 @@
     <sys:String>are an open-minded, friendly person</sys:String>
     <sys:String>have a closed life</sys:String>
     <sys:String>when attending a conference, you want the speaker to</sys:String>
-    <sys:String>mention all the details of the problem, avoid general introduction</sys:String>
-    <sys:String>give a brief introduction, a big picture about the problem before going into details</sys:String>
+    <sys:String>mention all the details of the issue, avoid general introduction</sys:String>
+    <sys:String>give a brief introduction, a big picture about the issue before going into details</sys:String>
     <sys:String>you usually like to do things that are</sys:String>
     <sys:String>highly practical</sys:String>
     <sys:String>related to creativity</sys:String>
@@ -73,12 +73,12 @@
     <sys:String>efficent, beneficial</sys:String>
     <sys:String>sometimes neccessary but usually not advantageous at all</sys:String>
     <sys:String>you usually want to</sys:String>
-    <sys:String>make a decision quickly to solve a problem</sys:String>
+    <sys:String>make a decision quickly to solve the issue</sys:String>
     <sys:String>delay making decision to find out and consider other options</sys:String>
     <sys:String>when having to talk to someone you do not know, you feel</sys:String>
     <sys:String>very happy and excited</sys:String>
     <sys:String>shy, reserved</sys:String>
-    <sys:String>to any situations, you always</sys:String>
+    <sys:String>to anything, you always</sys:String>
     <sys:String>take actions and respond quickly</sys:String>
     <sys:String>consider and think carefully</sys:String>
     <sys:String>you like your friend to</sys:String>
@@ -132,7 +132,7 @@
     <sys:String>when reading books, you like the authors that</sys:String>
     <sys:String>mention directly what they want to say</sys:String>
     <sys:String>express differently, uniquely, figuratively</sys:String>
-    <sys:String>when presenting a problem, you usually</sys:String>
+    <sys:String>when raising an issue, you usually</sys:String>
     <sys:String>go into details</sys:String>
     <sys:String>give a general idea</sys:String>
     <sys:String>you usually like to be praised as</sys:String>
@@ -162,7 +162,7 @@
     <sys:String>you would consider someone bad if they are</sys:String>
     <sys:String>too sentimental</sys:String>
     <sys:String>too hard-headed</sys:String>
-    <sys:String>when handling certain situations, you usually are</sys:String>
+    <sys:String>when addressing certain issues, you usually are</sys:String>
     <sys:String>too rigid</sys:String>
     <sys:String>too susceptible</sys:String>
     <sys:String>when deciding to choose something, you usually are</sys:String>
@@ -213,11 +213,11 @@
     <sys:String>you like to be praised as a person who always</sys:String>
     <sys:String>work logically and consistently</sys:String>
     <sys:String>live true to your feelings</sys:String>
-    <sys:String>you usually like</sys:String>
+    <sys:String>you usually like to</sys:String>
     <sys:String>prioritize working over playing</sys:String>
     <sys:String>combine working with playing</sys:String>
-    <sys:String>you like</sys:String>
-    <sys:String>proactively arrange everything according to plan</sys:String>
+    <sys:String>you like to</sys:String>
+    <sys:String>proactively plan ahead everything</sys:String>
     <sys:String>let everything happen naturually</sys:String>
     <sys:String>you are</sys:String>
     <sys:String>an open-minded, friendly person</sys:String>

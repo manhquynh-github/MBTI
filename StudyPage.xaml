@@ -131,8 +131,8 @@
                       SelectedIndex="{Binding SelectedPrefix2,
                                               Mode=TwoWay}"
                       Style="{StaticResource CustomComboBoxStyle}">
-              <ComboBoxItem Content="Thực tế" />
-              <ComboBoxItem Content="Trực giác" />
+              <ComboBoxItem Content="{DynamicResource SSensing}" />
+              <ComboBoxItem Content="{DynamicResource SIntuition}" />
             </ComboBox>
             <ComboBox Grid.Row="2"
                       Grid.Column="4"
