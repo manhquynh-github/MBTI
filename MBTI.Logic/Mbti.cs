@@ -9,9 +9,14 @@ namespace MBTI.Logic
   {
     public Mbti(IList<Question> questions)
     {
+      if (questions is null)
+      {
+        throw new ArgumentNullException(nameof(questions));
+      }
+
       if (questions.Count != RequiredQuestionCount)
       {
-        throw new InvalidOperationException($"Number of question must be exactly {RequiredQuestionCount}");
+        throw new InvalidOperationException($"Number of question must be exactly {RequiredQuestionCount}.");
       }
 
       Calculate(questions);
@@ -57,9 +62,18 @@ namespace MBTI.Logic
 
     private void Calculate(IList<Question> questions)
     {
+      if (questions is null)
+      {
+        throw new ArgumentNullException(nameof(questions));
+      }
+
       for (int i = 0; i < questions.Count; i++)
       {
         Question question = questions[i];
+        if (question is null)
+        {
+          throw new InvalidOperationException($"{nameof(question)} is null.");
+        }
 
         int selectedIndex = question.SelectedIndex;
         if (selectedIndex < 1 || selectedIndex > 2)

@@ -3,9 +3,9 @@ using System.Windows;
 using System.Windows.Controls;
 
 using MBTI.Logic;
-using MBTI.ViewModels;
+using MBTI.WindowsGUI.ViewModels;
 
-namespace MBTI
+namespace MBTI.WindowsGUI
 {
   /// <summary>
   /// Interaction logic for ResultPage.xaml

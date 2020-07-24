@@ -5,7 +5,7 @@ using System.Windows.Controls;
 using System.Windows.Media.Animation;
 using System.Windows.Navigation;
 
-namespace MBTI
+namespace MBTI.WindowsGUI
 {
   /// <summary>
   /// Interaction logic for MainWindow.xaml

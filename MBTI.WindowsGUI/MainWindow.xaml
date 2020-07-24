@@ -1,10 +1,10 @@
-﻿<Window x:Class="MBTI.MainWindow"
+﻿<Window x:Class="MBTI.WindowsGUI.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:local="clr-namespace:MBTI"
+        xmlns:local="clr-namespace:MBTI.WindowsGUI"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        Title="MBTI"
+        Title="MBTI.WindowsGUI"
         Width="800"
         Height="600"
         MinWidth="700"
@@ -18,7 +18,7 @@
   </WindowChrome.WindowChrome>
   <Grid>
     <Grid.Background>
-      <ImageBrush ImageSource="/MBTI;component/Resources/background.png" />
+      <ImageBrush ImageSource="/Resources/background.png" />
     </Grid.Background>
     <Frame x:Name="MainFrame"
            Focusable="False"

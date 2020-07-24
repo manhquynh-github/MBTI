@@ -6,7 +6,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Media.Animation;
 
-namespace MBTI
+namespace MBTI.WindowsGUI
 {
   /// <summary>
   /// Interaction logic for App.xaml
@@ -25,9 +25,9 @@ namespace MBTI
 
       LanguageSources = new List<Func<CultureInfo, string>>()
       {
-         info => $"/{nameof(MBTI)};component/ResourceDictionaries/UIContent/UIContent.{info.TwoLetterISOLanguageName}.xaml",
-         info => $"/{nameof(MBTI)};component/ResourceDictionaries/Content/Questions.{info.TwoLetterISOLanguageName}.xaml",
-         info => $"/{nameof(MBTI)};component/ResourceDictionaries/Content/Descriptions.{info.TwoLetterISOLanguageName}.xaml",
+         info => $"/ResourceDictionaries/UIContent/UIContent.{info.TwoLetterISOLanguageName}.xaml",
+         info => $"/ResourceDictionaries/Content/Questions.{info.TwoLetterISOLanguageName}.xaml",
+         info => $"/ResourceDictionaries/Content/Descriptions.{info.TwoLetterISOLanguageName}.xaml",
       };
 
       FadeInStoryboard = (Storyboard)Resources["FadeInStoryboard"];
@@ -83,10 +83,17 @@ namespace MBTI
         {
           source = LanguageSources[i](new CultureInfo("vi"));
 
-          dict = new ResourceDictionary()
+          try
           {
-            Source = new Uri(source, UriKind.Relative),
-          };
+            dict = new ResourceDictionary()
+            {
+              Source = new Uri(source, UriKind.Relative),
+            };
+          }
+          catch (IOException)
+          {
+            throw new InvalidOperationException("Default language source not found");
+          }
         }
 
         yield return dict;

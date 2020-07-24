@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace MBTI
+namespace MBTI.WindowsGUI
 {
   /// <summary>
   /// Interaction logic for WelcomePage.xaml

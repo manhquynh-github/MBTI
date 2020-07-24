@@ -5,7 +5,7 @@ using System.Windows;
 using MBTI.Logic;
 using MBTI.Models;
 
-namespace MBTI.ViewModels
+namespace MBTI.WindowsGUI.ViewModels
 {
   public class StudyVM : VMBase
   {
@@ -134,7 +134,7 @@ namespace MBTI.ViewModels
       }
 
       NotifyPropertyChanged(nameof(TypeAcronym));
-      UpdateDescription(PersonalityType);
+      UpdateDescription(TypeAcronym);
       NotifyPropertyChanged(nameof(DisplayPrefix1));
       NotifyPropertyChanged(nameof(DisplayPrefix2));
       NotifyPropertyChanged(nameof(DisplayPrefix3));
@@ -146,9 +146,9 @@ namespace MBTI.ViewModels
       NeedsRefreshUI = false;
     }
 
-    private void UpdateDescription(PersonalityType type)
+    private void UpdateDescription(string typeAcronym)
     {
-      string[] descriptionResource = (string[])Application.Current.Resources[TypeAcronym];
+      string[] descriptionResource = (string[])Application.Current.Resources[typeAcronym];
       if (descriptionResource == null || descriptionResource.Length == 0)
       {
         throw new InvalidOperationException();

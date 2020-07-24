@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace MBTI.ViewModels
+namespace MBTI.WindowsGUI.ViewModels
 {
   public abstract class VMBase :
     INotifyPropertyChanging,

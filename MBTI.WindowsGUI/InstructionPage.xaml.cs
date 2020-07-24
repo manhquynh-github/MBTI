@@ -6,7 +6,7 @@ using System.Windows.Controls;
 using System.Windows.Media.Animation;
 using System.Windows.Threading;
 
-namespace MBTI
+namespace MBTI.WindowsGUI
 {
   /// <summary>
   /// Interaction logic for InstructionPage.xaml

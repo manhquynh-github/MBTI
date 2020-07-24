@@ -7,9 +7,9 @@ using System.Windows.Media.Animation;
 
 using MBTI.Logic;
 using MBTI.Models;
-using MBTI.ViewModels;
+using MBTI.WindowsGUI.ViewModels;
 
-namespace MBTI
+namespace MBTI.WindowsGUI
 {
   /// <summary>
   /// Interaction logic for QuizPage.xaml

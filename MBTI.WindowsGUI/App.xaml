@@ -1,15 +1,15 @@
-﻿<Application x:Class="MBTI.App"
+﻿<Application x:Class="MBTI.WindowsGUI.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:MBTI"
+             xmlns:local="clr-namespace:MBTI.WindowsGUI"
              xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2"
              StartupUri="MainWindow.xaml">
   <Application.Resources>
     <ResourceDictionary>
       <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/MBTI;component/ResourceDictionaries/UIContent/UIContent.vi.xaml" />
-        <ResourceDictionary Source="/MBTI;component/ResourceDictionaries/Content/Questions.vi.xaml" />
-        <ResourceDictionary Source="/MBTI;component/ResourceDictionaries/Content/Descriptions.vi.xaml" />
+        <ResourceDictionary Source="/ResourceDictionaries/UIContent/UIContent.vi.xaml" />
+        <ResourceDictionary Source="/ResourceDictionaries/Content/Questions.vi.xaml" />
+        <ResourceDictionary Source="/ResourceDictionaries/Content/Descriptions.vi.xaml" />
       </ResourceDictionary.MergedDictionaries>
       <Storyboard x:Key="FadeInStoryboard">
         <DoubleAnimation Storyboard.TargetProperty="(UIElement.Opacity)"

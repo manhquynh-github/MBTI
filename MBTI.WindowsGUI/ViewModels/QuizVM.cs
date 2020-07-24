@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using MBTI.Models;
 
-namespace MBTI.ViewModels
+namespace MBTI.WindowsGUI.ViewModels
 {
   public class QuizVM : VMBase
   {

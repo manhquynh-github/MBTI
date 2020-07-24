@@ -1,6 +1,6 @@
 ﻿using MBTI.Logic;
 
-namespace MBTI.ViewModels
+namespace MBTI.WindowsGUI.ViewModels
 {
   public class MbtiVM : VMBase
   {

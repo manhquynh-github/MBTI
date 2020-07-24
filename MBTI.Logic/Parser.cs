@@ -10,9 +10,14 @@ namespace MBTI.Logic
   {
     public static void Parse(string[] source, out PersonalityTypeDescription value)
     {
+      if (source is null)
+      {
+        throw new ArgumentNullException(nameof(source));
+      }
+
       if (source.Length != 2)
       {
-        throw new ArgumentException(nameof(source));
+        throw new ArgumentException($"{nameof(source)} requires 2 strings elements.");
       }
 
       value = new PersonalityTypeDescription()
@@ -32,9 +37,14 @@ namespace MBTI.Logic
 
     public static void Parse(string[] source, out IList<Question> value)
     {
+      if (source is null)
+      {
+        throw new ArgumentNullException(nameof(source));
+      }
+
       if (source.Length % 3 != 0)
       {
-        throw new ArgumentException(nameof(source));
+        throw new ArgumentException($"{nameof(source)} requires multiply of 3 number of string elements.");
       }
 
       value = new List<Question>();
