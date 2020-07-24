@@ -33,7 +33,7 @@ namespace MBTI.WindowsGUI
     public StudyPage() : this(
       new PersonalityType()
       {
-        Prefix1 = PersonalityPrefixes1.Introvert,
+        Prefix1 = PersonalityPrefixes1.Extrovert,
         Prefix2 = PersonalityPrefixes2.Sensing,
         Prefix3 = PersonalityPrefixes3.Thinking,
         Prefix4 = PersonalityPrefixes4.Judging,
@@ -116,7 +116,7 @@ namespace MBTI.WindowsGUI
 
     private void UpdatePrefixes()
     {
-      bool specialPrefix2 = StudyVM.SelectedPrefix2 == 1;
+      bool specialPrefix2 = StudyVM.PersonalityType.Prefix2 == PersonalityPrefixes2.Intuition;
 
       for (int i = 0; i < _tblPrefixes.Count; i++)
       {

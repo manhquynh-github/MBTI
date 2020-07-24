@@ -14,17 +14,13 @@ namespace MBTI.WindowsGUI
   /// </summary>
   public partial class App : Application
   {
+    private CultureInfo _language;
+
     public App()
     {
       InitializeComponent();
 
       AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
-
-      SupportedLanguages = new List<CultureInfo>()
-      {
-        CultureInfo.GetCultureInfo("en"),
-        CultureInfo.GetCultureInfo("vi"),
-      };
 
       LanguageSources = new List<Func<CultureInfo, string>>()
       {
@@ -32,6 +28,14 @@ namespace MBTI.WindowsGUI
          info => $"/ResourceDictionaries/Content/Questions.{info.TwoLetterISOLanguageName}.xaml",
          info => $"/ResourceDictionaries/Content/Descriptions.{info.TwoLetterISOLanguageName}.xaml",
       };
+
+      SupportedLanguages = new List<CultureInfo>()
+      {
+        CultureInfo.GetCultureInfo("en"),
+        CultureInfo.GetCultureInfo("vi"),
+      };
+
+      Language = SupportedLanguages.First();
 
       FadeInStoryboard = (Storyboard)Resources["FadeInStoryboard"];
       FadeOutStoryboard = (Storyboard)Resources["FadeOutStoryboard"];
@@ -48,36 +52,20 @@ namespace MBTI.WindowsGUI
 
     public Storyboard FadeOutStoryboard { get; }
 
-    public IEnumerable<CultureInfo> SupportedLanguages { get; }
-
-    public static new App Current => (App)Application.Current;
-
-    public new MainWindow MainWindow => (MainWindow)Application.Current.MainWindow;
-
-    protected IList<Func<CultureInfo, string>> LanguageSources { get; }
-
-    public void UpdateLanguage(CultureInfo cultureInfo)
+    public CultureInfo Language
     {
-      if (cultureInfo is null)
+      get => _language;
+      set
       {
-        throw new ArgumentNullException(nameof(cultureInfo));
+        _language = value;
+        UpdateLanguage(value);
       }
-
-      if (!SupportedLanguages.Contains(cultureInfo))
-      {
-        throw new NotSupportedException();
-      }
-
-      Resources.MergedDictionaries.Clear();
-
-      foreach (ResourceDictionary resource in GetLanguageResources(cultureInfo))
-      {
-        Resources.MergedDictionaries.Add(resource);
-      }
-
-      CultureInfo.CurrentCulture = cultureInfo;
-      CultureInfo.CurrentUICulture = cultureInfo;
     }
+
+    public IEnumerable<CultureInfo> SupportedLanguages { get; }
+    public static new App Current => (App)Application.Current;
+    public new MainWindow MainWindow => (MainWindow)Application.Current.MainWindow;
+    protected IList<Func<CultureInfo, string>> LanguageSources { get; }
 
     protected IEnumerable<ResourceDictionary> GetLanguageResources(CultureInfo cultureInfo)
     {
@@ -167,6 +155,29 @@ namespace MBTI.WindowsGUI
         MessageBoxButton.OK,
         MessageBoxImage.Error,
         MessageBoxResult.OK);
+    }
+
+    private void UpdateLanguage(CultureInfo cultureInfo)
+    {
+      if (cultureInfo is null)
+      {
+        throw new ArgumentNullException(nameof(cultureInfo));
+      }
+
+      if (!SupportedLanguages.Contains(cultureInfo))
+      {
+        throw new NotSupportedException();
+      }
+
+      Resources.MergedDictionaries.Clear();
+
+      foreach (ResourceDictionary resource in GetLanguageResources(cultureInfo))
+      {
+        Resources.MergedDictionaries.Add(resource);
+      }
+
+      CultureInfo.CurrentCulture = cultureInfo;
+      CultureInfo.CurrentUICulture = cultureInfo;
     }
   }
 }

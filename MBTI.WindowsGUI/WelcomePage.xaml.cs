@@ -16,6 +16,7 @@ namespace MBTI.WindowsGUI
       InitializeComponent();
 
       CbbLanguage.ItemsSource = App.Current.SupportedLanguages;
+      CbbLanguage.SelectedItem = App.Current.Language;
     }
 
     private async void AboutButton_Click(object sender, RoutedEventArgs e)
@@ -53,13 +54,13 @@ namespace MBTI.WindowsGUI
       {
         if (!IsLoaded)
         {
-          App.Current.UpdateLanguage((CultureInfo)e.AddedItems[0]);
+          App.Current.Language = (CultureInfo)e.AddedItems[0];
           return;
         }
 
         App.Current.FadeOutStoryboard.Begin(ContentArea);
         await Task.Delay(TimeSpan.FromMilliseconds(400));
-        await Task.Run(() => App.Current.UpdateLanguage((CultureInfo)e.AddedItems[0]));
+        await Task.Run(() => App.Current.Language = (CultureInfo)e.AddedItems[0]);
         App.Current.FadeInStoryboard.Begin(ContentArea);
       }
     }

@@ -84,7 +84,6 @@
                 Orientation="Horizontal">
       <ComboBox x:Name="CbbLanguage"
                 DisplayMemberPath="NativeName"
-                SelectedIndex="0"
                 SelectionChanged="CbbLanguage_SelectionChanged"
                 Style="{StaticResource CustomComboBoxStyle}" />
       <Border Width="1"
