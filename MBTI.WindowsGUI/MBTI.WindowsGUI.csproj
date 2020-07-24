@@ -19,10 +19,10 @@
 
   <ItemGroup>
     <None Remove="Resources\background.png" />
-    <None Include="Resources\icon.ico">
+    <Resource Include="Resources\icon.ico">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
-    </None>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
@@ -50,10 +50,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Resources\icon.ico">
+    <Resource Update="Resources\icon.ico">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
-    </None>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>

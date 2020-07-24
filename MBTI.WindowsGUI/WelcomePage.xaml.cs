@@ -18,6 +18,11 @@ namespace MBTI.WindowsGUI
       CbbLanguage.ItemsSource = App.Current.SupportedLanguages;
     }
 
+    private async void AboutButton_Click(object sender, RoutedEventArgs e)
+    {
+      await App.Current.MainWindow.Navigate(() => new AboutPage());
+    }
+
     private async void BtnQuiz_Click(object sender, RoutedEventArgs e)
     {
       string instruction1 = (string)Application.Current.Resources["SInstruction1"];

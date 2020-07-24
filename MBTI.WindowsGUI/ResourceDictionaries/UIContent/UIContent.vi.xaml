@@ -22,4 +22,5 @@
   <sys:String x:Key="SPersonality">Tính cách</sys:String>
   <sys:String x:Key="SSuggestedJobs">Nghề nghiệp thích hợp</sys:String>
   <sys:String x:Key="SHomeTooltip">Trở về màn hình chính</sys:String>
+  <sys:String x:Key="SMBTIDescription">Chỉ số phân loại Myers-Briggs (Myers-Briggs Type Indication), thường được viết ngắn gọn là MBTI, là một phương pháp sử dụng các câu hỏi trắc nghiệm tâm lý để tìm hiểu tâm lý, tính cách cũng như cách con người nhận thức thế giới xung quanh, đưa ra quyết định cho một vấn đề...</sys:String>
 </ResourceDictionary>

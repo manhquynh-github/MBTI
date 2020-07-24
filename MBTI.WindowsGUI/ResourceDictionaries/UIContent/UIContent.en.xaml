@@ -22,4 +22,5 @@
   <sys:String x:Key="SPersonality">Personality</sys:String>
   <sys:String x:Key="SSuggestedJobs">Suggested jobs</sys:String>
   <sys:String x:Key="SHomeTooltip">Go back to home screen</sys:String>
+  <sys:String x:Key="SMBTIDescription">The Myers–Briggs Type Indicator (MBTI) is a pseudoscientific introspective self-report questionnaire indicating differing psychological preferences in how people perceive the world and make decisions.</sys:String>
 </ResourceDictionary>
