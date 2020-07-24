@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MBTI.Logic", "MBTI.Logic\MB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MBTI.WindowsGUI", "MBTI.WindowsGUI\MBTI.WindowsGUI.csproj", "{FE3D589A-713A-4360-9B06-174C84D584B7}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MBTI.WindowsSetup", "MBTI.WindowsSetup\MBTI.WindowsSetup.vdproj", "{6CE44B57-8DFD-4645-AC92-85DBC063963B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,8 @@ Global
 		{FE3D589A-713A-4360-9B06-174C84D584B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE3D589A-713A-4360-9B06-174C84D584B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE3D589A-713A-4360-9B06-174C84D584B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CE44B57-8DFD-4645-AC92-85DBC063963B}.Debug|Any CPU.ActiveCfg = Debug
+		{6CE44B57-8DFD-4645-AC92-85DBC063963B}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
