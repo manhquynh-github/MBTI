@@ -16,6 +16,8 @@ namespace MBTI.WindowsGUI
   /// </summary>
   public partial class QuizPage : Page
   {
+    private bool _isTransitioning;
+
     public QuizPage()
     {
       InitializeComponent();
@@ -47,6 +49,11 @@ namespace MBTI.WindowsGUI
 
     private async void BtnFirstChoice_Click(object sender, RoutedEventArgs e)
     {
+      if (_isTransitioning)
+      {
+        return;
+      }
+
       QuizVM.CurrentQuestion.SelectedIndex = 1;
 
       if (QuizVM.DisplayCurrentIndex == QuizVM.Quiz.Count)
@@ -61,6 +68,11 @@ namespace MBTI.WindowsGUI
 
     private async void BtnSecondChoice_Click(object sender, RoutedEventArgs e)
     {
+      if (_isTransitioning)
+      {
+        return;
+      }
+
       QuizVM.CurrentQuestion.SelectedIndex = 2;
 
       if (QuizVM.DisplayCurrentIndex == QuizVM.Quiz.Count)
@@ -99,10 +111,12 @@ namespace MBTI.WindowsGUI
 
     private async Task Transition(Action onFadedOut)
     {
+      _isTransitioning = true;
       App.Current.FadeOutStoryboard.Begin(QuizArea);
       await Task.Delay(400);
       onFadedOut();
       App.Current.FadeInStoryboard.Begin(QuizArea);
+      _isTransitioning = false;
     }
   }
 }

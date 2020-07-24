@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Media.Animation;
+using System.Windows.Threading;
 
 namespace MBTI.WindowsGUI
 {
@@ -16,6 +17,8 @@ namespace MBTI.WindowsGUI
     public App()
     {
       InitializeComponent();
+
+      AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
 
       SupportedLanguages = new List<CultureInfo>()
       {
@@ -42,10 +45,15 @@ namespace MBTI.WindowsGUI
     }
 
     public Storyboard FadeInStoryboard { get; }
+
     public Storyboard FadeOutStoryboard { get; }
+
     public IEnumerable<CultureInfo> SupportedLanguages { get; }
+
     public static new App Current => (App)Application.Current;
+
     public new MainWindow MainWindow => (MainWindow)Application.Current.MainWindow;
+
     protected IList<Func<CultureInfo, string>> LanguageSources { get; }
 
     public void UpdateLanguage(CultureInfo cultureInfo)
@@ -114,9 +122,19 @@ namespace MBTI.WindowsGUI
       }
     }
 
+    private void Application_DispatcherUnhandledException(object sender, DispatcherUnhandledExceptionEventArgs e)
+    {
+      ShowExceptionDialog(e.Exception);
+    }
+
     private void CloseButton_Click(object sender, RoutedEventArgs e)
     {
       base.MainWindow.Close();
+    }
+
+    private void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
+    {
+      ShowExceptionDialog((Exception)e.ExceptionObject);
     }
 
     private void MaximizeButton_Click(object sender, RoutedEventArgs e)
@@ -134,6 +152,21 @@ namespace MBTI.WindowsGUI
     private void MinimizeButton_Click(object sender, RoutedEventArgs e)
     {
       base.MainWindow.WindowState = WindowState.Minimized;
+    }
+
+    private void ShowExceptionDialog(Exception e)
+    {
+      string message = $"Unexpected error has occured." +
+        $"{Environment.NewLine}" +
+        $"{Environment.NewLine}" +
+        $"Additional information: {e.Message}";
+
+      MessageBox.Show(
+        message,
+        "Error",
+        MessageBoxButton.OK,
+        MessageBoxImage.Error,
+        MessageBoxResult.OK);
     }
   }
 }
