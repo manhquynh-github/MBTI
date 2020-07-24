@@ -9,6 +9,8 @@
     <RepositoryType>GitHub</RepositoryType>
     <Copyright>Copyright © 2020</Copyright>
     <Description>https://github.com/manhquynh-github/MBTI</Description>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <PackageIcon>icon.ico</PackageIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -17,6 +19,10 @@
 
   <ItemGroup>
     <None Remove="Resources\background.png" />
+    <None Include="icon.ico">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
