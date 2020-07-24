@@ -11,6 +11,11 @@ namespace MBTI.Models
 
     public static PersonalityType Parse(string acronym)
     {
+      if (string.IsNullOrWhiteSpace(acronym))
+      {
+        throw new ArgumentException("Cannot be empty.", nameof(acronym));
+      }
+
       if (acronym.Length != 4)
       {
         throw new ArgumentException(nameof(acronym));

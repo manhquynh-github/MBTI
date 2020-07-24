@@ -23,6 +23,13 @@ namespace MBTI.WindowsGUI
       string instruction1 = (string)Application.Current.Resources["SInstruction1"];
       string instruction2 = (string)Application.Current.Resources["SInstruction2"];
 
+      if (instruction1 == null
+       || instruction2 == null)
+      {
+        throw new InvalidOperationException(
+          "Unable to get resource dictionary for instructions.");
+      }
+
       await App.Current.MainWindow.Navigate(() => new InstructionPage()
         .DisplayMessages(
           instruction1,

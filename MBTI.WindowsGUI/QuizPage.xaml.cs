@@ -23,7 +23,8 @@ namespace MBTI.WindowsGUI
       string[] questions = (string[])Application.Current.Resources["Questions"];
       if (questions == null || questions.Length == 0)
       {
-        throw new InvalidOperationException();
+        throw new InvalidOperationException(
+          "Unable to get resource dictionary for questions.");
       }
 
       Parser.Parse(questions, out IList<Question> quiz);
@@ -81,6 +82,13 @@ namespace MBTI.WindowsGUI
     {
       string instruction3 = (string)Application.Current.Resources["SInstruction3"];
       string instruction4 = (string)Application.Current.Resources["SInstruction4"];
+
+      if (instruction3 == null
+        || instruction4 == null)
+      {
+        throw new InvalidOperationException(
+          "Unable to get resource dictionary for instructions.");
+      }
 
       await App.Current.MainWindow.Navigate(() => new InstructionPage()
         .DisplayMessages(

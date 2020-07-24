@@ -17,7 +17,9 @@ namespace MBTI.Logic
 
       if (source.Length != 2)
       {
-        throw new ArgumentException($"{nameof(source)} requires 2 strings elements.");
+        throw new ArgumentException(
+          "Array value requires 2 strings elements.",
+          nameof(source));
       }
 
       value = new PersonalityTypeDescription()
@@ -42,9 +44,18 @@ namespace MBTI.Logic
         throw new ArgumentNullException(nameof(source));
       }
 
+      if (source.Length == 0)
+      {
+        throw new ArgumentException(
+          "Array value requires non-zero number of string elements.",
+          nameof(source));
+      }
+
       if (source.Length % 3 != 0)
       {
-        throw new ArgumentException($"{nameof(source)} requires multiply of 3 number of string elements.");
+        throw new ArgumentException(
+          "Array value requires multiply of 3 number of string elements.",
+          nameof(source));
       }
 
       value = new List<Question>();

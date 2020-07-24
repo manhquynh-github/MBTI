@@ -64,7 +64,7 @@ namespace MBTI.WindowsGUI
 
       if (!(_getNextPageCallback is null))
       {
-        throw new InvalidOperationException();
+        throw new InvalidOperationException("This action has already been set.");
       }
 
       _getNextPageCallback = getNextPageCallback;

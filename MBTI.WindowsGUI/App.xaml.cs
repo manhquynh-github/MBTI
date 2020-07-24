@@ -32,6 +32,13 @@ namespace MBTI.WindowsGUI
 
       FadeInStoryboard = (Storyboard)Resources["FadeInStoryboard"];
       FadeOutStoryboard = (Storyboard)Resources["FadeOutStoryboard"];
+
+      if (FadeInStoryboard == null
+       || FadeOutStoryboard == null)
+      {
+        throw new InvalidOperationException(
+          "Unable to get resource dictionary for fade animations.");
+      }
     }
 
     public Storyboard FadeInStoryboard { get; }
@@ -66,6 +73,11 @@ namespace MBTI.WindowsGUI
 
     protected IEnumerable<ResourceDictionary> GetLanguageResources(CultureInfo cultureInfo)
     {
+      if (cultureInfo is null)
+      {
+        throw new ArgumentNullException(nameof(cultureInfo));
+      }
+
       for (int i = 0; i < LanguageSources.Count; i++)
       {
         string source = LanguageSources[i](cultureInfo);
@@ -79,7 +91,7 @@ namespace MBTI.WindowsGUI
             Source = new Uri(source, UriKind.Relative),
           };
         }
-        catch (IOException)
+        catch (IOException e1)
         {
           source = LanguageSources[i](new CultureInfo("vi"));
 
@@ -90,9 +102,11 @@ namespace MBTI.WindowsGUI
               Source = new Uri(source, UriKind.Relative),
             };
           }
-          catch (IOException)
+          catch (IOException e2)
           {
-            throw new InvalidOperationException("Default language source not found");
+            throw new InvalidOperationException(
+              "Default language source not found",
+              new AggregateException(e1, e2));
           }
         }
 

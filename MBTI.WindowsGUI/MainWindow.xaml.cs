@@ -19,6 +19,11 @@ namespace MBTI.WindowsGUI
 
     public async Task Navigate(Func<Page> getPageCallBack)
     {
+      if (getPageCallBack is null)
+      {
+        throw new ArgumentNullException(nameof(getPageCallBack));
+      }
+
       Page page = await Dispatcher.InvokeAsync(getPageCallBack);
       await Navigate(page);
     }

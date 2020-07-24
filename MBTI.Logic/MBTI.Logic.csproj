@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Copyright>Copyright © 2020</Copyright>
+    <Description>https://github.com/manhquynh-github/MBTI</Description>
+    <RepositoryUrl>https://github.com/manhquynh-github/MBTI</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>

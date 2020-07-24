@@ -16,7 +16,8 @@ namespace MBTI.Logic
 
       if (questions.Count != RequiredQuestionCount)
       {
-        throw new InvalidOperationException($"Number of question must be exactly {RequiredQuestionCount}.");
+        throw new InvalidOperationException(
+          $"Number of question must be exactly {RequiredQuestionCount}.");
       }
 
       Calculate(questions);
