@@ -145,43 +145,46 @@
               ToolTip="{DynamicResource SHomeTooltip}"
               WindowChrome.IsHitTestVisibleInChrome="True" />
     </Grid>
-    <Grid x:Name="QuizArea"
-          Grid.Row="1"
-          MinWidth="650"
-          MinHeight="300"
-          MaxWidth="800"
-          Margin="25,60,25,10"
-          HorizontalAlignment="Center"
-          VerticalAlignment="Center">
-      <Grid.RowDefinitions>
-        <RowDefinition Height="auto" />
-        <RowDefinition Height="*" />
-      </Grid.RowDefinitions>
-      <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="*" />
-        <ColumnDefinition Width="*" />
-      </Grid.ColumnDefinitions>
-      <TextBlock Grid.ColumnSpan="2"
-                 FontFamily="Segoe UI Semilight"
-                 FontSize="36"
-                 Text="{Binding DisplayQuestionContent}"
-                 TextWrapping="Wrap" />
-      <Button x:Name="BtnFirstChoice"
-              Grid.Row="1"
-              Grid.Column="0"
-              Click="BtnFirstChoice_Click"
-              Style="{StaticResource ChoiceButtonStyle}">
-        <TextBlock Text="{Binding CurrentQuestion.FirstChoice.Content}"
+    <ScrollViewer Grid.Row="1"
+                  HorizontalScrollBarVisibility="Disabled"
+                  VerticalScrollBarVisibility="Auto">
+      <Grid x:Name="QuizArea"
+            MinWidth="650"
+            MinHeight="300"
+            MaxWidth="800"
+            Margin="25,60,25,10"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="auto" />
+          <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.ColumnSpan="2"
+                   FontFamily="Segoe UI Semilight"
+                   FontSize="36"
+                   Text="{Binding DisplayQuestionContent}"
                    TextWrapping="Wrap" />
-      </Button>
-      <Button x:Name="BtnSecondChoice"
-              Grid.Row="1"
-              Grid.Column="1"
-              Click="BtnSecondChoice_Click"
-              Style="{StaticResource ChoiceButtonStyle}">
-        <TextBlock Text="{Binding CurrentQuestion.SecondChoice.Content}"
-                   TextWrapping="Wrap" />
-      </Button>
-    </Grid>
+        <Button x:Name="BtnFirstChoice"
+                Grid.Row="1"
+                Grid.Column="0"
+                Click="BtnFirstChoice_Click"
+                Style="{StaticResource ChoiceButtonStyle}">
+          <TextBlock Text="{Binding CurrentQuestion.FirstChoice.Content}"
+                     TextWrapping="Wrap" />
+        </Button>
+        <Button x:Name="BtnSecondChoice"
+                Grid.Row="1"
+                Grid.Column="1"
+                Click="BtnSecondChoice_Click"
+                Style="{StaticResource ChoiceButtonStyle}">
+          <TextBlock Text="{Binding CurrentQuestion.SecondChoice.Content}"
+                     TextWrapping="Wrap" />
+        </Button>
+      </Grid>
+    </ScrollViewer>
   </Grid>
 </Page>

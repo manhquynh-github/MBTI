@@ -10,11 +10,14 @@
       Loaded="Page_Loaded"
       mc:Ignorable="d">
   <Grid>
-    <TextBlock x:Name="TBlMessage"
-               HorizontalAlignment="Center"
-               VerticalAlignment="Center"
-               FontSize="32"
-               FontWeight="Light"
-               TextWrapping="Wrap" />
+    <ScrollViewer HorizontalScrollBarVisibility="Disabled"
+                  VerticalScrollBarVisibility="Auto">
+      <TextBlock x:Name="TBlMessage"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"
+                 FontSize="32"
+                 FontWeight="Light"
+                 TextWrapping="Wrap" />
+    </ScrollViewer>
   </Grid>
 </Page>
