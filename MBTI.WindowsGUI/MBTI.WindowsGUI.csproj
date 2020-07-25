@@ -11,6 +11,9 @@
     <Description>https://github.com/manhquynh-github/MBTI</Description>
     <ApplicationIcon>icon.ico</ApplicationIcon>
     <PackageIcon>icon.ico</PackageIcon>
+    <Product>MBTI.WindowsGUI</Product>
+    <Company>https://github.com/manhquynh-github/MBTI</Company>
+    <Authors>https://github.com/manhquynh-github/MBTI</Authors>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

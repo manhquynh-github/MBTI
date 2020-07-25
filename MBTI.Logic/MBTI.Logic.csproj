@@ -6,6 +6,8 @@
     <Description>https://github.com/manhquynh-github/MBTI</Description>
     <RepositoryUrl>https://github.com/manhquynh-github/MBTI</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
+    <Authors>https://github.com/manhquynh-github/MBTI</Authors>
+    <Company>https://github.com/manhquynh-github/MBTI</Company>
   </PropertyGroup>
 
   <ItemGroup>
