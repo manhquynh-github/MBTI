@@ -9,6 +9,9 @@ The app currently supports two languages: Vietnamese (original), and English (tr
 ## Technology
 This app is built upon .NET Core 3.1 WPF, Visual Studio 2019. Currently supports Windows platform only.
 
+## Installation
+An installer for pre-release version can be found [here](https://github.com/manhquynh-github/MBTI/releases/tag/v1.0-beta).
+
 ## Contributor(s)
 See [contributors](https://github.com/manhquynh-github/MBTI/graphs/contributors).
 
