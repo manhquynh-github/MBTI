@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Media.Animation;
 using System.Windows.Threading;
 
 namespace MBTI.WindowsGUI
@@ -36,7 +35,7 @@ namespace MBTI.WindowsGUI
         return this;
       }
 
-      foreach (string message in messages)
+      foreach (var message in messages)
       {
         if (string.IsNullOrEmpty(message))
         {

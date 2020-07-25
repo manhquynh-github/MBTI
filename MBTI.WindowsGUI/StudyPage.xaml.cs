@@ -4,7 +4,6 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
-using System.Windows.Media.Animation;
 
 using MBTI.Logic;
 using MBTI.Models;
@@ -116,9 +115,9 @@ namespace MBTI.WindowsGUI
 
     private void UpdatePrefixes()
     {
-      bool specialPrefix2 = StudyVM.PersonalityType.Prefix2 == PersonalityPrefixes2.Intuition;
+      var specialPrefix2 = StudyVM.PersonalityType.Prefix2 == PersonalityPrefixes2.Intuition;
 
-      for (int i = 0; i < _tblPrefixes.Count; i++)
+      for (var i = 0; i < _tblPrefixes.Count; i++)
       {
         if (i == 1
           && specialPrefix2)
@@ -128,7 +127,7 @@ namespace MBTI.WindowsGUI
 
         (TextBlock Tbl, Func<string> PrefixFunc) = _tblPrefixes[i];
         Tbl.Inlines.Clear();
-        string prefix = PrefixFunc();
+        var prefix = PrefixFunc();
         Tbl.Inlines.Add(new Run(prefix[0].ToString())
         {
           FontWeight = FontWeights.Bold,
@@ -143,7 +142,7 @@ namespace MBTI.WindowsGUI
       }
 
       TblPrefix2.Inlines.Clear();
-      string prefix2 = _tblPrefixes[1].PrefixFunc();
+      var prefix2 = _tblPrefixes[1].PrefixFunc();
       TblPrefix2.Inlines.Add(new Run(prefix2[0].ToString()));
       TblPrefix2.Inlines.Add(new Run(prefix2[1].ToString())
       {

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Media.Animation;
 
 using MBTI.Logic;
 using MBTI.Models;
@@ -22,7 +21,7 @@ namespace MBTI.WindowsGUI
     {
       InitializeComponent();
 
-      string[] questions = (string[])Application.Current.Resources["Questions"];
+      var questions = (string[])Application.Current.Resources["Questions"];
       if (questions == null || questions.Length == 0)
       {
         throw new InvalidOperationException(
@@ -92,8 +91,8 @@ namespace MBTI.WindowsGUI
 
     private async Task OnQuizFinished()
     {
-      string instruction3 = (string)Application.Current.Resources["SInstruction3"];
-      string instruction4 = (string)Application.Current.Resources["SInstruction4"];
+      var instruction3 = (string)Application.Current.Resources["SInstruction3"];
+      var instruction4 = (string)Application.Current.Resources["SInstruction4"];
 
       if (instruction3 == null
         || instruction4 == null)

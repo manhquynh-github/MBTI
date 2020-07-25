@@ -13,6 +13,7 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MBTI.WindowsSetup", "MBTI.W
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FBBCA5F0-EC38-4D42-9C11-FBEA23A1F060}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		README.md = README.md
 	EndProjectSection
 EndProject
