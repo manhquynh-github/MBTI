@@ -1,0 +1,402 @@
+[
+  {
+    "Question": "you usually spend most of your time on",
+    "FirstChoice": "meeting up with many people",
+    "SecondChoice": "yourself"
+  },
+  {
+    "Question": "the more you go to crowded places, the more you feel",
+    "FirstChoice": "excited, better, happier",
+    "SecondChoice": "tired, suffocated, exhausted"
+  },
+  {
+    "Question": "you always like",
+    "FirstChoice": "to know all issues in advance",
+    "SecondChoice": "changes"
+  },
+  {
+    "Question": "you like",
+    "FirstChoice": "plans and detailed processes",
+    "SecondChoice": "thinking, brainstorming, and imagining what can happen"
+  },
+  {
+    "Question": "to everyone, you usually are",
+    "FirstChoice": "firm, strong-willed",
+    "SecondChoice": "soft, easy-going"
+  },
+  {
+    "Question": "to make a decision, you tend to rely on",
+    "FirstChoice": "analysis and data",
+    "SecondChoice": "personal feelings and expectations"
+  },
+  {
+    "Question": "you like to",
+    "FirstChoice": "be proactive in life and hate surprises",
+    "SecondChoice": "live your life as it happens and feel excited with surprises"
+  },
+  {
+    "Question": "you usually work efficiently when",
+    "FirstChoice": "you make a plan and follow it",
+    "SecondChoice": "your work can be flexible"
+  },
+  {
+    "Question": "you usually are",
+    "FirstChoice": "a \"people\" person, easy to get along with",
+    "SecondChoice": "a quiet, discreet person"
+  },
+  {
+    "Question": "at parties",
+    "FirstChoice": "you always feel happy and excited",
+    "SecondChoice": "you sometimes feel bored and tired"
+  },
+  {
+    "Question": "most people think that you are",
+    "FirstChoice": "a practical person",
+    "SecondChoice": "a creative, imaginative person"
+  },
+  {
+    "Question": "you want your boss to be",
+    "FirstChoice": "a practical person",
+    "SecondChoice": "a visionary person"
+  },
+  {
+    "Question": "usually you",
+    "FirstChoice": "let the mind control the heart",
+    "SecondChoice": "let the heart control the mind"
+  },
+  {
+    "Question": "when judging others, you usually are",
+    "FirstChoice": "objective and not influenced by personal feelings",
+    "SecondChoice": "soft, kind, and are influenced by personal feelings"
+  },
+  {
+    "Question": "you usually",
+    "FirstChoice": "hate surprises and want to be told or prepared beforehand",
+    "SecondChoice": "like surprises and can easily adapt to changes at the last minute"
+  },
+  {
+    "Question": "when having to do an assigned project in a week, you",
+    "FirstChoice": "first spend time listing out the things and the steps to do",
+    "SecondChoice": "quickly get into the work"
+  },
+  {
+    "Question": "every time you go to a party, you usually talk to",
+    "FirstChoice": "everyone, even the ones you do not know",
+    "SecondChoice": "only a few people you know"
+  },
+  {
+    "Question": "most people say that you",
+    "FirstChoice": "are an open-minded, friendly person",
+    "SecondChoice": "have a closed life"
+  },
+  {
+    "Question": "when attending a conference, you want the speaker to",
+    "FirstChoice": "mention all the details of the issue, avoid general introduction",
+    "SecondChoice": "give a brief introduction, a big picture about the issue before going into details"
+  },
+  {
+    "Question": "you usually like to do things that are",
+    "FirstChoice": "highly practical",
+    "SecondChoice": "related to creativity"
+  },
+  {
+    "Question": "to you, what is more important",
+    "FirstChoice": "consistent thinking",
+    "SecondChoice": "harmonious relationship"
+  },
+  {
+    "Question": "if you have to tell someone something that they do not like, you will",
+    "FirstChoice": "be straightforward",
+    "SecondChoice": "be tactful"
+  },
+  {
+    "Question": "to you, following timetables and schedules is",
+    "FirstChoice": "efficent, beneficial",
+    "SecondChoice": "sometimes neccessary but usually not advantageous at all"
+  },
+  {
+    "Question": "you usually want to",
+    "FirstChoice": "make a decision quickly to solve the issue",
+    "SecondChoice": "delay making decision to find out and consider other options"
+  },
+  {
+    "Question": "when having to talk to someone you do not know, you feel",
+    "FirstChoice": "very happy and excited",
+    "SecondChoice": "shy, reserved"
+  },
+  {
+    "Question": "to anything, you always",
+    "FirstChoice": "take actions and respond quickly",
+    "SecondChoice": "consider and think carefully"
+  },
+  {
+    "Question": "you like your friend to",
+    "FirstChoice": "be a practical person",
+    "SecondChoice": "always have new ideas"
+  },
+  {
+    "Question": "you usually",
+    "FirstChoice": "like analyzing, details, and specifications",
+    "SecondChoice": "dislike and are not patient enough with analyzing or anything too detailed"
+  },
+  {
+    "Question": "during a heated discussion, you usually",
+    "FirstChoice": "stand your ground",
+    "SecondChoice": "try to find similarity to satisfy everyoneu0027s point of view"
+  },
+  {
+    "Question": "if you have to choose a personality, it will be",
+    "FirstChoice": "fairness",
+    "SecondChoice": "kindness"
+  },
+  {
+    "Question": "you are annoyed by",
+    "FirstChoice": "hesitancy, indecision",
+    "SecondChoice": "having to end hastily, hurriedly"
+  },
+  {
+    "Question": "you usually",
+    "FirstChoice": "like to make appointments, plan ahead leisure activities",
+    "SecondChoice": "do not like appointments, and instead be flexible as you feel like it"
+  },
+  {
+    "Question": "you tend to",
+    "FirstChoice": "say what you think immediately",
+    "SecondChoice": "listen first"
+  },
+  {
+    "Question": "you feel pressured when",
+    "FirstChoice": "working alone",
+    "SecondChoice": "working in a group"
+  },
+  {
+    "Question": "you usually do your work",
+    "FirstChoice": "step by step and precisely assess the needed time",
+    "SecondChoice": "eagerly as you feel like it and not pay attention to the time you have"
+  },
+  {
+    "Question": "when doing something that other people also do, you usually",
+    "FirstChoice": "do the same way other people do",
+    "SecondChoice": "think of another way to do it"
+  },
+  {
+    "Question": "when working with others, you usually are",
+    "FirstChoice": "firm, strong-willed",
+    "SecondChoice": "easy-going, forgiving"
+  },
+  {
+    "Question": "other people usually think of you as a",
+    "FirstChoice": "cold person",
+    "SecondChoice": "compassionate person"
+  },
+  {
+    "Question": "when working on a project, you tend to",
+    "FirstChoice": "start by splitting work into smaller stages",
+    "SecondChoice": "think of the things that need to be done as you work"
+  },
+  {
+    "Question": "in every situation, you tend to be",
+    "FirstChoice": "considerate, careful",
+    "SecondChoice": "arbitrary, impulsive"
+  },
+  {
+    "Question": "you consider yourself",
+    "FirstChoice": "an easy-going, friendly person",
+    "SecondChoice": "a closed person"
+  },
+  {
+    "Question": "your new accquaintances can",
+    "FirstChoice": "easily know what you like",
+    "SecondChoice": "hardly know what you like and it takes more time to find out"
+  },
+  {
+    "Question": "when reading books, you like the authors that",
+    "FirstChoice": "mention directly what they want to say",
+    "SecondChoice": "express differently, uniquely, figuratively"
+  },
+  {
+    "Question": "when raising an issue, you usually",
+    "FirstChoice": "go into details",
+    "SecondChoice": "give a general idea"
+  },
+  {
+    "Question": "you usually like to be praised as",
+    "FirstChoice": "a reasonable person",
+    "SecondChoice": "a considerate person"
+  },
+  {
+    "Question": "you are usually influenced by",
+    "FirstChoice": "reasons",
+    "SecondChoice": "feelings"
+  },
+  {
+    "Question": "you like to",
+    "FirstChoice": "make plans and try to complete them",
+    "SecondChoice": "work as you feel like it"
+  },
+  {
+    "Question": "you like to work",
+    "FirstChoice": "according to plan to meet the deadline",
+    "SecondChoice": "as you feel like it, not being restricted by a schedule or a deadline"
+  },
+  {
+    "Question": "when going to a crowded meet-up, you usually",
+    "FirstChoice": "make friends with other people proactively",
+    "SecondChoice": "wait for other people to come and make friends with you"
+  },
+  {
+    "Question": "during a reunion, you usually",
+    "FirstChoice": "join in the group conversation",
+    "SecondChoice": "talk personally to the ones you know of"
+  },
+  {
+    "Question": "when listening to someone speaking, you usually understand",
+    "FirstChoice": "in a literal way",
+    "SecondChoice": "in a figurative way"
+  },
+  {
+    "Question": "you feel pressured when",
+    "FirstChoice": "having to think of a new method",
+    "SecondChoice": "being allowed to use only standardized methods"
+  },
+  {
+    "Question": "you would consider someone bad if they are",
+    "FirstChoice": "too sentimental",
+    "SecondChoice": "too hard-headed"
+  },
+  {
+    "Question": "when addressing certain issues, you usually are",
+    "FirstChoice": "too rigid",
+    "SecondChoice": "too susceptible"
+  },
+  {
+    "Question": "when deciding to choose something, you usually are",
+    "FirstChoice": "careful, thoughtful",
+    "SecondChoice": "impulsive, arbitrary"
+  },
+  {
+    "Question": "when doing anything, you always want it to be",
+    "FirstChoice": "methodical, structured, systematic, and chronological",
+    "SecondChoice": "easily adaptable and feel constricted to be too formal"
+  },
+  {
+    "Question": "at work, you tend to",
+    "FirstChoice": "communicate and share with colleagues",
+    "SecondChoice": "not communicate or share much with colleagues"
+  },
+  {
+    "Question": "at parties, you tend to",
+    "FirstChoice": "talk a lot",
+    "SecondChoice": "let others talk"
+  },
+  {
+    "Question": "you usually trust your",
+    "FirstChoice": "own experience",
+    "SecondChoice": "concepts, awareness"
+  },
+  {
+    "Question": "you tend to think",
+    "FirstChoice": "practically",
+    "SecondChoice": "far from reality"
+  },
+  {
+    "Question": "you think that you are",
+    "FirstChoice": "a firm person",
+    "SecondChoice": "a sensitive person"
+  },
+  {
+    "Question": "you usually feel pressured in a group where all the members lack",
+    "FirstChoice": "objectivity",
+    "SecondChoice": "harmony"
+  },
+  {
+    "Question": "you are",
+    "FirstChoice": "punctual and want others to be the same",
+    "SecondChoice": "easy-going, flexible and are usually not very punctual"
+  },
+  {
+    "Question": "you think that you are",
+    "FirstChoice": "serious, firm",
+    "SecondChoice": "easy-going, flexible"
+  },
+  {
+    "Question": "you think that you are",
+    "FirstChoice": "a good conversationalist",
+    "SecondChoice": "a good listener"
+  },
+  {
+    "Question": "you are excited and can talk passionately with",
+    "FirstChoice": "almost anyone",
+    "SecondChoice": "only the ones with the same interests"
+  },
+  {
+    "Question": "you cannot stand it when your bossu0027s requests are",
+    "FirstChoice": "unclear",
+    "SecondChoice": "too detailed"
+  },
+  {
+    "Question": "when in charge of a meeting, you usually",
+    "FirstChoice": "follow exactly what is on the agenda",
+    "SecondChoice": "follow the agenda at first but then let it happen naturally"
+  },
+  {
+    "Question": "in every situation, you favor",
+    "FirstChoice": "reasoning",
+    "SecondChoice": "feelings"
+  },
+  {
+    "Question": "you like to be praised as a person who always",
+    "FirstChoice": "work logically and consistently",
+    "SecondChoice": "live true to your feelings"
+  },
+  {
+    "Question": "you usually like to",
+    "FirstChoice": "prioritize working over playing",
+    "SecondChoice": "combine working with playing"
+  },
+  {
+    "Question": "you like to",
+    "FirstChoice": "proactively plan ahead everything",
+    "SecondChoice": "let everything happen naturually"
+  },
+  {
+    "Question": "you are",
+    "FirstChoice": "an open-minded, friendly person",
+    "SecondChoice": "a shy, reserved person"
+  },
+  {
+    "Question": "when in need of advice, you usually asks",
+    "FirstChoice": "a lot of people",
+    "SecondChoice": "only a few people that you carefully consider"
+  },
+  {
+    "Question": "you like",
+    "FirstChoice": "action, adventurous stories",
+    "SecondChoice": "fictional, psychological stories"
+  },
+  {
+    "Question": "you feel tired, stressful when dealing with",
+    "FirstChoice": "abstract theories",
+    "SecondChoice": "too many details in work"
+  },
+  {
+    "Question": "when making a decision, you usually rely on",
+    "FirstChoice": "reasoning",
+    "SecondChoice": "feeling"
+  },
+  {
+    "Question": "you like to work with a boss who is",
+    "FirstChoice": "incisive, firm, but reasonable",
+    "SecondChoice": "kind but not always consistent"
+  },
+  {
+    "Question": "you like to",
+    "FirstChoice": "make plans and complete them within the set time",
+    "SecondChoice": "work as you feel like it and accept any changes at the last minute"
+  },
+  {
+    "Question": "you like a leader who",
+    "FirstChoice": "always work with a clear plan",
+    "SecondChoice": "is flexible and can easily adapt"
+  }
+]

@@ -20,16 +20,7 @@ namespace MBTI.WindowsGUI
     public QuizPage()
     {
       InitializeComponent();
-
-      var questions = (string[])Application.Current.Resources["Questions"];
-      if (questions == null || questions.Length == 0)
-      {
-        throw new InvalidOperationException(
-          "Unable to get resource dictionary for questions.");
-      }
-
-      Parser.Parse(questions, out IList<Question> quiz);
-      QuizVM = new QuizVM(quiz);
+      QuizVM = new QuizVM();
       DataContext = QuizVM;
     }
 

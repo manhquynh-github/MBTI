@@ -1,4 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text.Encodings.Web;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -9,12 +14,13 @@ namespace MBTI.WindowsGUI.ViewModels
 {
   public class StudyVM : VMBase
   {
-    public Task OnPersonalityTypeChanging;
+    private readonly Dictionary<string, PersonalityTypeDescription> _descriptions;
     private PersonalityTypeDescription _content;
     private PersonalityType _personalityType;
 
     public StudyVM(PersonalityType type)
     {
+      _descriptions = Resources.Content.GetDescriptions(App.Current.Language);
       PersonalityType = type;
       NeedsRefreshUI = true;
     }
@@ -27,10 +33,19 @@ namespace MBTI.WindowsGUI.ViewModels
       private set => SetProperty(ref _content, value);
     }
 
+    public string DisplayDescriptions => string.Join(
+      Environment.NewLine,
+      Content.Descriptions.Select(v => $"- {v}."));
+
     public string DisplayPrefix1 => PersonalityType.Prefix1.ToString().ToUpper();
     public string DisplayPrefix2 => PersonalityType.Prefix2.ToString().ToUpper();
     public string DisplayPrefix3 => PersonalityType.Prefix3.ToString().ToUpper();
     public string DisplayPrefix4 => PersonalityType.Prefix4.ToString().ToUpper();
+
+    public string DisplaySuggestedJobs => string.Join(
+      Environment.NewLine,
+      Content.SuggestedJobs.Select(v => $"- {v}."));
+
     public bool NeedsRefreshUI { get; private set; }
 
     public PersonalityType PersonalityType
@@ -134,7 +149,9 @@ namespace MBTI.WindowsGUI.ViewModels
       }
 
       NotifyPropertyChanged(nameof(TypeAcronym));
-      UpdateDescription(TypeAcronym);
+      Content = _descriptions[TypeAcronym];
+      NotifyPropertyChanged(nameof(DisplayDescriptions));
+      NotifyPropertyChanged(nameof(DisplaySuggestedJobs));
       NotifyPropertyChanged(nameof(DisplayPrefix1));
       NotifyPropertyChanged(nameof(DisplayPrefix2));
       NotifyPropertyChanged(nameof(DisplayPrefix3));
@@ -144,18 +161,6 @@ namespace MBTI.WindowsGUI.ViewModels
       NotifyPropertyChanged(nameof(SelectedPrefix3));
       NotifyPropertyChanged(nameof(SelectedPrefix4));
       NeedsRefreshUI = false;
-    }
-
-    private void UpdateDescription(string typeAcronym)
-    {
-      string[] descriptionResource = (string[])Application.Current.Resources[typeAcronym];
-      if (descriptionResource == null || descriptionResource.Length == 0)
-      {
-        throw new InvalidOperationException();
-      }
-
-      Parser.Parse(descriptionResource, out PersonalityTypeDescription description);
-      Content = description;
     }
   }
 }

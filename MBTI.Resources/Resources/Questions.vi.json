@@ -1,0 +1,402 @@
+[
+  {
+    "Question": "bạn thường dành nhiều thời gian cho",
+    "FirstChoice": "việc hội họp với nhiều người",
+    "SecondChoice": "riêng bạn"
+  },
+  {
+    "Question": "càng đến chỗ đông người, bạn càng cảm thấy",
+    "FirstChoice": "hứng thú và dường như vui hơn, khỏe hơn",
+    "SecondChoice": "ngột ngạt, mệt mỏi, và muốn kiệt sức"
+  },
+  {
+    "Question": "bạn luôn thích",
+    "FirstChoice": "có thể dự báo được trước mọi vấn đề",
+    "SecondChoice": "những sự thay đổi"
+  },
+  {
+    "Question": "bạn thích",
+    "FirstChoice": "những kế hoạch và quy trình cụ thể",
+    "SecondChoice": "động não, phát huy sáng kiến và tưởng tượng những gì có thể xảy ra"
+  },
+  {
+    "Question": "với mọi người bạn thường",
+    "FirstChoice": "kiên quyết, mạnh mẽ",
+    "SecondChoice": "thoải mái, nhẹ nhàng"
+  },
+  {
+    "Question": "để quyết định một vấn đề, bạn thường có khuynh hướng",
+    "FirstChoice": "dựa trên phân tích, dữ liệu bạn có",
+    "SecondChoice": "dựa trên cảm xúc và mong muốn của mình"
+  },
+  {
+    "Question": "bạn thích",
+    "FirstChoice": "chủ động được cuộc sống và ghét sự bất ngờ",
+    "SecondChoice": "trải nghiệm cuộc sống đang diễn ra và thích thú với những bất ngờ"
+  },
+  {
+    "Question": "bạn thường làm việc rất hiệu quả khi",
+    "FirstChoice": "tự mình vạch kế hoạch cho công việc của mình và thực hiện theo nó",
+    "SecondChoice": "công việc của mình có thể linh động, uyển chuyển"
+  },
+  {
+    "Question": "bạn thường là",
+    "FirstChoice": "người \"đa hệ\", dễ hòa đồng",
+    "SecondChoice": "người trầm lặng, kín đáo"
+  },
+  {
+    "Question": "đối với các buổi tiệc tùng",
+    "FirstChoice": "bạn luôn thấy vui và hào hứng",
+    "SecondChoice": "đôi khi bạn cảm thấy chán và mệt mỏi"
+  },
+  {
+    "Question": "đa số những người xung quanh nhận xét bạn là",
+    "FirstChoice": "người có đầu óc thực tế",
+    "SecondChoice": "người khéo léo, giàu trí tưởng tượng"
+  },
+  {
+    "Question": "bạn muốn cấp trên của bạn là",
+    "FirstChoice": "người thực tế",
+    "SecondChoice": "người biết nhìn xa trông rộng"
+  },
+  {
+    "Question": "thường thì bạn",
+    "FirstChoice": "để lý trí điều khiển con tim",
+    "SecondChoice": "để con tim điều khiển lý trí"
+  },
+  {
+    "Question": "khi đánh giá người khác, bạn thường",
+    "FirstChoice": "khách quan và không bị tình cảm chi phối",
+    "SecondChoice": "nhẹ nhàng, thân thiện và bị tình cảm chi phối"
+  },
+  {
+    "Question": "bạn thường",
+    "FirstChoice": "ghét bất ngờ và muốn được cảnh báo hay chuẩn bị trước cho những bất ngờ",
+    "SecondChoice": "thích bất ngờ và dễ thích ứng với những thay đổi vào giờ chót"
+  },
+  {
+    "Question": "khi bạn phải thực hiện dự án được giao trong 1 tuần, bạn",
+    "FirstChoice": "dành thời gian để liệt kê những việc cần làm và trình tự thực hiện chúng trước",
+    "SecondChoice": "lao ngay vào công việc"
+  },
+  {
+    "Question": "mỗi khi đến một buổi tiệc, bạn thường",
+    "FirstChoice": "giao tiếp với nhiều người, kể cả những người bạn chưa biết",
+    "SecondChoice": "chỉ giao tiếp với một số người quen"
+  },
+  {
+    "Question": "đa số những người chung quanh bạn nhận xét bạn là",
+    "FirstChoice": "người cởi mở, dễ gần",
+    "SecondChoice": "người sống khép kín"
+  },
+  {
+    "Question": "đến dự một buổi hội thảo, bạn muốn diễn giả",
+    "FirstChoice": "đề cập những chi tiết cụ thể của vấn đề, tránh giới thiệu chung chung",
+    "SecondChoice": "giới thiệu chung, đưa ra bức tranh toàn cảnh của vấn đề trước khi vào chi tiết"
+  },
+  {
+    "Question": "bạn thường thích làm những công việc",
+    "FirstChoice": "mang tính thực tiễn cao",
+    "SecondChoice": "thiên về sáng tạo"
+  },
+  {
+    "Question": "đối với bạn, điều gì quan trọng hơn",
+    "FirstChoice": "suy nghĩ nhất quán",
+    "SecondChoice": "mối quan hệ hòa hợp"
+  },
+  {
+    "Question": "nếu bạn phải nói với ai đó về những gì họ không thích nghe, bạn sẽ",
+    "FirstChoice": "thẳng thắn nói những điều cần nói",
+    "SecondChoice": "nói với thái độ nhẹ nhàng và thận trọng, cân nhắc những điều mình nói"
+  },
+  {
+    "Question": "đối với bạn, làm việc theo thời khóa biểu, theo kế hoạch vạch sẵn thì",
+    "FirstChoice": "có hiệu quả, thuận lợi",
+    "SecondChoice": "đôi khi cần thiết nhưng thường chẳng thuận lợi tí nào"
+  },
+  {
+    "Question": "bạn thường muốn",
+    "FirstChoice": "quyết định nhanh để kết thúc vấn đề",
+    "SecondChoice": "trì hoãn việc quyết định để tìm hiểu, cân nhắc thêm các giải pháp"
+  },
+  {
+    "Question": "khi phải giao tiếp với những người bạn chưa quen biết, bạn cảm thấy",
+    "FirstChoice": "rất vui và hứng thú",
+    "SecondChoice": "e ngại, dè dặt"
+  },
+  {
+    "Question": "đối với bất cứ việc gì, bạn cũng thường",
+    "FirstChoice": "hành động và phản ứng nhanh",
+    "SecondChoice": "cân nhắc và suy nghĩ cẩn thận"
+  },
+  {
+    "Question": "bạn thích bạn của mình là người",
+    "FirstChoice": "có đầu óc thực tế",
+    "SecondChoice": "luôn có những ý tưởng mới lạ"
+  },
+  {
+    "Question": "bạn thường",
+    "FirstChoice": "thích phân tích, thích chi tiết, cụ thể",
+    "SecondChoice": "không thích và không đủ kiên nhẫn với việc phân tích và những gì quá chi tiết"
+  },
+  {
+    "Question": "trong các buổi thảo luận sôi nổi, bạn thường",
+    "FirstChoice": "khăng khăng giữ lập trường của mình",
+    "SecondChoice": "cố tìm điểm chung để có thể hài hòa với quan điểm mọi người"
+  },
+  {
+    "Question": "đối với bạn, nếu phải lựa chọn cho bạn một tính cách, bạn sẽ chọn",
+    "FirstChoice": "công bằng",
+    "SecondChoice": "nhân hậu"
+  },
+  {
+    "Question": "bạn rất khó chịu với",
+    "FirstChoice": "những việc cứ do dự, không quyết định được",
+    "SecondChoice": "những việc phải kết thúc vội vã, hấp tấp"
+  },
+  {
+    "Question": "thường thì bạn",
+    "FirstChoice": "thích lên lịch những buổi hẹn hò, vui chơi từ trước",
+    "SecondChoice": "không thích hẹn trước, cứ thoải mái theo cảm hứng của mình"
+  },
+  {
+    "Question": "bạn có khuynh hướng",
+    "FirstChoice": "nói ngay điều bạn đang nghĩ",
+    "SecondChoice": "lắng nghe trước đã"
+  },
+  {
+    "Question": "bạn thường cảm thấy áp lực khi",
+    "FirstChoice": "làm việc một mình",
+    "SecondChoice": "làm việc chung với nhóm"
+  },
+  {
+    "Question": "bạn thường",
+    "FirstChoice": "thực hiện công việc theo từng bước và tính toán chính xác thời gian cần thiết",
+    "SecondChoice": "háo hức thực hiện công việc theo cảm hứng và không để ý đến thời gian bạn có"
+  },
+  {
+    "Question": "khi làm những công việc mà những người khác cùng từng làm, bạn thường",
+    "FirstChoice": "làm theo cách mọi người làm",
+    "SecondChoice": "nghĩ ra một cách khác để làm"
+  },
+  {
+    "Question": "khi làm việc với người khác, bạn thường",
+    "FirstChoice": "kiên quyết, cứng rắn",
+    "SecondChoice": "uyển chuyển, dễ tha thứ"
+  },
+  {
+    "Question": "người khác thường nghĩ bạn là người",
+    "FirstChoice": "lạnh lùng",
+    "SecondChoice": "dễ động lòng trắc ẩn"
+  },
+  {
+    "Question": "khi thực hiện một dự án, bạn thường có khuynh hướng",
+    "FirstChoice": "bắt đầu bằng cách chia nhỏ công việc thành nhiều giai đoạn",
+    "SecondChoice": "cứ bắt tay vào, vừa làm vừa hình dung những việc cần làm"
+  },
+  {
+    "Question": "trong mọi tình huống, bạn có khuynh hướng",
+    "FirstChoice": "cân nhắc, cẩn thận",
+    "SecondChoice": "tùy hứng, bốc đồng"
+  },
+  {
+    "Question": "bạn tự cho mình là",
+    "FirstChoice": "người thoải mái, dễ gần",
+    "SecondChoice": "người khép kín"
+  },
+  {
+    "Question": "những người mới quen biết bạn",
+    "FirstChoice": "có thể dễ dàng biết ngay những điều bạn thích",
+    "SecondChoice": "khó biết ngay những điều bạn thích mà cần phải có thêm thời gian tìm hiểu"
+  },
+  {
+    "Question": "khi đọc sách, bạn thường thích những tác giả",
+    "FirstChoice": "đề cập thẳng vào những gì họ muốn nói",
+    "SecondChoice": "thể hiện mới lạ, độc đáo, dùng ẩn ý"
+  },
+  {
+    "Question": "khi trình bày về một vấn đề gì, bạn thường",
+    "FirstChoice": "trình bày chi tiết",
+    "SecondChoice": "trình bày chung chung"
+  },
+  {
+    "Question": "bạn thường thích được người khác khen bạn",
+    "FirstChoice": "là người rất lý trí",
+    "SecondChoice": "là người giàu tình cảm"
+  },
+  {
+    "Question": "bạn thường bị cái nào điều khiển",
+    "FirstChoice": "lý trí",
+    "SecondChoice": "tình cảm"
+  },
+  {
+    "Question": "bạn thích",
+    "FirstChoice": "vạch sẵn kế hoạch và cố gắng hoàn tất như kế hoạch",
+    "SecondChoice": "làm việc theo cảm hứng vào ngày đó"
+  },
+  {
+    "Question": "bạn thích làm việc",
+    "FirstChoice": "theo kế hoạch để kịp thời hạn đã định",
+    "SecondChoice": "tùy thích, không bị ràng buộc theo kế hoạch, thời gian đã định"
+  },
+  {
+    "Question": "khi đến những buổi hội họp đông người, bạn thường",
+    "FirstChoice": "chủ động làm quen với những người khác",
+    "SecondChoice": "chờ những người khác đến làm quen mình"
+  },
+  {
+    "Question": "trong một buổi họp mặt, bạn thường",
+    "FirstChoice": "tham gia cuộc trò chuyện chung của cả nhóm",
+    "SecondChoice": "nói chuyện riêng rẽ với người bạn quen"
+  },
+  {
+    "Question": "khi nghe người khác nói, bạn thường hiểu theo",
+    "FirstChoice": "nghĩa đen",
+    "SecondChoice": "nghĩa bóng"
+  },
+  {
+    "Question": "bạn thường cảm thấy áp lực khi",
+    "FirstChoice": "phải sáng tạo ra phương pháp mới, cách làm mới",
+    "SecondChoice": "chỉ được dùng những phương pháp, cách làm đã được công nhận là chuẩn mực"
+  },
+  {
+    "Question": "bạn cho rằng người nào là xấu",
+    "FirstChoice": "người quá ủy mị, tình cảm",
+    "SecondChoice": "người quá cứng rắn"
+  },
+  {
+    "Question": "trước một số tình huống cần giải quyết, bạn thường",
+    "FirstChoice": "quá cứng nhắc",
+    "SecondChoice": "quá tình cảm"
+  },
+  {
+    "Question": "khi lựa chọn điều gì/vật gì, bạn thường",
+    "FirstChoice": "cẩn thận, chu đáo",
+    "SecondChoice": "bốc đồng, tùy hứng"
+  },
+  {
+    "Question": "làm việc gì bạn cũng muốn",
+    "FirstChoice": "phải có bài bản, có cơ cấu, hệ thống rõ ràng, trình tự thời gian hẳn hoi",
+    "SecondChoice": "dễ dàng thay đổi tùy theo tình thế và cảm thấy bó buộc khi phải quá bài bản"
+  },
+  {
+    "Question": "trong công việc, bạn có khuynh hướng",
+    "FirstChoice": "giao du, chia sẻ với các đồng nghiệp",
+    "SecondChoice": "không muốn giao du, chia sẻ nhiều với đồng nghiệp"
+  },
+  {
+    "Question": "trong các buổi tiệc, bạn thường",
+    "FirstChoice": "nói nhiều",
+    "SecondChoice": "để người khác nói"
+  },
+  {
+    "Question": "bạn thường tin vào",
+    "FirstChoice": "kinh nghiệm bản thân",
+    "SecondChoice": "quan niệm, nhận thức bản thân"
+  },
+  {
+    "Question": "bạn thường có cảm nghĩ",
+    "FirstChoice": "thực tế",
+    "SecondChoice": "rời xa thực tế"
+  },
+  {
+    "Question": "bạn nghĩ mình là người",
+    "FirstChoice": "cứng rắn",
+    "SecondChoice": "nhạy cảm"
+  },
+  {
+    "Question": "bạn thường cảm thấy áp lực khi ở trong một tập thể mà các thành viên",
+    "FirstChoice": "thiếu tính khách quan",
+    "SecondChoice": "thiếu sự hòa thuận"
+  },
+  {
+    "Question": "bạn là người",
+    "FirstChoice": "luôn đúng giờ và mong người khác cũng như bạn",
+    "SecondChoice": "thoải mái, linh động và thường không đúng giờ cho lắm"
+  },
+  {
+    "Question": "bạn nghĩ bạn là người",
+    "FirstChoice": "nghiêm nghị, đâu ra đó",
+    "SecondChoice": "thoải mái, linh động"
+  },
+  {
+    "Question": "bạn nghĩ mình là",
+    "FirstChoice": "người có tài ăn nói",
+    "SecondChoice": "người biết lắng nghe"
+  },
+  {
+    "Question": "bạn hứng thú và có thể nói chuyện say sưa với",
+    "FirstChoice": "hầu hết mọi người",
+    "SecondChoice": "chỉ những người cùng sở thích"
+  },
+  {
+    "Question": "bạn không thể chịu đựng nỗi khi những yêu cầu của sếp",
+    "FirstChoice": "không rõ ràng",
+    "SecondChoice": "quá chi tiết"
+  },
+  {
+    "Question": "khi điều khiển một cuộc họp, bạn thường",
+    "FirstChoice": "theo đúng trình tự những gì đã được nêu trong lịch",
+    "SecondChoice": "bắt đầu cũng theo đúng trình tự trong lịch họp nhưng sau đó để nó diễn ra tự nhiên"
+  },
+  {
+    "Question": "trong mọi chuyện, bạn là người thiên về",
+    "FirstChoice": "lý trí",
+    "SecondChoice": "tình cảm"
+  },
+  {
+    "Question": "bạn thích được khen mình là người",
+    "FirstChoice": "làm việc hợp lý và nhất quán",
+    "SecondChoice": "luôn sống thực với tình cảm của mình"
+  },
+  {
+    "Question": "bạn thường thích",
+    "FirstChoice": "ưu tiên làm việc trước rồi mới chơi",
+    "SecondChoice": "kết hợp vừa làm việc vừa chơi"
+  },
+  {
+    "Question": "bạn thích",
+    "FirstChoice": "chủ động sắp xếp trước mọi chuyện theo kế hoạch, theo ý muốn",
+    "SecondChoice": "để mọi chuyện diễn ra tự nhiên"
+  },
+  {
+    "Question": "bạn là người",
+    "FirstChoice": "cởi mở, dễ tiếp xúc",
+    "SecondChoice": "kín đáo, dè dặt"
+  },
+  {
+    "Question": "khi cần được góp ý, tham khảo, bạn thường",
+    "FirstChoice": "hỏi nhiều người",
+    "SecondChoice": "chỉ hỏi một số người mà bạn cân nhắc kỹ càng"
+  },
+  {
+    "Question": "bạn thích",
+    "FirstChoice": "truyện hành động và phiêu lưu mạo hiểm",
+    "SecondChoice": "truyện giả tưởng, truyện tâm lý xã hội"
+  },
+  {
+    "Question": "bạn cảm thấy mệt mỏi, căng thẳng khi phải đối đầu với",
+    "FirstChoice": "những lý thuyết trừu tượng",
+    "SecondChoice": "quá nhiều chi tiết trong công việc"
+  },
+  {
+    "Question": "khi cần quyết định chuyện gì, bạn thường dựa vào",
+    "FirstChoice": "lý trí",
+    "SecondChoice": "tình cảm"
+  },
+  {
+    "Question": "bạn thích làm việc với sếp",
+    "FirstChoice": "nói năng sắc bén, cứng rắn nhưng hợp lý",
+    "SecondChoice": "tốt bụng nhưng không phải lúc nào cũng nhất quán"
+  },
+  {
+    "Question": "bạn thích",
+    "FirstChoice": "vạch kế hoạch làm việc và hoàn tất nó theo thời gian đã định",
+    "SecondChoice": "làm việc theo hứng và sẵn sàng chấp nhận những thay đổi vào giờ chót"
+  },
+  {
+    "Question": "bạn thích",
+    "FirstChoice": "một người lãnh đạo luôn làm việc có kế hoạch",
+    "SecondChoice": "một người lãnh đạo dễ thích nghi, uyển chuyển, linh động"
+  }
+]

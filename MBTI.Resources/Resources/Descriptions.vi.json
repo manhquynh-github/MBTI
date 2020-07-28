@@ -1,0 +1,356 @@
+{
+  "ISTJ": {
+    "Descriptions": [
+      "Nghiêm túc, trầm lặng, có được thành công nhờ sự kiên trì, tỉ mỉ, quyết tâm",
+      "Suy nghĩ thực tế, logic, có kỷ luật và đáng tin cậy, luôn muốn thấy mọi thứ được sắp xếp cẩn thận",
+      "Tự lên tinh thần để hoàn thành công việc mà không cần nghỉ ngơi, thư giãn",
+      "Hướng đến chi tiết và ổn định",
+      "Có trách nhiệm, không ưa tiểu thuyết và những điều phù phiếm",
+      "Trân trọng các giá trị truyền thống và lòng chân thành"
+    ],
+    "SuggestedJobs": [
+      "Bí thư, Thư ký, Doanh nhân",
+      "Nhà khí tượng học",
+      "Quản trị dữ liệu",
+      "Chuyên viên chăm sóc sức khỏe",
+      "Kế toán viên",
+      "Môi giới bất động sản",
+      "Kỹ sư xây dựng, Giám sát công trình",
+      "Thám tử",
+      "Kỹ sư nông nghiệp",
+      "Giám đốc điều hành"
+    ]
+  },
+  "ISTP": {
+    "Descriptions": [
+      "Điềm tĩnh, trầm lặng, kín đáo",
+      "Là người khách quan trong các nhận định và không phải là người dễ xúc động",
+      "Quan sát và phân tích cuộc sống một cách sâu sắc, tiếp cận các vấn đề bằng nhãn quan khoa học, thường phân tích các vấn đề thông qua hàng núi các dữ liệu thống kê, bằng kinh nghiệm thực tiễn đã tích lũy được",
+      "Tập trung vào những việc cần làm, thích các giải pháp đơn giản mà hiệu quả, rất sáng tạo trong việc giải quyết các công việc trong tình trạng khẩn cấp"
+    ],
+    "SuggestedJobs": [
+      "Lập trình viên",
+      "Phi công",
+      "Người trực đường dây nóng",
+      "Nhân viên cảnh sát",
+      "Chuyên viên phát triển phần mềm",
+      "Trưởng phòng dịch vụ thông tin",
+      "Thám tử tư",
+      "Dược sĩ"
+    ]
+  },
+  "ISFJ": {
+    "Descriptions": [
+      "Điềm đạm, sống tình cảm, có trách nhiệm, quan tâm và sẵn lòng giúp đỡ người khác",
+      "Rất quan tâm xem người khác nghĩ về mình",
+      "Tận tụy, chăm chỉ để hoàn thành công việc đúng thời hạn",
+      "Tỉ mỉ, để tâm đến các chi tiết",
+      "Muốn sống cuộc sống ổn định, sống rất thực tế, thích các giải pháp đơn giản, dễ áp dụng nhưng hiệu quả",
+      "Bạn tôn trọng các nguyên tắc, truyền thống và muốn mọi người cũng như vậy",
+      "Luôn cố gắng để có được sự hài hòa giữa công việc và gia đình"
+    ],
+    "SuggestedJobs": [
+      "Chuyên gia về vấn đề dinh dưỡng",
+      "Quản thư, Chuyên viên lưu trữ văn thư",
+      "Trang trí nội thất",
+      "Nhân viên tín dụng",
+      "Dịch vụ chăm sóc khách hàng",
+      "Nhân viên kế toán",
+      "Tư vấn viên",
+      "Giáo viên"
+    ]
+  },
+  "ISFP": {
+    "Descriptions": [
+      "Điềm đạm, kín đáo, nhạy cảm, chu đáo và tốt bụng",
+      "Khá nhạy cảm nên rất dễ bị tổn thương",
+      "Thường lảng tránh tranh cãi, không áp đặt ý kiến, giá trị lên người khác",
+      "Trong công việc bạn thường giải quyết thông qua kinh nghiệm theo hướng đơn giản và thiết thực nhất",
+      "Bạn thích quan tâm đến chi tiết, tỉ mỉ",
+      "Bạn thường không muốn gò bó mình vào các khuôn mẫu, kế hoạch đã định sẵn, dễ thích ứng với sự thay đổi"
+    ],
+    "SuggestedJobs": [
+      "Bác sĩ điều trị",
+      "Trang trí nội thất",
+      "Dịch vụ chăm sóc khách hàng",
+      "Thiết kế thời trang",
+      "Nhân viên giám định",
+      "Y tá",
+      "Nha sĩ",
+      "Đại lý du lịch, Điều hành tour",
+      "Trợ lý y khoa"
+    ]
+  },
+  "INTJ": {
+    "Descriptions": [
+      "Có nhiều ý tưởng sáng tạo, luôn tìm kiếm những phương thức mới để giải quyết vấn đề",
+      "Có khả năng bao quát vấn đề, có tầm nhìn dài hạn, có khả năng lập kế hoạch và kiên định thực hiện để đạt được mục tiêu đề ra",
+      "Thường đặt tiêu chuẩn cao cho chính bạn và những người xung quanh",
+      "Thường lý giải mọi vấn đề dưới con mắt khoa học, quyết định mọi việc khách quan",
+      "Khá kín đáo, suy nghĩ sâu sắc, sống động lập và ngăn nắp"
+    ],
+    "SuggestedJobs": [
+      "Kỹ sư thiết kế",
+      "Chuyên gia tích hợp mạng",
+      "Nhân viên phát triển phần mềm",
+      "Bác sĩ thần kinh",
+      "Bác sĩ chuyên khoa tim",
+      "Nhà văn",
+      "Nhà phát minh, sáng chế",
+      "Giám đốc tài chính",
+      "Quản trị trang web",
+      "Kiến trúc sư"
+    ]
+  },
+  "INTP": {
+    "Descriptions": [
+      "Trầm lặng, khép kín, luôn xuất sắc trong các kì thi, đặc biệt là về các bộ môn khoa học và học thuyết",
+      "Khả năng sáng tạo cao, thường rất hứng thú với các ý tưởng mới thay vì các bữa tiệc hay việc chuyện trò",
+      "Cá tính, vì vậy cần chọn nghề nghiệp dựa trên hứng thú mạnh mẽ",
+      "Suy nghĩ logic, bao quát vấn đề và có tầm nhìn dài hạn, tuy nhiên cũng không thích sự gò bó bởi các khuôn mẫu, linh hoạt và thích nghi nhanh với những thay đổi"
+    ],
+    "SuggestedJobs": [
+      "Chuyên viên thiết kế phần mềm",
+      "Nhà tư bản liều lĩnh",
+      "Chuyên viên phân tích tài chính",
+      "Nhà kinh tế học",
+      "Giáo sư đại học: Triết học, Kinh tế học",
+      "Nhạc sĩ",
+      "Chuyên viên thiết kế trang web",
+      "Thám tử",
+      "Chuyên viên chiến lược",
+      "Nhà thần kinh học",
+      "Chuyên viên nghiên cứu dược phẩm"
+    ]
+  },
+  "INFJ": {
+    "Descriptions": [
+      "Hơi ít nói, sống thiên về nội tâm và hay suy tư về nhân sinh quan, thế giới quan. Có thể vẻ bề ngoài bạn giữ một vẻ lạnh lùng và chẳng quan tâm đến bất cứ gì ngoài sự \"im lặng\". Nhưng thực ra, bạn là người hay quan sát, luôn để mắt theo dõi từng diễn biến nhỏ nhặt xảy ra xung quanh mình. Các mối quan hệ được bạn vun trồng theo cách \"chậm mà chắc\". Một chút bí ẩn rắc rối tồn tại trong con người bạn làm mọi người muốn khám phá và giải mã. Chính điều này tạo ra \"sự cuốn hút\" của bạn",
+      "Khả năng sáng tạo và có khả năng làm việc độc lập. Bạn luôn luôn suy nghĩ kĩ trước khi làm bất cứ việc gì. Bạn luôn dành hết đam mê cho những gì mình làm",
+      "Biết tổ chức và kiên quyết thực hiện ước vọng. Có khả năng triển khai ước vọng qua tầm nhìn bao quát một cách rõ ràng để phục vụ tốt nhất sự nghiệp nhân loại"
+    ],
+    "SuggestedJobs": [
+      "Giáo viên",
+      "Kiến trúc sư",
+      "Trưởng phòng/bộ phận, Nhà đào tạo",
+      "Nhà diễn thuyết, Nhà ngôn ngữ học",
+      "Chuyên viên tư vấn việc làm",
+      "Chuyên viên môi trường",
+      "Bác sĩ chuyên khoa",
+      "Nhà biên tập, Giám đốc Nghệ thuật",
+      "Nhà văn",
+      "Nhân viên kế hoạch"
+    ]
+  },
+  "INFP": {
+    "Descriptions": [
+      "Cầu toàn và đầy đam mê sáng tạo, không gò bó mình trong những khuôn mẫu có sẵn, trong những phương thức giải quyết vấn đề kiểu \"truyền thống\" mà luôn suy nghĩ tìm giải pháp mới để áp dụng lâu dài",
+      "Không chú trọng đến việc lập những kế hoạch quá chi tiết mà thường tùy cơ ứng biến",
+      "Trong các mối quan hệ với bạn bè hay trong công việc, bạn luôn thể hiện được mình là một người tin cậy, sẵn sàng quan tâm, giúp đỡ người khác",
+      "Nhạy cảm, cũng vì lẽ đó mà bạn cũng dễ bị tổn thương vì những lý do không lớn lắm"
+    ],
+    "SuggestedJobs": [
+      "Nhà tâm lý học",
+      "Quản lý Nhân sự",
+      "Bác sĩ chuyên khoa",
+      "Nhà nghiên cứu",
+      "Phiên dịch viên, Thông dịch viên",
+      "Chuyên gia đào tạo và phát triển nhân viên",
+      "Giáo sư đại học: Khoa học Nhân văn",
+      "Nhân viên hoạt động xã hội",
+      "Thủ/Quản thư",
+      "Thiết kế thời trang",
+      "Tổng biên tập/Giám đốc nghệ thuật (website)"
+    ]
+  },
+  "ESTJ": {
+    "Descriptions": [
+      "Mang tố chất của một nhà lãnh đạo, có khả năng sắp xếp công việc một cách tuyệt vời, thích gánh vác trách nhiệm",
+      "Là mẫu người của công việc, luôn phân tích và áp dụng những điều mình cho là logic vào công việc, quyết định mọi việc nhanh, luôn cố gắng hoàn thành công việc hiệu quả, để sau đó tiếp tục nhanh chóng chuyển tới những công việc tiếp theo",
+      "Có trách nhiệm và mong muốn người khác cũng được như mình",
+      "Có khả năng tổ chức, điều hành, thích tham gia các công việc của cộng đồng",
+      "Có khuynh hướng thích nói thẳng những điều mình nghĩ, sẵn sàng phê bình khi thấy cần thiết"
+    ],
+    "SuggestedJobs": [
+      "Điều hành kinh doanh",
+      "Sĩ quan quân đội",
+      "Giám đốc Thông tin",
+      "Nhân viên kinh doanh sản phẩm thể thao",
+      "Kinh doanh bất động sản",
+      "Chuyên gia hoạch định ngân sách",
+      "Hành chánh: Chăm sóc sức khỏe",
+      "Trưởng bộ phận Quản lý cơ sở dữ liệu",
+      "Chuyên viên tài chính",
+      "Dược sĩ",
+      "Tư vấn tín dụng",
+      "Đại lý bảo hiểm",
+      "Giáo viên: Kinh thương, Công nghệ, Kỹ thuật",
+      "Trưởng phòng Tài sản"
+    ]
+  },
+  "ESTP": {
+    "Descriptions": [
+      "Năng động, mạnh mẽ, sống thực tế",
+      "Thường tìm những giải pháp đơn giản, dễ áp dụng để giải quyết công việc",
+      "Thích hành động hơn là suy nghĩ tìm hiểu về những lý thuyết, học thuyết mới",
+      "Thích gặp gỡ, giao lưu cùng mọi người, hòa đồng, chân thành, dễ tính nhưng đôi khi bị \"chê\" là thiếu tinh tế"
+    ],
+    "SuggestedJobs": [
+      "Nhân viên y tế",
+      "Môi giới chứng khoán",
+      "Nhà sinh lý học",
+      "Đại lý bảo hiểm",
+      "Kỹ sư",
+      "Nhà doanh nghiệp",
+      "Nhà nghiên cứu về sinh vật biển",
+      "Thám tử tư",
+      "Đại lý du lịch",
+      "Vận động viên chuyên nghiệp, Huấn luyện viên",
+      "Thầu khoán",
+      "Phát triển trò chơi điện tử",
+      "Chuyên viên địa ốc"
+    ]
+  },
+  "ESFJ": {
+    "Descriptions": [
+      "Nhân hậu, tận tâm, có tinh thần hợp tác",
+      "Quan tâm và giúp đỡ nhu cầu người khác trong cuộc sống hằng ngày",
+      "Yêu thích môi trường sống hài hòa, làm việc để thiết lập môi trường như vậy",
+      "Thích làm việc với những ai hoàn thành công việc chính xác và đúng hạn",
+      "Rất giỏi áp dụng những kinh nghiệm đã tích lũy được từ thực tế cuộc sống và công việc",
+      "Mối quan tâm lớn nhất của bạn là những thứ ảnh hưởng trực tiếp và rõ ràng đến đời sống con người, không hứng thú với những học thuyết trừu tượng"
+    ],
+    "SuggestedJobs": [
+      "Kinh doanh bất động sản",
+      "Huấn luyện viên thể hình",
+      "Bác sĩ thú y",
+      "Giáo viên",
+      "Người bán lẻ",
+      "Tư vấn tín dụng",
+      "Y tá",
+      "Nhân viên chăm sóc sức khỏe tại nhà",
+      "Nhân viên thu mua",
+      "Huấn luyện viên điền kinh",
+      "Dịch vụ ăn uống, nhà trọ",
+      "Đại lý du lịch"
+    ]
+  },
+  "ESFP": {
+    "Descriptions": [
+      "Thích giao du, thích kết nhiều bạn mới và mở rộng các mối quan hệ",
+      "Luôn quan tâm đến người khác và thể hiện sự quan tâm đó bằng hành động thực tế khi hết mình giúp đỡ họ",
+      "Thích thâm nhập và trải nghiệm cuộc sống hơn là chỉ ngồi và đánh giá chúng",
+      "Thoải mái, khôi hài, đôi khi cũng có những hành động hơi bốc đồng. Luôn biết điều gì đang diễn ra và tham gia một cách vui vẻ và phấn khích, thích tham gia thể thao hay công tác xã hội",
+      "Thích đúc rút kinh nghiệm từ thực tế hơn là nghiên cứu các học thuyết"
+    ],
+    "SuggestedJobs": [
+      "Giáo viên tiểu học",
+      "Trợ lý phòng Nha",
+      "Nhân viên chăm sóc sức khỏe tại nhà",
+      "Chuyên viên PR, Giao tiếp nhân sự",
+      "Bác sĩ X-quang",
+      "Bác sĩ điều trị",
+      "Đại lý du lịch, Điều hành tour",
+      "Người sáng lập",
+      "Diễn viên",
+      "Bác sĩ thú y",
+      "Chuyên viên tổ chức sự kiện",
+      "Nhà nghiên cứu về sinh vật biển",
+      "Kinh doanh: Thiết bị thể thao"
+    ]
+  },
+  "ENTJ": {
+    "Descriptions": [
+      "Có đầy đủ tố chất để trở thành một nhà lãnh đạo tài năng",
+      "Nhanh ý nhận ra tiến trình, chính sách không logic, thiếu hiệu quả",
+      "Biết cách triển khai hệ thống, giải quyết các khó khăn của tổ chức. Yêu thích hoạch định dài hạn",
+      "Biết động viên, khích lệ và hướng dẫn người khác người khác làm việc để hoàn thành mục tiêu",
+      "Bạn sống chân thành, khá thân thiện, tuy nhiên bạn cũng rất thẳng tính nên đôi khi làm tổn thương người khác"
+    ],
+    "SuggestedJobs": [
+      "Giám đốc Điều hành",
+      "Chuyên viên quản trị mạng",
+      "Tư vấn quản lý",
+      "Chính trị gia",
+      "Nhà kinh doanh",
+      "Chuyên viên tài chính",
+      "Nhà hoạch định tài chính",
+      "Nhân viên địa ốc",
+      "Nhân viên Marketing",
+      "Quản lý tài sản trí tuệ",
+      "Nhà hoạch định/tư vấn đầu tư",
+      "Phân tích Tài chính",
+      "Kỹ sư hóa",
+      "Tư vấn giáo dục",
+      "Quan tòa"
+    ]
+  },
+  "ENTP": {
+    "Descriptions": [
+      "Nhanh nhẹn, tài trí, biết cách truyền cảm hứng, lanh lợi và trực tính",
+      "Thích giải quyết vấn đề mới lạ và đầy thử thách. Tài giỏi trong việc tạo ra các triển vọng và phân tích trên các quan điểm chiến lược",
+      "Đọc được ý tưởng của người khác",
+      "Không thích thủ tục, ít khi làm việc theo lối mòn",
+      "Bạn luôn có những niềm đam mê và luôn trong tình trạng cố gắng và nỗ lực không ngừng để đạt được mục tiêu"
+    ],
+    "SuggestedJobs": [
+      "Nhà doanh nghiệp, Thầu khoán",
+      "Nhà đầu tư Ngân hàng",
+      "Nhà đầu tư mạo hiểm",
+      "Quản lý/tư vấn Marketing",
+      "Người viết bài quảng cáo",
+      "Phát thanh viên (Radio/TV), MC điều khiển chương trình",
+      "Kinh doanh bất động sản",
+      "Diễn viên",
+      "Nhà hoạch định, phát triển chiến lược",
+      "Hiệu trưởng trường Đại học/Cao đẳng",
+      "Tư vấn tâm lý, Chuyên gia động viên tinh thần nhân viên",
+      "Nhân viên Tiếp thị",
+      "Giám đốc Quảng cáo/Creative"
+    ]
+  },
+  "ENFJ": {
+    "Descriptions": [
+      "Nhiệt tình, có trách nhiệm và đáng tin cậy",
+      "Có khả năng giao tiếp, dễ đồng cảm, hiểu nhu cầu người khác và động viên họ. Dễ nhận ra năng lực mọi người và giúp năng lực phát huy",
+      "Là chất xúc tác để từng cá nhân và nhóm phát triển",
+      "Bặt thiệp, giúp mọi người tìm thấy sự thoải mải và tạo được sức mạnh tinh thần của tập thể",
+      "Có khả năng sáng tạo, không bó mình trong những nếp nghĩ \"thông thường\""
+    ],
+    "SuggestedJobs": [
+      "Người tổ chức sự kiện",
+      "Nhà tư vấn",
+      "Nhà tâm lý học",
+      "Nhà công tác xã hội, Luật sư",
+      "Giáo viên",
+      "Đại lý bán hàng",
+      "Nhân sự",
+      "Giám đốc",
+      "Chính trị gia, Nhà ngoại giao",
+      "Nhà văn"
+    ]
+  },
+  "ENFP": {
+    "Descriptions": [
+      "Thích sự mới mẻ: ý tưởng mới, hoạt động mới, con người mới,...",
+      "Giỏi trong giao tiếp, ấm áp, thân thiện và biết quan tâm tới mọi người xung quanh",
+      "Luôn lạc quan và hướng tới tương lai. Đây là mẫu người \"nhiều năng lượng\", mạnh mẽ, nhiệt tình và có một cuộc sống không gò bó, dễ thích nghi với sự thay đổi",
+      "Có khả năng liên kết các sự kiện để đưa ra các nhận định, các giải pháp cho bất cứ khó khăn nào"
+    ],
+    "SuggestedJobs": [
+      "Quản lý khách hàng",
+      "Chuyên viên tư vấn nghề nghiệp",
+      "Tư vấn quản lý",
+      "Phát triển phần mềm",
+      "Diễn viên",
+      "Thiết kế đồ họa",
+      "Giám đốc nghệ thuật",
+      "Người viết bài quảng cáo",
+      "Người huấn luyện, đào tạo",
+      "Nhà tâm lý học",
+      "Nhà phát minh, sáng chế",
+      "Quản lý Nhân sự",
+      "Chuyên viên tư vấn quyền trẻ em"
+    ]
+  }
+}

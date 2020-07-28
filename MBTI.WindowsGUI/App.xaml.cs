@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Threading;
 using System.Windows;
 using System.Windows.Media.Animation;
 using System.Windows.Threading;
@@ -20,13 +21,9 @@ namespace MBTI.WindowsGUI
     {
       InitializeComponent();
 
-      AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
-
       LanguageSources = new List<Func<CultureInfo, string>>()
       {
          info => $"/ResourceDictionaries/UIContent/UIContent.{info.TwoLetterISOLanguageName}.xaml",
-         info => $"/ResourceDictionaries/Content/Questions.{info.TwoLetterISOLanguageName}.xaml",
-         info => $"/ResourceDictionaries/Content/Descriptions.{info.TwoLetterISOLanguageName}.xaml",
       };
 
       SupportedLanguages = new List<CultureInfo>()
@@ -74,9 +71,9 @@ namespace MBTI.WindowsGUI
         throw new ArgumentNullException(nameof(cultureInfo));
       }
 
-      for (int i = 0; i < LanguageSources.Count; i++)
+      for (var i = 0; i < LanguageSources.Count; i++)
       {
-        string source = LanguageSources[i](cultureInfo);
+        var source = LanguageSources[i](cultureInfo);
 
         ResourceDictionary dict;
 
@@ -144,7 +141,7 @@ namespace MBTI.WindowsGUI
 
     private void ShowExceptionDialog(Exception e)
     {
-      string message = $"Unexpected error has occured." +
+      var message = $"Unexpected error has occured." +
         $"{Environment.NewLine}" +
         $"{Environment.NewLine}" +
         $"Additional information: {e.Message}";

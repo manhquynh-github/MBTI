@@ -31,6 +31,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MBTI.Logic\MBTI.Logic.csproj" />
     <ProjectReference Include="..\MBTI.Models\MBTI.Models.csproj" />
+    <ProjectReference Include="..\MBTI.Resources\MBTI.Resources.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -57,14 +58,5 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </Resource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="ResourceDictionaries\Content\Descriptions.en.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="ResourceDictionaries\Content\Questions.en.xaml">
-      <SubType>Designer</SubType>
-    </Page>
   </ItemGroup>
 </Project>

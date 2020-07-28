@@ -8,8 +8,6 @@
     <ResourceDictionary>
       <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/ResourceDictionaries/UIContent/UIContent.vi.xaml" />
-        <ResourceDictionary Source="/ResourceDictionaries/Content/Questions.vi.xaml" />
-        <ResourceDictionary Source="/ResourceDictionaries/Content/Descriptions.vi.xaml" />
       </ResourceDictionary.MergedDictionaries>
       <Storyboard x:Key="FadeInStoryboard">
         <DoubleAnimation Storyboard.TargetProperty="(UIElement.Opacity)"

@@ -1,8 +1,10 @@
-﻿namespace MBTI.Models
+﻿using System.Collections.Generic;
+
+namespace MBTI.Models
 {
   public class PersonalityTypeDescription
   {
-    public string Description { get; set; }
-    public string SuggestedJobs { get; set; }
+    public List<string> Descriptions { get; set; }
+    public List<string> SuggestedJobs { get; set; }
   }
 }

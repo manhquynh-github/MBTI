@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 using MBTI.Models;
+using MBTI.Resources;
 
 namespace MBTI.WindowsGUI.ViewModels
 {
@@ -9,9 +12,10 @@ namespace MBTI.WindowsGUI.ViewModels
   {
     private int _currentIndex;
 
-    public QuizVM(IList<Question> quiz)
+    public QuizVM()
     {
-      Quiz = quiz;
+      List<Question> quiz = Content.GetQuestions(App.Current.Language);
+      Quiz = quiz.AsReadOnly();
     }
 
     public int CurrentIndex
@@ -38,7 +42,7 @@ namespace MBTI.WindowsGUI.ViewModels
       .ToString()
       .ToUpper() + CurrentQuestion.Content.Substring(1);
 
-    public IList<Question> Quiz { get; }
+    public IReadOnlyList<Question> Quiz { get; }
 
     public bool MoveNext()
     {

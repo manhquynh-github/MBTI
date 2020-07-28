@@ -173,7 +173,7 @@
                 Grid.Column="0"
                 Click="BtnFirstChoice_Click"
                 Style="{StaticResource ChoiceButtonStyle}">
-          <TextBlock Text="{Binding CurrentQuestion.FirstChoice.Content}"
+          <TextBlock Text="{Binding CurrentQuestion.FirstChoice}"
                      TextWrapping="Wrap" />
         </Button>
         <Button x:Name="BtnSecondChoice"
@@ -181,7 +181,7 @@
                 Grid.Column="1"
                 Click="BtnSecondChoice_Click"
                 Style="{StaticResource ChoiceButtonStyle}">
-          <TextBlock Text="{Binding CurrentQuestion.SecondChoice.Content}"
+          <TextBlock Text="{Binding CurrentQuestion.SecondChoice}"
                      TextWrapping="Wrap" />
         </Button>
       </Grid>

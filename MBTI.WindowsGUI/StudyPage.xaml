@@ -178,14 +178,14 @@
                      Grid.Row="2"
                      FontSize="18"
                      FontWeight="Light"
-                     Text="{Binding Content.Description}"
+                     Text="{Binding DisplayDescriptions}"
                      TextWrapping="Wrap" />
           <TextBlock x:Name="JobsArea"
                      Grid.Row="2"
                      Grid.Column="2"
                      FontSize="18"
                      FontWeight="Light"
-                     Text="{Binding Content.SuggestedJobs}"
+                     Text="{Binding DisplaySuggestedJobs}"
                      TextWrapping="Wrap" />
         </Grid>
       </ScrollViewer>

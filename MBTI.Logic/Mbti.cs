@@ -7,7 +7,7 @@ namespace MBTI.Logic
 {
   public class Mbti
   {
-    public Mbti(IList<Question> questions)
+    public Mbti(IReadOnlyList<Question> questions)
     {
       if (questions is null)
       {
@@ -61,14 +61,14 @@ namespace MBTI.Logic
       };
     }
 
-    private void Calculate(IList<Question> questions)
+    private void Calculate(IReadOnlyList<Question> questions)
     {
       if (questions is null)
       {
         throw new ArgumentNullException(nameof(questions));
       }
 
-      for (int i = 0; i < questions.Count; i++)
+      for (var i = 0; i < questions.Count; i++)
       {
         Question question = questions[i];
         if (question is null)
@@ -76,13 +76,13 @@ namespace MBTI.Logic
           throw new InvalidOperationException($"{nameof(question)} is null.");
         }
 
-        int selectedIndex = question.SelectedIndex;
+        var selectedIndex = question.SelectedIndex;
         if (selectedIndex < 1 || selectedIndex > 2)
         {
           throw new InvalidOperationException("Unexpected selected index.");
         }
 
-        int column = i % 8;
+        var column = i % 8;
         switch ((column % 2 == 1 ? column : column - 1) + selectedIndex)
         {
           case 2:

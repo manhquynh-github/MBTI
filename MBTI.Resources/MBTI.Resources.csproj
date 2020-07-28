@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>MBTI.Resources</AssemblyName>
+    <Authors>https://github.com/manhquynh-github/MBTI</Authors>
+    <Description>https://github.com/manhquynh-github/MBTI</Description>
+    <RepositoryUrl>https://github.com/manhquynh-github/MBTI</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <Copyright>Copyright © 2020</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Descriptions.vi.json" />
+    <EmbeddedResource Include="Resources\Descriptions.en.json" />
+    <EmbeddedResource Include="Resources\Questions.en.json" />
+    <EmbeddedResource Include="Resources\Questions.vi.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MBTI.Models\MBTI.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Content.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Content.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Content.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Content.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Content.vi.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
