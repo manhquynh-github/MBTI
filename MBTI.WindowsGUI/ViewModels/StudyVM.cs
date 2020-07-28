@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
-using System.Text.Encodings.Web;
-using System.Text.Json;
-using System.Threading.Tasks;
-using System.Windows;
 
 using MBTI.Logic;
 using MBTI.Models;
@@ -17,6 +12,7 @@ namespace MBTI.WindowsGUI.ViewModels
   {
     private readonly Dictionary<string, PersonalityTypeDescription> _descriptions;
     private PersonalityTypeDescription _content;
+    private bool _needsRefreshUI;
     private PersonalityType _personalityType;
 
     public StudyVM(PersonalityType type)
@@ -47,7 +43,22 @@ namespace MBTI.WindowsGUI.ViewModels
       Environment.NewLine,
       Content.SuggestedJobs.Select(v => $"- {v}."));
 
-    public bool NeedsRefreshUI { get; private set; }
+    public bool NeedsRefreshUI
+    {
+      get => _needsRefreshUI;
+      private set
+      {
+        if (_needsRefreshUI != value)
+        {
+          _needsRefreshUI = value;
+
+          if (_needsRefreshUI == true)
+          {
+            OnNeedsRefreshUI?.Invoke(this, EventArgs.Empty);
+          }
+        }
+      }
+    }
 
     public PersonalityType PersonalityType
     {
@@ -56,7 +67,6 @@ namespace MBTI.WindowsGUI.ViewModels
       {
         SetProperty(ref _personalityType, value);
         NeedsRefreshUI = true;
-        OnNeedsRefreshUI?.Invoke(this, EventArgs.Empty);
       }
     }
 
@@ -70,13 +80,8 @@ namespace MBTI.WindowsGUI.ViewModels
           throw new IndexOutOfRangeException();
         }
 
-        PersonalityType = new PersonalityType()
-        {
-          Prefix1 = (PersonalityPrefixes1)value,
-          Prefix2 = PersonalityType.Prefix2,
-          Prefix3 = PersonalityType.Prefix3,
-          Prefix4 = PersonalityType.Prefix4,
-        };
+        PersonalityType = PersonalityType
+          .CloneAndSet(prefix1: (PersonalityPrefixes1)value);
       }
     }
 
@@ -90,13 +95,8 @@ namespace MBTI.WindowsGUI.ViewModels
           throw new IndexOutOfRangeException();
         }
 
-        PersonalityType = new PersonalityType()
-        {
-          Prefix1 = PersonalityType.Prefix1,
-          Prefix2 = (PersonalityPrefixes2)value,
-          Prefix3 = PersonalityType.Prefix3,
-          Prefix4 = PersonalityType.Prefix4,
-        };
+        PersonalityType = PersonalityType
+          .CloneAndSet(prefix2: (PersonalityPrefixes2)value);
       }
     }
 
@@ -110,13 +110,8 @@ namespace MBTI.WindowsGUI.ViewModels
           throw new IndexOutOfRangeException();
         }
 
-        PersonalityType = new PersonalityType()
-        {
-          Prefix1 = PersonalityType.Prefix1,
-          Prefix2 = PersonalityType.Prefix2,
-          Prefix3 = (PersonalityPrefixes3)value,
-          Prefix4 = PersonalityType.Prefix4,
-        };
+        PersonalityType = PersonalityType
+          .CloneAndSet(prefix3: (PersonalityPrefixes3)value);
       }
     }
 
@@ -130,13 +125,8 @@ namespace MBTI.WindowsGUI.ViewModels
           throw new IndexOutOfRangeException();
         }
 
-        PersonalityType = new PersonalityType()
-        {
-          Prefix1 = PersonalityType.Prefix1,
-          Prefix2 = PersonalityType.Prefix2,
-          Prefix3 = PersonalityType.Prefix3,
-          Prefix4 = (PersonalityPrefixes4)value,
-        };
+        PersonalityType = PersonalityType
+          .CloneAndSet(prefix4: (PersonalityPrefixes4)value);
       }
     }
 

@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.IO;
 using System.Linq;
-using System.Threading;
 using System.Windows;
 using System.Windows.Media.Animation;
 using System.Windows.Threading;
 
-using MBTI.Resources.Properties;
 using MBTI.WindowsGUI.ViewModels;
 
 namespace MBTI.WindowsGUI
