@@ -4,6 +4,8 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
+using MBTI.WindowsGUI.ViewModels;
+
 namespace MBTI.WindowsGUI
 {
   /// <summary>
@@ -26,8 +28,8 @@ namespace MBTI.WindowsGUI
 
     private async void BtnQuiz_Click(object sender, RoutedEventArgs e)
     {
-      string instruction1 = (string)Application.Current.Resources["SInstruction1"];
-      string instruction2 = (string)Application.Current.Resources["SInstruction2"];
+      var instruction1 = (string)ResourcesVM.Instance["SInstruction1"];
+      var instruction2 = (string)ResourcesVM.Instance["SInstruction2"];
 
       if (instruction1 == null
        || instruction2 == null)

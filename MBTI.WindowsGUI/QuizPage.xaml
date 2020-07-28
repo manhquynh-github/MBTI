@@ -4,6 +4,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:MBTI.WindowsGUI"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:vm="clr-namespace:MBTI.WindowsGUI.ViewModels"
       Title="QuizPage"
       d:DesignHeight="450"
       d:DesignWidth="800"
@@ -88,7 +89,9 @@
                  VerticalAlignment="Center"
                  FontSize="21"
                  FontWeight="Light"
-                 Text="{DynamicResource STitleNormal}" />
+                 Text="{Binding Source={x:Static vm:ResourcesVM.Instance},
+                                Path=[STitleNormal],
+                                Mode=OneWay}" />
       <StackPanel Orientation="Horizontal">
         <Button x:Name="BackButton"
                 Width="45"
@@ -121,7 +124,7 @@
                    VerticalAlignment="Center"
                    FontSize="21"
                    FontWeight="Light">
-          <Run Text="{DynamicResource SQuestion}" />
+          <Run Text="{Binding Source={x:Static vm:ResourcesVM.Instance}, Path=[SQuestion], Mode=OneWay}" />
           <Run>
             <Run.Text>
               <MultiBinding StringFormat="{}{0}/{1}">
@@ -142,7 +145,9 @@
               Click="HomeButton_Click"
               Content="&#xE80F;"
               Style="{StaticResource WindowButtonStyle}"
-              ToolTip="{DynamicResource SHomeTooltip}"
+              ToolTip="{Binding Source={x:Static vm:ResourcesVM.Instance},
+                                Path=[SHomeTooltip],
+                                Mode=OneWay}"
               WindowChrome.IsHitTestVisibleInChrome="True" />
     </Grid>
     <ScrollViewer Grid.Row="1"

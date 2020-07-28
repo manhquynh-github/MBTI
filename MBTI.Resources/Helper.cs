@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Text.Json;
 
 using MBTI.Models;
@@ -10,19 +9,17 @@ namespace MBTI.Resources
 {
   public static class Helper
   {
-    public static Dictionary<string, PersonalityTypeDescription> GetDescriptions(CultureInfo cultureInfo)
+    public static Dictionary<string, PersonalityTypeDescription> GetDescriptions()
     {
-      Properties.Content.Culture = cultureInfo;
-      var resource = Properties.Content.Descriptions;
+      var resource = Content.Descriptions;
 
       return JsonSerializer.Deserialize<Dictionary<string, PersonalityTypeDescription>>(
         new ReadOnlySpan<byte>(resource));
     }
 
-    public static List<Question> GetQuestions(CultureInfo cultureInfo)
+    public static List<Question> GetQuestions()
     {
-      Properties.Content.Culture = cultureInfo;
-      var resource = Properties.Content.Questions;
+      var resource = Content.Questions;
 
       return JsonSerializer.Deserialize<List<Question>>(
         new ReadOnlySpan<byte>(resource));

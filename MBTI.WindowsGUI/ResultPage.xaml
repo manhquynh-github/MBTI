@@ -4,6 +4,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:MBTI.WindowsGUI"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:vm="clr-namespace:MBTI.WindowsGUI.ViewModels"
       Title="ResultPage"
       d:DesignHeight="450"
       d:DesignWidth="800"
@@ -18,7 +19,9 @@
                  VerticalAlignment="Center"
                  FontSize="21"
                  FontWeight="Light"
-                 Text="{DynamicResource STitleNormal}" />
+                 Text="{Binding Source={x:Static vm:ResourcesVM.Instance},
+                                Path=[STitleNormal],
+                                Mode=OneWay}" />
     </Grid>
     <ScrollViewer Grid.Row="1"
                   HorizontalScrollBarVisibility="Disabled"
@@ -66,7 +69,9 @@
           </Grid.ColumnDefinitions>
           <TextBlock Grid.Row="0"
                      Grid.Column="0"
-                     Text="{DynamicResource SExtrovert}"
+                     Text="{Binding Source={x:Static vm:ResourcesVM.Instance},
+                                    Path=[SExtrovert],
+                                    Mode=OneWay}"
                      TextWrapping="Wrap" />
           <TextBlock Grid.Row="0"
                      Grid.Column="2"
@@ -76,7 +81,9 @@
                      TextWrapping="Wrap" />
           <TextBlock Grid.Row="0"
                      Grid.Column="4"
-                     Text="{DynamicResource SIntrovert}"
+                     Text="{Binding Source={x:Static vm:ResourcesVM.Instance},
+                                    Path=[SIntrovert],
+                                    Mode=OneWay}"
                      TextWrapping="Wrap" />
           <TextBlock Grid.Row="0"
                      Grid.Column="6"
@@ -86,7 +93,9 @@
                      TextWrapping="Wrap" />
           <TextBlock Grid.Row="1"
                      Grid.Column="0"
-                     Text="{DynamicResource SSensing}"
+                     Text="{Binding Source={x:Static vm:ResourcesVM.Instance},
+                                    Path=[SSensing],
+                                    Mode=OneWay}"
                      TextWrapping="Wrap" />
           <TextBlock Grid.Row="1"
                      Grid.Column="2"
@@ -96,7 +105,9 @@
                      TextWrapping="Wrap" />
           <TextBlock Grid.Row="1"
                      Grid.Column="4"
-                     Text="{DynamicResource SIntuition}"
+                     Text="{Binding Source={x:Static vm:ResourcesVM.Instance},
+                                    Path=[SIntuition],
+                                    Mode=OneWay}"
                      TextWrapping="Wrap" />
           <TextBlock Grid.Row="1"
                      Grid.Column="6"
@@ -106,7 +117,9 @@
                      TextWrapping="Wrap" />
           <TextBlock Grid.Row="2"
                      Grid.Column="0"
-                     Text="{DynamicResource SThinking}"
+                     Text="{Binding Source={x:Static vm:ResourcesVM.Instance},
+                                    Path=[SThinking],
+                                    Mode=OneWay}"
                      TextWrapping="Wrap" />
           <TextBlock Grid.Row="2"
                      Grid.Column="2"
@@ -116,7 +129,9 @@
                      TextWrapping="Wrap" />
           <TextBlock Grid.Row="2"
                      Grid.Column="4"
-                     Text="{DynamicResource SFeeling}"
+                     Text="{Binding Source={x:Static vm:ResourcesVM.Instance},
+                                    Path=[SFeeling],
+                                    Mode=OneWay}"
                      TextWrapping="Wrap" />
           <TextBlock Grid.Row="2"
                      Grid.Column="6"
@@ -126,7 +141,9 @@
                      TextWrapping="Wrap" />
           <TextBlock Grid.Row="3"
                      Grid.Column="0"
-                     Text="{DynamicResource SJudging}"
+                     Text="{Binding Source={x:Static vm:ResourcesVM.Instance},
+                                    Path=[SJudging],
+                                    Mode=OneWay}"
                      TextWrapping="Wrap" />
           <TextBlock Grid.Row="3"
                      Grid.Column="2"
@@ -136,7 +153,9 @@
                      TextWrapping="Wrap" />
           <TextBlock Grid.Row="3"
                      Grid.Column="4"
-                     Text="{DynamicResource SPerceptive}"
+                     Text="{Binding Source={x:Static vm:ResourcesVM.Instance},
+                                    Path=[SPerceptive],
+                                    Mode=OneWay}"
                      TextWrapping="Wrap" />
           <TextBlock Grid.Row="3"
                      Grid.Column="6"
@@ -149,7 +168,9 @@
                 Grid.Row="2"
                 Margin="0,20,0,0"
                 Click="BtnStudy_Click"
-                Content="{DynamicResource SStudy}"
+                Content="{Binding Source={x:Static vm:ResourcesVM.Instance},
+                                  Path=[SStudy],
+                                  Mode=OneWay}"
                 Style="{StaticResource CustomButtonStyle}" />
       </Grid>
     </ScrollViewer>

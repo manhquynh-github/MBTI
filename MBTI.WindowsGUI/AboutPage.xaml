@@ -4,6 +4,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:MBTI.WindowsGUI"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:vm="clr-namespace:MBTI.WindowsGUI.ViewModels"
       Title="AboutPage"
       d:DesignHeight="450"
       d:DesignWidth="800"
@@ -19,7 +20,8 @@
                  VerticalAlignment="Center"
                  FontSize="18"
                  FontWeight="Light"
-                 Text="{DynamicResource STitle}" />
+                 Text="{Binding Source={x:Static vm:ResourcesVM.Instance},
+                                Path=[STitle]}" />
       <Button x:Name="BackButton"
               Width="45"
               HorizontalAlignment="Left"
@@ -58,7 +60,7 @@
                    FontWeight="Light"
                    TextAlignment="Justify"
                    TextWrapping="Wrap">
-          <Run Text="{DynamicResource SMBTIDescription}" /></TextBlock>
+          <Run Text="{Binding Source={x:Static vm:ResourcesVM.Instance}, Path=[SMBTIDescription], Mode=OneWay}" /></TextBlock>
         <TextBlock Margin="0,5"
                    FontSize="18"
                    FontWeight="Light">

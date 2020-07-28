@@ -124,4 +124,70 @@
   <data name="Questions" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\questions.vi.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="SExtrovert" xml:space="preserve">
+    <value>Hướng ngoại</value>
+  </data>
+  <data name="SFeeling" xml:space="preserve">
+    <value>Tình cảm</value>
+  </data>
+  <data name="SHomeTooltip" xml:space="preserve">
+    <value>Trở về màn hình chính</value>
+  </data>
+  <data name="SInstruction1" xml:space="preserve">
+    <value>Nhấn vào câu mô tả rõ nét về bạn nhất</value>
+  </data>
+  <data name="SInstruction2" xml:space="preserve">
+    <value>Hãy thành thật với chính mình</value>
+  </data>
+  <data name="SInstruction3" xml:space="preserve">
+    <value>Bạn đã hoàn thành trắc nghiệm</value>
+  </data>
+  <data name="SInstruction4" xml:space="preserve">
+    <value>Tính cách đại diện của bạn là</value>
+  </data>
+  <data name="SIntrovert" xml:space="preserve">
+    <value>Hướng nội</value>
+  </data>
+  <data name="SIntuition" xml:space="preserve">
+    <value>Trực giác</value>
+  </data>
+  <data name="SJudging" xml:space="preserve">
+    <value>Kế hoạch</value>
+  </data>
+  <data name="SMBTIDescription" xml:space="preserve">
+    <value>Chỉ số phân loại Myers-Briggs (Myers-Briggs Type Indication), thường được viết ngắn gọn là MBTI, là một phương pháp sử dụng các câu hỏi trắc nghiệm tâm lý để tìm hiểu tâm lý, tính cách cũng như cách con người nhận thức thế giới xung quanh, đưa ra quyết định cho một vấn đề...</value>
+  </data>
+  <data name="SPerceptive" xml:space="preserve">
+    <value>Linh hoạt</value>
+  </data>
+  <data name="SPersonality" xml:space="preserve">
+    <value>Tính cách</value>
+  </data>
+  <data name="SQuestion" xml:space="preserve">
+    <value>Câu</value>
+  </data>
+  <data name="SQuiz" xml:space="preserve">
+    <value>trắc nghiệm</value>
+  </data>
+  <data name="SSensing" xml:space="preserve">
+    <value>Thực tế</value>
+  </data>
+  <data name="SStudy" xml:space="preserve">
+    <value>tìm hiểu</value>
+  </data>
+  <data name="SSubtitle" xml:space="preserve">
+    <value>Hiểu bạn &amp; Chọn nghề nghiệp thích hợp với bạn</value>
+  </data>
+  <data name="SSuggestedJobs" xml:space="preserve">
+    <value>Nghề nghiệp thích hợp</value>
+  </data>
+  <data name="SThinking" xml:space="preserve">
+    <value>Lý trí</value>
+  </data>
+  <data name="STitle" xml:space="preserve">
+    <value>CHỈ SỐ MBTI</value>
+  </data>
+  <data name="STitleNormal" xml:space="preserve">
+    <value>Chỉ số MBTI</value>
+  </data>
 </root>

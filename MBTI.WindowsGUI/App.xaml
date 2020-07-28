@@ -5,392 +5,387 @@
              DispatcherUnhandledException="Application_DispatcherUnhandledException"
              StartupUri="MainWindow.xaml">
   <Application.Resources>
-    <ResourceDictionary>
-      <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/ResourceDictionaries/UIContent/UIContent.vi.xaml" />
-      </ResourceDictionary.MergedDictionaries>
-      <Storyboard x:Key="FadeInStoryboard">
-        <DoubleAnimation Storyboard.TargetProperty="(UIElement.Opacity)"
-                         From="0"
-                         To="1"
-                         Duration="0:0:0.4">
-          <DoubleAnimation.EasingFunction>
-            <ExponentialEase EasingMode="EaseOut" />
-          </DoubleAnimation.EasingFunction>
-        </DoubleAnimation>
-      </Storyboard>
-      <Storyboard x:Key="FadeOutStoryboard">
-        <DoubleAnimation Storyboard.TargetProperty="(UIElement.Opacity)"
-                         From="1"
-                         To="0"
-                         Duration="0:0:0.4">
-          <DoubleAnimation.EasingFunction>
-            <ExponentialEase EasingMode="EaseOut" />
-          </DoubleAnimation.EasingFunction>
-        </DoubleAnimation>
-      </Storyboard>
-      <Style x:Key="IconButtonStyle"
-             TargetType="{x:Type Button}">
-        <Setter Property="FontFamily"
-                Value="Segoe MDL2 Assets" />
-        <Setter Property="HorizontalContentAlignment"
-                Value="Center" />
-        <Setter Property="Template">
-          <Setter.Value>
-            <ControlTemplate TargetType="{x:Type Button}">
-              <Border Background="{TemplateBinding Background}"
-                      BorderBrush="{TemplateBinding BorderBrush}"
-                      BorderThickness="{TemplateBinding BorderThickness}">
-                <StackPanel Margin="{TemplateBinding Padding}"
-                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                            Focusable="False"
-                            Orientation="Horizontal"
-                            TextElement.Foreground="{TemplateBinding Foreground}">
-                  <TextBlock x:Name="PART_Text"
-                             FontFamily="{TemplateBinding FontFamily}"
-                             FontSize="{TemplateBinding FontSize}"
-                             FontStretch="{TemplateBinding FontStretch}"
-                             FontStyle="{TemplateBinding FontStyle}"
-                             FontWeight="{TemplateBinding FontWeight}"
-                             Text="{TemplateBinding Content}" />
-                </StackPanel>
-              </Border>
-            </ControlTemplate>
-          </Setter.Value>
-        </Setter>
-        <Setter Property="VerticalContentAlignment"
-                Value="Center" />
-      </Style>
-      <Style x:Key="WindowButtonStyle"
-             BasedOn="{StaticResource IconButtonStyle}"
-             TargetType="{x:Type Button}">
-        <Setter Property="Background"
-                Value="Transparent" />
-        <Setter Property="BorderThickness"
-                Value="0" />
-        <Style.Triggers>
-          <Trigger Property="IsMouseOver"
-                   Value="true">
-            <Setter Property="Background"
-                    Value="#0A000000" />
-          </Trigger>
-          <Trigger Property="IsPressed"
-                   Value="True">
-            <Setter Property="Background"
-                    Value="#26000000" />
-          </Trigger>
-        </Style.Triggers>
-      </Style>
-      <Style x:Key="ChromedWindowStyle"
-             TargetType="{x:Type Window}">
-        <Setter Property="Template">
-          <Setter.Value>
-            <ControlTemplate TargetType="Window">
-              <Border x:Name="Bd"
-                      Padding="0"
-                      Background="{TemplateBinding Background}"
-                      BorderBrush="{TemplateBinding BorderBrush}"
-                      BorderThickness="{TemplateBinding BorderThickness}">
-                <AdornerDecorator>
-                  <Grid>
-                    <Grid.RowDefinitions>
-                      <RowDefinition Height="30" />
-                      <RowDefinition Height="*" />
-                    </Grid.RowDefinitions>
-                    <Grid Panel.ZIndex="10">
-                      <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="30" />
-                        <ColumnDefinition Width="auto" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="auto" />
-                        <ColumnDefinition Width="auto" />
-                        <ColumnDefinition Width="auto" />
-                      </Grid.ColumnDefinitions>
-                      <!--<TextBlock Grid.Column="1"
+    <Storyboard x:Key="FadeInStoryboard">
+      <DoubleAnimation Storyboard.TargetProperty="(UIElement.Opacity)"
+                       From="0"
+                       To="1"
+                       Duration="0:0:0.4">
+        <DoubleAnimation.EasingFunction>
+          <ExponentialEase EasingMode="EaseOut" />
+        </DoubleAnimation.EasingFunction>
+      </DoubleAnimation>
+    </Storyboard>
+    <Storyboard x:Key="FadeOutStoryboard">
+      <DoubleAnimation Storyboard.TargetProperty="(UIElement.Opacity)"
+                       From="1"
+                       To="0"
+                       Duration="0:0:0.4">
+        <DoubleAnimation.EasingFunction>
+          <ExponentialEase EasingMode="EaseOut" />
+        </DoubleAnimation.EasingFunction>
+      </DoubleAnimation>
+    </Storyboard>
+    <Style x:Key="IconButtonStyle"
+           TargetType="{x:Type Button}">
+      <Setter Property="FontFamily"
+              Value="Segoe MDL2 Assets" />
+      <Setter Property="HorizontalContentAlignment"
+              Value="Center" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type Button}">
+            <Border Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}">
+              <StackPanel Margin="{TemplateBinding Padding}"
+                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                          Focusable="False"
+                          Orientation="Horizontal"
+                          TextElement.Foreground="{TemplateBinding Foreground}">
+                <TextBlock x:Name="PART_Text"
+                           FontFamily="{TemplateBinding FontFamily}"
+                           FontSize="{TemplateBinding FontSize}"
+                           FontStretch="{TemplateBinding FontStretch}"
+                           FontStyle="{TemplateBinding FontStyle}"
+                           FontWeight="{TemplateBinding FontWeight}"
+                           Text="{TemplateBinding Content}" />
+              </StackPanel>
+            </Border>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+      <Setter Property="VerticalContentAlignment"
+              Value="Center" />
+    </Style>
+    <Style x:Key="WindowButtonStyle"
+           BasedOn="{StaticResource IconButtonStyle}"
+           TargetType="{x:Type Button}">
+      <Setter Property="Background"
+              Value="Transparent" />
+      <Setter Property="BorderThickness"
+              Value="0" />
+      <Style.Triggers>
+        <Trigger Property="IsMouseOver"
+                 Value="true">
+          <Setter Property="Background"
+                  Value="#0A000000" />
+        </Trigger>
+        <Trigger Property="IsPressed"
+                 Value="True">
+          <Setter Property="Background"
+                  Value="#26000000" />
+        </Trigger>
+      </Style.Triggers>
+    </Style>
+    <Style x:Key="ChromedWindowStyle"
+           TargetType="{x:Type Window}">
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="Window">
+            <Border x:Name="Bd"
+                    Padding="0"
+                    Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}">
+              <AdornerDecorator>
+                <Grid>
+                  <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="*" />
+                  </Grid.RowDefinitions>
+                  <Grid Panel.ZIndex="10">
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="30" />
+                      <ColumnDefinition Width="auto" />
+                      <ColumnDefinition Width="*" />
+                      <ColumnDefinition Width="auto" />
+                      <ColumnDefinition Width="auto" />
+                      <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <!--<TextBlock Grid.Column="1"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
                                FontSize="16"
                                Text="{TemplateBinding Title}" />-->
-                      <Button x:Name="MinimizeButton"
-                              Grid.Column="3"
-                              Width="45"
-                              Click="MinimizeButton_Click"
-                              Content="&#xE921;"
-                              FontSize="11"
-                              Style="{StaticResource WindowButtonStyle}"
-                              ToolTip="Minimize"
-                              WindowChrome.IsHitTestVisibleInChrome="True" />
-                      <Button x:Name="MaximizeButton"
-                              Grid.Column="4"
-                              Width="45"
-                              Click="MaximizeButton_Click"
-                              Content="&#xE922;"
-                              FontSize="11"
-                              Style="{StaticResource WindowButtonStyle}"
-                              ToolTip="Maximize"
-                              WindowChrome.IsHitTestVisibleInChrome="True" />
-                      <Button x:Name="CloseButton"
-                              Grid.Column="5"
-                              Width="45"
-                              Click="CloseButton_Click"
-                              Content="&#xE8BB;"
-                              FontSize="11"
-                              ToolTip="Close"
-                              WindowChrome.IsHitTestVisibleInChrome="True">
-                        <Button.Style>
-                          <Style BasedOn="{StaticResource WindowButtonStyle}"
-                                 TargetType="Button">
-                            <Style.Triggers>
-                              <Trigger Property="IsMouseOver"
-                                       Value="True">
-                                <Setter Property="Background"
-                                        Value="#E81123" />
-                                <Setter Property="Foreground"
-                                        Value="White" />
-                              </Trigger>
-                              <Trigger Property="IsPressed"
-                                       Value="True">
-                                <Setter Property="Background"
-                                        Value="#F1707A" />
-                                <Setter Property="Foreground"
-                                        Value="Black" />
-                              </Trigger>
-                            </Style.Triggers>
-                          </Style>
-                        </Button.Style>
-                      </Button>
-                    </Grid>
-                    <ContentPresenter Grid.RowSpan="2"
-                                      Content="{TemplateBinding Content}" />
+                    <Button x:Name="MinimizeButton"
+                            Grid.Column="3"
+                            Width="45"
+                            Click="MinimizeButton_Click"
+                            Content="&#xE921;"
+                            FontSize="11"
+                            Style="{StaticResource WindowButtonStyle}"
+                            ToolTip="Minimize"
+                            WindowChrome.IsHitTestVisibleInChrome="True" />
+                    <Button x:Name="MaximizeButton"
+                            Grid.Column="4"
+                            Width="45"
+                            Click="MaximizeButton_Click"
+                            Content="&#xE922;"
+                            FontSize="11"
+                            Style="{StaticResource WindowButtonStyle}"
+                            ToolTip="Maximize"
+                            WindowChrome.IsHitTestVisibleInChrome="True" />
+                    <Button x:Name="CloseButton"
+                            Grid.Column="5"
+                            Width="45"
+                            Click="CloseButton_Click"
+                            Content="&#xE8BB;"
+                            FontSize="11"
+                            ToolTip="Close"
+                            WindowChrome.IsHitTestVisibleInChrome="True">
+                      <Button.Style>
+                        <Style BasedOn="{StaticResource WindowButtonStyle}"
+                               TargetType="Button">
+                          <Style.Triggers>
+                            <Trigger Property="IsMouseOver"
+                                     Value="True">
+                              <Setter Property="Background"
+                                      Value="#E81123" />
+                              <Setter Property="Foreground"
+                                      Value="White" />
+                            </Trigger>
+                            <Trigger Property="IsPressed"
+                                     Value="True">
+                              <Setter Property="Background"
+                                      Value="#F1707A" />
+                              <Setter Property="Foreground"
+                                      Value="Black" />
+                            </Trigger>
+                          </Style.Triggers>
+                        </Style>
+                      </Button.Style>
+                    </Button>
                   </Grid>
-                </AdornerDecorator>
-              </Border>
-              <ControlTemplate.Triggers>
-                <Trigger Property="WindowState"
-                         Value="Maximized">
-                  <Setter TargetName="Bd"
-                          Property="Padding"
-                          Value="8" />
-                  <Setter TargetName="MaximizeButton"
-                          Property="Content"
-                          Value="&#xE923;" />
-                  <Setter TargetName="MaximizeButton"
-                          Property="ToolTip"
-                          Value="Restore Down" />
-                </Trigger>
-              </ControlTemplate.Triggers>
-            </ControlTemplate>
-          </Setter.Value>
-        </Setter>
-        <Setter Property="WindowChrome.WindowChrome">
-          <Setter.Value>
-            <WindowChrome CaptionHeight="30"
-                          UseAeroCaptionButtons="False" />
-          </Setter.Value>
-        </Setter>
-      </Style>
-      <Style x:Key="CustomButtonStyle"
-             TargetType="{x:Type Button}">
-        <Setter Property="Background"
-                Value="DodgerBlue" />
-        <Setter Property="BorderThickness"
-                Value="0" />
-        <Setter Property="FontSize"
-                Value="28" />
-        <Setter Property="FontWeight"
-                Value="Light" />
-        <Setter Property="Foreground"
-                Value="White" />
-        <Setter Property="HorizontalAlignment"
-                Value="Center" />
-        <Setter Property="Margin"
-                Value="5" />
-        <Setter Property="Padding"
-                Value="10,5" />
-        <Setter Property="Template">
-          <Setter.Value>
-            <ControlTemplate TargetType="{x:Type Button}">
-              <Border x:Name="border"
-                      Background="{TemplateBinding Background}"
-                      BorderBrush="{TemplateBinding BorderBrush}"
-                      BorderThickness="{TemplateBinding BorderThickness}"
-                      CornerRadius="5"
-                      SnapsToDevicePixels="true">
-                <ContentPresenter x:Name="contentPresenter"
-                                  Margin="{TemplateBinding Padding}"
-                                  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                                  Focusable="False"
-                                  RecognizesAccessKey="True"
-                                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
-              </Border>
-            </ControlTemplate>
-          </Setter.Value>
-        </Setter>
-        <Style.Triggers>
-          <Trigger Property="IsMouseOver"
-                   Value="True">
-            <Setter Property="Background"
-                    Value="RoyalBlue" />
-          </Trigger>
-          <Trigger Property="IsPressed"
-                   Value="True">
-            <Setter Property="Background"
-                    Value="MidnightBlue" />
-          </Trigger>
-        </Style.Triggers>
-      </Style>
-      <Style x:Key="ComboBoxToggleButton"
-             TargetType="{x:Type ToggleButton}">
-        <Setter Property="ClickMode"
-                Value="Press" />
-        <Setter Property="Focusable"
-                Value="false" />
-        <Setter Property="IsTabStop"
-                Value="false" />
-        <Setter Property="OverridesDefaultStyle"
-                Value="true" />
-        <Setter Property="Template">
-          <Setter.Value>
-            <ControlTemplate TargetType="{x:Type ToggleButton}">
-              <Border x:Name="templateRoot"
-                      Background="{TemplateBinding Background}"
-                      BorderBrush="{TemplateBinding BorderBrush}"
-                      BorderThickness="{TemplateBinding BorderThickness}"
-                      CornerRadius="2"
-                      SnapsToDevicePixels="true">
-                <Border x:Name="splitBorder"
-                        Width="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}"
-                        Margin="0"
-                        HorizontalAlignment="Right"
-                        BorderBrush="Transparent"
-                        BorderThickness="1"
-                        SnapsToDevicePixels="true">
-                  <Path x:Name="arrow"
-                        Margin="0"
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Center"
-                        Data="F1 M 0,0 L 2.667,2.66665 L 5.3334,0 L 5.3334,-1.78168 L 2.6667,0.88501 L0,-1.78168 L0,0 Z"
-                        Fill="{TemplateBinding Foreground}" />
-                </Border>
-              </Border>
-              <ControlTemplate.Triggers>
-                <Trigger Property="IsMouseOver"
-                         Value="true">
-                  <Setter TargetName="arrow"
-                          Property="Fill"
-                          Value="DodgerBlue" />
-                  <Setter TargetName="templateRoot"
-                          Property="Background"
-                          Value="#7FFFFFFF" />
-                  <Setter TargetName="templateRoot"
-                          Property="BorderBrush"
-                          Value="DodgerBlue" />
-                </Trigger>
-              </ControlTemplate.Triggers>
-            </ControlTemplate>
-          </Setter.Value>
-        </Setter>
-      </Style>
-      <Style x:Key="CustomComboBoxStyle"
-             TargetType="{x:Type ComboBox}">
-        <Setter Property="Background"
-                Value="Transparent" />
-        <Setter Property="BorderBrush"
-                Value="#7F333333" />
-        <Setter Property="FontSize"
-                Value="18" />
-        <Setter Property="FontWeight"
-                Value="Light" />
-        <Setter Property="Template">
-          <Setter.Value>
-            <ControlTemplate TargetType="{x:Type ComboBox}">
-              <Grid x:Name="templateRoot"
+                  <ContentPresenter Grid.RowSpan="2"
+                                    Content="{TemplateBinding Content}" />
+                </Grid>
+              </AdornerDecorator>
+            </Border>
+            <ControlTemplate.Triggers>
+              <Trigger Property="WindowState"
+                       Value="Maximized">
+                <Setter TargetName="Bd"
+                        Property="Padding"
+                        Value="8" />
+                <Setter TargetName="MaximizeButton"
+                        Property="Content"
+                        Value="&#xE923;" />
+                <Setter TargetName="MaximizeButton"
+                        Property="ToolTip"
+                        Value="Restore Down" />
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+      <Setter Property="WindowChrome.WindowChrome">
+        <Setter.Value>
+          <WindowChrome CaptionHeight="30"
+                        UseAeroCaptionButtons="False" />
+        </Setter.Value>
+      </Setter>
+    </Style>
+    <Style x:Key="CustomButtonStyle"
+           TargetType="{x:Type Button}">
+      <Setter Property="Background"
+              Value="DodgerBlue" />
+      <Setter Property="BorderThickness"
+              Value="0" />
+      <Setter Property="FontSize"
+              Value="28" />
+      <Setter Property="FontWeight"
+              Value="Light" />
+      <Setter Property="Foreground"
+              Value="White" />
+      <Setter Property="HorizontalAlignment"
+              Value="Center" />
+      <Setter Property="Margin"
+              Value="5" />
+      <Setter Property="Padding"
+              Value="10,5" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type Button}">
+            <Border x:Name="border"
+                    Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    CornerRadius="5"
                     SnapsToDevicePixels="true">
-                <Grid.ColumnDefinitions>
-                  <ColumnDefinition Width="*" />
-                  <ColumnDefinition Width="0"
-                                    MinWidth="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}" />
-                </Grid.ColumnDefinitions>
-                <Popup x:Name="PART_Popup"
-                       Grid.ColumnSpan="2"
-                       Margin="1"
-                       AllowsTransparency="true"
-                       IsOpen="{Binding IsDropDownOpen,
-                                        Mode=TwoWay,
-                                        RelativeSource={RelativeSource TemplatedParent}}"
-                       Placement="Bottom"
-                       PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}">
-                  <theme:SystemDropShadowChrome x:Name="shadow"
-                                                MinWidth="{Binding ActualWidth,
-                                                                   ElementName=templateRoot}"
-                                                MaxHeight="{TemplateBinding MaxDropDownHeight}"
-                                                Color="Transparent">
-                    <Border x:Name="dropDownBorder"
-                            Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"
-                            BorderBrush="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}"
-                            BorderThickness="1">
-                      <ScrollViewer x:Name="DropDownScrollViewer">
-                        <Grid x:Name="grid"
-                              RenderOptions.ClearTypeHint="Enabled">
-                          <Canvas x:Name="canvas"
-                                  Width="0"
-                                  Height="0"
-                                  HorizontalAlignment="Left"
-                                  VerticalAlignment="Top">
-                            <Rectangle x:Name="opaqueRect"
-                                       Width="{Binding ActualWidth,
-                                                       ElementName=dropDownBorder}"
-                                       Height="{Binding ActualHeight,
-                                                        ElementName=dropDownBorder}"
-                                       Fill="{Binding Background,
-                                                      ElementName=dropDownBorder}" />
-                          </Canvas>
-                          <ItemsPresenter x:Name="ItemsPresenter"
-                                          KeyboardNavigation.DirectionalNavigation="Contained"
-                                          SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
-                        </Grid>
-                      </ScrollViewer>
-                    </Border>
-                  </theme:SystemDropShadowChrome>
-                </Popup>
-                <ToggleButton x:Name="toggleButton"
-                              Grid.ColumnSpan="2"
-                              Background="{TemplateBinding Background}"
-                              BorderBrush="{TemplateBinding BorderBrush}"
-                              BorderThickness="{TemplateBinding BorderThickness}"
-                              IsChecked="{Binding IsDropDownOpen,
-                                                  Mode=TwoWay,
-                                                  RelativeSource={RelativeSource TemplatedParent}}"
-                              Style="{StaticResource ComboBoxToggleButton}" />
-                <ContentPresenter x:Name="contentPresenter"
-                                  Margin="{TemplateBinding Padding}"
-                                  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                                  Content="{TemplateBinding SelectionBoxItem}"
-                                  ContentStringFormat="{TemplateBinding SelectionBoxItemStringFormat}"
-                                  ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
-                                  ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"
-                                  IsHitTestVisible="false"
-                                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
-              </Grid>
-              <ControlTemplate.Triggers>
-                <Trigger SourceName="PART_Popup"
-                         Property="HasDropShadow"
-                         Value="true">
-                  <Setter TargetName="shadow"
-                          Property="Color"
-                          Value="#71000000" />
-                  <Setter TargetName="shadow"
-                          Property="Margin"
-                          Value="0,0,5,5" />
-                </Trigger>
-              </ControlTemplate.Triggers>
-            </ControlTemplate>
-          </Setter.Value>
-        </Setter>
-      </Style>
-    </ResourceDictionary>
+              <ContentPresenter x:Name="contentPresenter"
+                                Margin="{TemplateBinding Padding}"
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                Focusable="False"
+                                RecognizesAccessKey="True"
+                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+            </Border>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+      <Style.Triggers>
+        <Trigger Property="IsMouseOver"
+                 Value="True">
+          <Setter Property="Background"
+                  Value="RoyalBlue" />
+        </Trigger>
+        <Trigger Property="IsPressed"
+                 Value="True">
+          <Setter Property="Background"
+                  Value="MidnightBlue" />
+        </Trigger>
+      </Style.Triggers>
+    </Style>
+    <Style x:Key="ComboBoxToggleButton"
+           TargetType="{x:Type ToggleButton}">
+      <Setter Property="ClickMode"
+              Value="Press" />
+      <Setter Property="Focusable"
+              Value="false" />
+      <Setter Property="IsTabStop"
+              Value="false" />
+      <Setter Property="OverridesDefaultStyle"
+              Value="true" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type ToggleButton}">
+            <Border x:Name="templateRoot"
+                    Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    CornerRadius="2"
+                    SnapsToDevicePixels="true">
+              <Border x:Name="splitBorder"
+                      Width="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}"
+                      Margin="0"
+                      HorizontalAlignment="Right"
+                      BorderBrush="Transparent"
+                      BorderThickness="1"
+                      SnapsToDevicePixels="true">
+                <Path x:Name="arrow"
+                      Margin="0"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"
+                      Data="F1 M 0,0 L 2.667,2.66665 L 5.3334,0 L 5.3334,-1.78168 L 2.6667,0.88501 L0,-1.78168 L0,0 Z"
+                      Fill="{TemplateBinding Foreground}" />
+              </Border>
+            </Border>
+            <ControlTemplate.Triggers>
+              <Trigger Property="IsMouseOver"
+                       Value="true">
+                <Setter TargetName="arrow"
+                        Property="Fill"
+                        Value="DodgerBlue" />
+                <Setter TargetName="templateRoot"
+                        Property="Background"
+                        Value="#7FFFFFFF" />
+                <Setter TargetName="templateRoot"
+                        Property="BorderBrush"
+                        Value="DodgerBlue" />
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+    <Style x:Key="CustomComboBoxStyle"
+           TargetType="{x:Type ComboBox}">
+      <Setter Property="Background"
+              Value="Transparent" />
+      <Setter Property="BorderBrush"
+              Value="#7F333333" />
+      <Setter Property="FontSize"
+              Value="18" />
+      <Setter Property="FontWeight"
+              Value="Light" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type ComboBox}">
+            <Grid x:Name="templateRoot"
+                  SnapsToDevicePixels="true">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="0"
+                                  MinWidth="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}" />
+              </Grid.ColumnDefinitions>
+              <Popup x:Name="PART_Popup"
+                     Grid.ColumnSpan="2"
+                     Margin="1"
+                     AllowsTransparency="true"
+                     IsOpen="{Binding IsDropDownOpen,
+                                      Mode=TwoWay,
+                                      RelativeSource={RelativeSource TemplatedParent}}"
+                     Placement="Bottom"
+                     PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}">
+                <theme:SystemDropShadowChrome x:Name="shadow"
+                                              MinWidth="{Binding ActualWidth,
+                                                                 ElementName=templateRoot}"
+                                              MaxHeight="{TemplateBinding MaxDropDownHeight}"
+                                              Color="Transparent">
+                  <Border x:Name="dropDownBorder"
+                          Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"
+                          BorderBrush="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}"
+                          BorderThickness="1">
+                    <ScrollViewer x:Name="DropDownScrollViewer">
+                      <Grid x:Name="grid"
+                            RenderOptions.ClearTypeHint="Enabled">
+                        <Canvas x:Name="canvas"
+                                Width="0"
+                                Height="0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Top">
+                          <Rectangle x:Name="opaqueRect"
+                                     Width="{Binding ActualWidth,
+                                                     ElementName=dropDownBorder}"
+                                     Height="{Binding ActualHeight,
+                                                      ElementName=dropDownBorder}"
+                                     Fill="{Binding Background,
+                                                    ElementName=dropDownBorder}" />
+                        </Canvas>
+                        <ItemsPresenter x:Name="ItemsPresenter"
+                                        KeyboardNavigation.DirectionalNavigation="Contained"
+                                        SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                      </Grid>
+                    </ScrollViewer>
+                  </Border>
+                </theme:SystemDropShadowChrome>
+              </Popup>
+              <ToggleButton x:Name="toggleButton"
+                            Grid.ColumnSpan="2"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            IsChecked="{Binding IsDropDownOpen,
+                                                Mode=TwoWay,
+                                                RelativeSource={RelativeSource TemplatedParent}}"
+                            Style="{StaticResource ComboBoxToggleButton}" />
+              <ContentPresenter x:Name="contentPresenter"
+                                Margin="{TemplateBinding Padding}"
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                Content="{TemplateBinding SelectionBoxItem}"
+                                ContentStringFormat="{TemplateBinding SelectionBoxItemStringFormat}"
+                                ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                                ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"
+                                IsHitTestVisible="false"
+                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+            </Grid>
+            <ControlTemplate.Triggers>
+              <Trigger SourceName="PART_Popup"
+                       Property="HasDropShadow"
+                       Value="true">
+                <Setter TargetName="shadow"
+                        Property="Color"
+                        Value="#71000000" />
+                <Setter TargetName="shadow"
+                        Property="Margin"
+                        Value="0,0,5,5" />
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
   </Application.Resources>
 </Application>

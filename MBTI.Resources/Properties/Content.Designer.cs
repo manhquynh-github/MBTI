@@ -22,7 +22,7 @@ namespace MBTI.Resources.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Content {
+    public class Content {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace MBTI.Resources.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MBTI.Resources.Properties.Content", typeof(Content).Assembly);
@@ -51,7 +51,7 @@ namespace MBTI.Resources.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace MBTI.Resources.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] Descriptions {
+        public static byte[] Descriptions {
             get {
                 object obj = ResourceManager.GetObject("Descriptions", resourceCulture);
                 return ((byte[])(obj));
@@ -73,10 +73,208 @@ namespace MBTI.Resources.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] Questions {
+        public static byte[] Questions {
             get {
                 object obj = ResourceManager.GetObject("Questions", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Extrovert.
+        /// </summary>
+        public static string SExtrovert {
+            get {
+                return ResourceManager.GetString("SExtrovert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Feeling.
+        /// </summary>
+        public static string SFeeling {
+            get {
+                return ResourceManager.GetString("SFeeling", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Go back to home screen.
+        /// </summary>
+        public static string SHomeTooltip {
+            get {
+                return ResourceManager.GetString("SHomeTooltip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Click on the sentence that best describes you.
+        /// </summary>
+        public static string SInstruction1 {
+            get {
+                return ResourceManager.GetString("SInstruction1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Be true to yourself.
+        /// </summary>
+        public static string SInstruction2 {
+            get {
+                return ResourceManager.GetString("SInstruction2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You have completed the quiz.
+        /// </summary>
+        public static string SInstruction3 {
+            get {
+                return ResourceManager.GetString("SInstruction3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your personality type is.
+        /// </summary>
+        public static string SInstruction4 {
+            get {
+                return ResourceManager.GetString("SInstruction4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Introvert.
+        /// </summary>
+        public static string SIntrovert {
+            get {
+                return ResourceManager.GetString("SIntrovert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Intuition.
+        /// </summary>
+        public static string SIntuition {
+            get {
+                return ResourceManager.GetString("SIntuition", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Judging.
+        /// </summary>
+        public static string SJudging {
+            get {
+                return ResourceManager.GetString("SJudging", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Myers–Briggs Type Indicator (MBTI) is a pseudoscientific introspective self-report questionnaire indicating differing psychological preferences in how people perceive the world and make decisions..
+        /// </summary>
+        public static string SMBTIDescription {
+            get {
+                return ResourceManager.GetString("SMBTIDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Perceptive.
+        /// </summary>
+        public static string SPerceptive {
+            get {
+                return ResourceManager.GetString("SPerceptive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Personality.
+        /// </summary>
+        public static string SPersonality {
+            get {
+                return ResourceManager.GetString("SPersonality", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Question.
+        /// </summary>
+        public static string SQuestion {
+            get {
+                return ResourceManager.GetString("SQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to take a quiz.
+        /// </summary>
+        public static string SQuiz {
+            get {
+                return ResourceManager.GetString("SQuiz", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sensing.
+        /// </summary>
+        public static string SSensing {
+            get {
+                return ResourceManager.GetString("SSensing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to learn.
+        /// </summary>
+        public static string SStudy {
+            get {
+                return ResourceManager.GetString("SStudy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Understands &amp; Helps you choose suitable jobs.
+        /// </summary>
+        public static string SSubtitle {
+            get {
+                return ResourceManager.GetString("SSubtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Suggested jobs.
+        /// </summary>
+        public static string SSuggestedJobs {
+            get {
+                return ResourceManager.GetString("SSuggestedJobs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thinking.
+        /// </summary>
+        public static string SThinking {
+            get {
+                return ResourceManager.GetString("SThinking", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MBTI.
+        /// </summary>
+        public static string STitle {
+            get {
+                return ResourceManager.GetString("STitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MBTI.
+        /// </summary>
+        public static string STitleNormal {
+            get {
+                return ResourceManager.GetString("STitleNormal", resourceCulture);
             }
         }
     }

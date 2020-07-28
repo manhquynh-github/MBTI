@@ -8,6 +8,9 @@ using System.Windows;
 using System.Windows.Media.Animation;
 using System.Windows.Threading;
 
+using MBTI.Resources.Properties;
+using MBTI.WindowsGUI.ViewModels;
+
 namespace MBTI.WindowsGUI
 {
   /// <summary>
@@ -20,11 +23,6 @@ namespace MBTI.WindowsGUI
     public App()
     {
       InitializeComponent();
-
-      LanguageSources = new List<Func<CultureInfo, string>>()
-      {
-         info => $"/ResourceDictionaries/UIContent/UIContent.{info.TwoLetterISOLanguageName}.xaml",
-      };
 
       SupportedLanguages = new List<CultureInfo>()
       {
@@ -62,50 +60,6 @@ namespace MBTI.WindowsGUI
     public IEnumerable<CultureInfo> SupportedLanguages { get; }
     public static new App Current => (App)Application.Current;
     public new MainWindow MainWindow => (MainWindow)Application.Current.MainWindow;
-    protected IList<Func<CultureInfo, string>> LanguageSources { get; }
-
-    protected IEnumerable<ResourceDictionary> GetLanguageResources(CultureInfo cultureInfo)
-    {
-      if (cultureInfo is null)
-      {
-        throw new ArgumentNullException(nameof(cultureInfo));
-      }
-
-      for (var i = 0; i < LanguageSources.Count; i++)
-      {
-        var source = LanguageSources[i](cultureInfo);
-
-        ResourceDictionary dict;
-
-        try
-        {
-          dict = new ResourceDictionary()
-          {
-            Source = new Uri(source, UriKind.Relative),
-          };
-        }
-        catch (IOException e1)
-        {
-          source = LanguageSources[i](new CultureInfo("vi"));
-
-          try
-          {
-            dict = new ResourceDictionary()
-            {
-              Source = new Uri(source, UriKind.Relative),
-            };
-          }
-          catch (IOException e2)
-          {
-            throw new InvalidOperationException(
-              "Default language source not found",
-              new AggregateException(e1, e2));
-          }
-        }
-
-        yield return dict;
-      }
-    }
 
     private void Application_DispatcherUnhandledException(object sender, DispatcherUnhandledExceptionEventArgs e)
     {
@@ -166,15 +120,8 @@ namespace MBTI.WindowsGUI
         throw new NotSupportedException();
       }
 
-      Resources.MergedDictionaries.Clear();
-
-      foreach (ResourceDictionary resource in GetLanguageResources(cultureInfo))
-      {
-        Resources.MergedDictionaries.Add(resource);
-      }
-
-      CultureInfo.CurrentCulture = cultureInfo;
       CultureInfo.CurrentUICulture = cultureInfo;
+      ResourcesVM.Instance.CurrentCulture = cultureInfo;
     }
   }
 }

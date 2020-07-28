@@ -82,8 +82,8 @@ namespace MBTI.WindowsGUI
 
     private async Task OnQuizFinished()
     {
-      var instruction3 = (string)Application.Current.Resources["SInstruction3"];
-      var instruction4 = (string)Application.Current.Resources["SInstruction4"];
+      var instruction3 = (string)ResourcesVM.Instance["SInstruction3"];
+      var instruction4 = (string)ResourcesVM.Instance["SInstruction4"];
 
       if (instruction3 == null
         || instruction4 == null)

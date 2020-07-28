@@ -21,7 +21,7 @@ namespace MBTI.WindowsGUI.ViewModels
 
     public StudyVM(PersonalityType type)
     {
-      _descriptions = Helper.GetDescriptions(App.Current.Language);
+      _descriptions = Helper.GetDescriptions();
       PersonalityType = type;
       NeedsRefreshUI = true;
     }

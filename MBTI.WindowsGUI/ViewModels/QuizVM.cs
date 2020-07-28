@@ -14,7 +14,7 @@ namespace MBTI.WindowsGUI.ViewModels
 
     public QuizVM()
     {
-      List<Question> quiz = Helper.GetQuestions(App.Current.Language);
+      List<Question> quiz = Helper.GetQuestions();
       Quiz = quiz.AsReadOnly();
     }
 

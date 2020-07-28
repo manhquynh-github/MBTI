@@ -124,4 +124,70 @@
   <data name="Questions" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\questions.en.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="SExtrovert" xml:space="preserve">
+    <value>Extrovert</value>
+  </data>
+  <data name="SFeeling" xml:space="preserve">
+    <value>Feeling</value>
+  </data>
+  <data name="SHomeTooltip" xml:space="preserve">
+    <value>Go back to home screen</value>
+  </data>
+  <data name="SInstruction1" xml:space="preserve">
+    <value>Click on the sentence that best describes you</value>
+  </data>
+  <data name="SInstruction2" xml:space="preserve">
+    <value>Be true to yourself</value>
+  </data>
+  <data name="SInstruction3" xml:space="preserve">
+    <value>You have completed the quiz</value>
+  </data>
+  <data name="SInstruction4" xml:space="preserve">
+    <value>Your personality type is</value>
+  </data>
+  <data name="SIntrovert" xml:space="preserve">
+    <value>Introvert</value>
+  </data>
+  <data name="SIntuition" xml:space="preserve">
+    <value>Intuition</value>
+  </data>
+  <data name="SJudging" xml:space="preserve">
+    <value>Judging</value>
+  </data>
+  <data name="SMBTIDescription" xml:space="preserve">
+    <value>The Myers–Briggs Type Indicator (MBTI) is a pseudoscientific introspective self-report questionnaire indicating differing psychological preferences in how people perceive the world and make decisions.</value>
+  </data>
+  <data name="SPerceptive" xml:space="preserve">
+    <value>Perceptive</value>
+  </data>
+  <data name="SPersonality" xml:space="preserve">
+    <value>Personality</value>
+  </data>
+  <data name="SQuestion" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="SQuiz" xml:space="preserve">
+    <value>take a quiz</value>
+  </data>
+  <data name="SSensing" xml:space="preserve">
+    <value>Sensing</value>
+  </data>
+  <data name="SStudy" xml:space="preserve">
+    <value>learn</value>
+  </data>
+  <data name="SSubtitle" xml:space="preserve">
+    <value>Understands &amp; Helps you choose suitable jobs</value>
+  </data>
+  <data name="SSuggestedJobs" xml:space="preserve">
+    <value>Suggested jobs</value>
+  </data>
+  <data name="SThinking" xml:space="preserve">
+    <value>Thinking</value>
+  </data>
+  <data name="STitle" xml:space="preserve">
+    <value>MBTI</value>
+  </data>
+  <data name="STitleNormal" xml:space="preserve">
+    <value>MBTI</value>
+  </data>
 </root>

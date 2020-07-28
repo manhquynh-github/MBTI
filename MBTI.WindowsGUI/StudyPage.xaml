@@ -4,6 +4,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:MBTI.WindowsGUI"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:vm="clr-namespace:MBTI.WindowsGUI.ViewModels"
       Title="StudyPage"
       d:DesignHeight="600"
       d:DesignWidth="800"
@@ -18,7 +19,9 @@
                  VerticalAlignment="Center"
                  FontSize="18"
                  FontWeight="Light"
-                 Text="{DynamicResource STitle}" />
+                 Text="{Binding Source={x:Static vm:ResourcesVM.Instance},
+                                Path=[STitle],
+                                Mode=OneWay}" />
       <Button x:Name="BackButton"
               Width="45"
               HorizontalAlignment="Left"
@@ -53,7 +56,9 @@
               Click="HomeButton_Click"
               Content="&#xE80F;"
               Style="{StaticResource WindowButtonStyle}"
-              ToolTip="{DynamicResource SHomeTooltip}"
+              ToolTip="{Binding Source={x:Static vm:ResourcesVM.Instance},
+                                Path=[SHomeTooltip],
+                                Mode=OneWay}"
               WindowChrome.IsHitTestVisibleInChrome="True" />
     </Grid>
     <Grid Grid.Row="1">
@@ -123,32 +128,32 @@
                       SelectedIndex="{Binding SelectedPrefix1,
                                               Mode=TwoWay}"
                       Style="{StaticResource CustomComboBoxStyle}">
-              <ComboBoxItem Content="{DynamicResource SExtrovert}" />
-              <ComboBoxItem Content="{DynamicResource SIntrovert}" />
+              <ComboBoxItem Content="{Binding Source={x:Static vm:ResourcesVM.Instance}, Path=[SExtrovert], Mode=OneWay}" />
+              <ComboBoxItem Content="{Binding Source={x:Static vm:ResourcesVM.Instance}, Path=[SIntrovert], Mode=OneWay}" />
             </ComboBox>
             <ComboBox Grid.Row="2"
                       Grid.Column="2"
                       SelectedIndex="{Binding SelectedPrefix2,
                                               Mode=TwoWay}"
                       Style="{StaticResource CustomComboBoxStyle}">
-              <ComboBoxItem Content="{DynamicResource SSensing}" />
-              <ComboBoxItem Content="{DynamicResource SIntuition}" />
+              <ComboBoxItem Content="{Binding Source={x:Static vm:ResourcesVM.Instance}, Path=[SSensing], Mode=OneWay}" />
+              <ComboBoxItem Content="{Binding Source={x:Static vm:ResourcesVM.Instance}, Path=[SIntuition], Mode=OneWay}" />
             </ComboBox>
             <ComboBox Grid.Row="2"
                       Grid.Column="4"
                       SelectedIndex="{Binding SelectedPrefix3,
                                               Mode=TwoWay}"
                       Style="{StaticResource CustomComboBoxStyle}">
-              <ComboBoxItem Content="{DynamicResource SThinking}" />
-              <ComboBoxItem Content="{DynamicResource SFeeling}" />
+              <ComboBoxItem Content="{Binding Source={x:Static vm:ResourcesVM.Instance}, Path=[SThinking], Mode=OneWay}" />
+              <ComboBoxItem Content="{Binding Source={x:Static vm:ResourcesVM.Instance}, Path=[SFeeling], Mode=OneWay}" />
             </ComboBox>
             <ComboBox Grid.Row="2"
                       Grid.Column="6"
                       SelectedIndex="{Binding SelectedPrefix4,
                                               Mode=TwoWay}"
                       Style="{StaticResource CustomComboBoxStyle}">
-              <ComboBoxItem Content="{DynamicResource SJudging}" />
-              <ComboBoxItem Content="{DynamicResource SPerceptive}" />
+              <ComboBoxItem Content="{Binding Source={x:Static vm:ResourcesVM.Instance}, Path=[SJudging], Mode=OneWay}" />
+              <ComboBoxItem Content="{Binding Source={x:Static vm:ResourcesVM.Instance}, Path=[SPerceptive], Mode=OneWay}" />
             </ComboBox>
           </Grid>
         </Grid>
@@ -169,11 +174,15 @@
           </Grid.ColumnDefinitions>
           <TextBlock FontSize="18"
                      FontWeight="SemiBold"
-                     Text="{DynamicResource SPersonality}" />
+                     Text="{Binding Source={x:Static vm:ResourcesVM.Instance},
+                                    Path=[SPersonality],
+                                    Mode=OneWay}" />
           <TextBlock Grid.Column="2"
                      FontSize="18"
                      FontWeight="SemiBold"
-                     Text="{DynamicResource SSuggestedJobs}" />
+                     Text="{Binding Source={x:Static vm:ResourcesVM.Instance},
+                                    Path=[SSuggestedJobs],
+                                    Mode=OneWay}" />
           <TextBlock x:Name="DescriptionArea"
                      Grid.Row="2"
                      FontSize="18"
