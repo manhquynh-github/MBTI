@@ -9,6 +9,7 @@ using System.Windows;
 
 using MBTI.Logic;
 using MBTI.Models;
+using MBTI.Resources;
 
 namespace MBTI.WindowsGUI.ViewModels
 {
@@ -20,7 +21,7 @@ namespace MBTI.WindowsGUI.ViewModels
 
     public StudyVM(PersonalityType type)
     {
-      _descriptions = Resources.Content.GetDescriptions(App.Current.Language);
+      _descriptions = Helper.GetDescriptions(App.Current.Language);
       PersonalityType = type;
       NeedsRefreshUI = true;
     }

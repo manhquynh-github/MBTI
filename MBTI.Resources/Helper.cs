@@ -8,7 +8,7 @@ using MBTI.Resources.Properties;
 
 namespace MBTI.Resources
 {
-  public static class Content
+  public static class Helper
   {
     public static Dictionary<string, PersonalityTypeDescription> GetDescriptions(CultureInfo cultureInfo)
     {
