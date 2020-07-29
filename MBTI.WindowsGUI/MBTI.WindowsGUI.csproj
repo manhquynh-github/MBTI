@@ -14,6 +14,7 @@
     <Product>MBTI.WindowsGUI</Product>
     <Company>https://github.com/manhquynh-github/MBTI</Company>
     <Authors>https://github.com/manhquynh-github/MBTI</Authors>
+    <AssemblyName>MBTI</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
