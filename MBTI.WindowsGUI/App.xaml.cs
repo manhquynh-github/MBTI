@@ -114,7 +114,7 @@ namespace MBTI.WindowsGUI
 
       if (!SupportedLanguages.Contains(cultureInfo))
       {
-        throw new NotSupportedException();
+        throw new NotSupportedException("Language not supported.");
       }
 
       CultureInfo.CurrentUICulture = cultureInfo;

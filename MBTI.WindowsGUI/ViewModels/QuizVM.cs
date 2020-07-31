@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 
 using MBTI.Models;
 using MBTI.Resources;
@@ -12,8 +13,8 @@ namespace MBTI.WindowsGUI.ViewModels
 
     public QuizVM()
     {
-      List<Question> quiz = Helper.GetQuestions();
-      Quiz = quiz.AsReadOnly();
+      List<Question> quiz = HelperClass.GetQuestions();
+      Quiz = quiz.ToImmutableList();
     }
 
     public int CurrentIndex

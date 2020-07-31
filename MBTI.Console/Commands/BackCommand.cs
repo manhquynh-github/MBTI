@@ -1,0 +1,17 @@
+﻿using MBTI.ConsoleApp.Screens;
+
+namespace MBTI.ConsoleApp.Commands
+{
+  public class BackCommand : Command
+  {
+    public BackCommand(string description, ScreenBase toScreen) : base(
+      description,
+      () => toScreen)
+    {
+    }
+
+    public BackCommand(ScreenBase toScreen) : this("Back", toScreen)
+    {
+    }
+  }
+}

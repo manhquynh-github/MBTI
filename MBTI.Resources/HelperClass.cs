@@ -7,7 +7,7 @@ using MBTI.Resources.Properties;
 
 namespace MBTI.Resources
 {
-  public static class Helper
+  public static class HelperClass
   {
     public static Dictionary<string, PersonalityTypeDescription> GetDescriptions()
     {
