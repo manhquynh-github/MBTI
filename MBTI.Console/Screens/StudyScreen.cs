@@ -71,6 +71,8 @@ namespace MBTI.ConsoleApp.Screens
       WriteBeautifulSeparator();
       WriteBeautifulMessage(acronym);
       WriteBeautifulSeparator();
+      WriteAcronymDetails();
+      WriteBeautifulSeparator();
       PersonalityTypeDescription description = _descriptions[acronym];
       WriteBeautifulMessage(Content.SPersonality);
       WriteBeautifulSeparator();
@@ -85,6 +87,11 @@ namespace MBTI.ConsoleApp.Screens
         description.SuggestedJobs.Select(line => $"- {line}.")));
       WriteBeautifulSeparator();
       Console.WriteLine();
+    }
+
+    private string EmphasizeCharacter(string text, int characterIndex)
+    {
+      return $"{text[..characterIndex]}[{text[characterIndex]}]{text[(characterIndex + 1)..]}";
     }
 
     private ScreenBase InputPersonalityType()
@@ -106,6 +113,25 @@ namespace MBTI.ConsoleApp.Screens
       }
 
       return new StudyScreen(_resultScreen, type);
+    }
+
+    private void WriteAcronymDetails()
+    {
+      WriteBeautifulMessage(
+        $"{EmphasizeCharacter(Type.Prefix1.ToString().ToUpper(), 0)} - " +
+        $"{(Type.Prefix1 == PersonalityPrefixes1.Extrovert ? Content.SExtrovert : Content.SIntrovert).ToUpper()}");
+
+      WriteBeautifulMessage(
+        $"{(EmphasizeCharacter(Type.Prefix2.ToString().ToUpper(), Type.Prefix2 == PersonalityPrefixes2.Intuition ? 1 : 0))} - " +
+        $"{(Type.Prefix2 == PersonalityPrefixes2.Sensing ? Content.SSensing : Content.SIntuition).ToUpper()}");
+
+      WriteBeautifulMessage(
+        $"{EmphasizeCharacter(Type.Prefix3.ToString().ToUpper(), 0)} - " +
+        $"{(Type.Prefix3 == PersonalityPrefixes3.Thinking ? Content.SThinking : Content.SFeeling).ToUpper()} ");
+
+      WriteBeautifulMessage(
+        $"{EmphasizeCharacter(Type.Prefix4.ToString().ToUpper(), 0)} - " +
+        $"{(Type.Prefix4 == PersonalityPrefixes4.Judging ? Content.SJudging : Content.SPerceptive).ToUpper()}");
     }
   }
 }
