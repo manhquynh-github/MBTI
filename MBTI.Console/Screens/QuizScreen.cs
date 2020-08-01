@@ -74,6 +74,8 @@ namespace MBTI.ConsoleApp.Screens
     protected override void WriteDescriptionToConsole()
     {
       WriteDecoratedMessage(Content.STitle);
+      WriteBeautifulMessage($"{Content.SQuestion} {CurrentIndex + 1}/{Quiz.Count}");
+      WriteBeautifulSeparator();
       WriteBeautifulMessage(DisplayQuestionContent);
       WriteBeautifulMessage($"(1) {CurrentQuestion.FirstChoice}");
       WriteBeautifulMessage($"(2) {CurrentQuestion.SecondChoice}");
@@ -91,7 +93,7 @@ namespace MBTI.ConsoleApp.Screens
     private ScreenBase GetResultScreen()
     {
       return new InstructionScreen(
-        $"{Content.SInstruction3}{Environment.NewLine}{Content.SInstruction4}",
+        $"{Content.SInstruction3}",
         () => new ResultScreen(new Mbti(Quiz)));
     }
 

@@ -30,17 +30,17 @@ namespace MBTI.ConsoleApp.Screens
       WriteDecoratedMessage(Content.STitle);
       WriteBeautifulMessage($"{Content.SInstruction4} {Mbti.GetFinalType().GetAcronym()}");
       WriteBeautifulSeparator();
-      WriteBeautifulMessage($"{Content.SExtrovert}: {Mbti.Extrovert / 20.0:P}");
-      WriteBeautifulMessage($"{Content.SIntrovert}: {Mbti.Introvert / 20.0:P}");
+      WriteBeautifulMessage($"{Content.SExtrovert}: {Mbti.Extrovert / 20.0:P0}");
+      WriteBeautifulMessage($"{Content.SIntrovert}: {Mbti.Introvert / 20.0:P0}");
       WriteBeautifulSeparator();
-      WriteBeautifulMessage($"{Content.SSensing}: {Mbti.Sensing / 20.0:P}");
-      WriteBeautifulMessage($"{Content.SIntuition}: {Mbti.Intuition / 20.0:P}");
+      WriteBeautifulMessage($"{Content.SSensing}: {Mbti.Sensing / 20.0:P0}");
+      WriteBeautifulMessage($"{Content.SIntuition}: {Mbti.Intuition / 20.0:P0}");
       WriteBeautifulSeparator();
-      WriteBeautifulMessage($"{Content.SThinking}: {Mbti.Thinking / 20.0:P}");
-      WriteBeautifulMessage($"{Content.SFeeling}: {Mbti.Feeling / 20.0:P}");
+      WriteBeautifulMessage($"{Content.SThinking}: {Mbti.Thinking / 20.0:P0}");
+      WriteBeautifulMessage($"{Content.SFeeling}: {Mbti.Feeling / 20.0:P0}");
       WriteBeautifulSeparator();
-      WriteBeautifulMessage($"{Content.SJudging}: {Mbti.Judging / 20.0:P}");
-      WriteBeautifulMessage($"{Content.SPerceptive}: {Mbti.Perceptive / 20.0:P}");
+      WriteBeautifulMessage($"{Content.SJudging}: {Mbti.Judging / 20.0:P0}");
+      WriteBeautifulMessage($"{Content.SPerceptive}: {Mbti.Perceptive / 20.0:P0}");
       WriteBeautifulSeparator();
       Console.WriteLine();
     }

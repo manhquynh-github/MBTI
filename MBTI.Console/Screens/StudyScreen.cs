@@ -16,7 +16,6 @@ namespace MBTI.ConsoleApp.Screens
     private readonly IReadOnlyList<ICommand> _commands;
 
     private readonly Dictionary<string, PersonalityTypeDescription> _descriptions;
-    private readonly ResultScreen _resultScreen;
 
     public StudyScreen() : this(new PersonalityType()
     {
@@ -38,15 +37,15 @@ namespace MBTI.ConsoleApp.Screens
     {
     }
 
-    private StudyScreen(ResultScreen resultScreen, PersonalityType type)
+    public StudyScreen(ResultScreen resultScreen, PersonalityType type)
     {
       Type = type;
-      _resultScreen = resultScreen;
+      ResultScreen = resultScreen;
       _descriptions = Resources.HelperClass.GetDescriptions();
 
       var commands = new List<ICommand>()
       {
-        new Command("Input a personality type", InputPersonalityType),
+        new Command("Choose another personality type", () => new ChoosePersonalityTypeScreen(this)),
         new Command(Content.SHomeTooltip, () => new WelcomeScreen()),
       };
 
@@ -54,14 +53,15 @@ namespace MBTI.ConsoleApp.Screens
       {
         commands.Insert(
           commands.Count - 2,
-          new BackCommand("Back to results", _resultScreen));
+          new BackCommand("Back to results", ResultScreen));
       }
 
       _commands = commands;
     }
 
     public override IReadOnlyList<ICommand> Commands => _commands;
-
+    public IEnumerable<string> PersonalityTypeAcronyms => _descriptions.Keys;
+    public ResultScreen ResultScreen { get; }
     public PersonalityType Type { get; }
 
     protected override void WriteDescriptionToConsole()
@@ -92,27 +92,6 @@ namespace MBTI.ConsoleApp.Screens
     private string EmphasizeCharacter(string text, int characterIndex)
     {
       return $"{text[..characterIndex]}[{text[characterIndex]}]{text[(characterIndex + 1)..]}";
-    }
-
-    private ScreenBase InputPersonalityType()
-    {
-      Console.Write($"{new string(' ', PaddingLeft)}Input a personality type: ");
-      var typeStr = Console.ReadLine();
-      PersonalityType type;
-      try
-      {
-        type = PersonalityType.Parse(typeStr);
-      }
-      catch (Exception e) when (
-      e is ArgumentException
-      || e is FormatException)
-      {
-        WriteBeautifulMessage("Please try again.");
-        Console.ReadKey();
-        return this;
-      }
-
-      return new StudyScreen(_resultScreen, type);
     }
 
     private void WriteAcronymDetails()
