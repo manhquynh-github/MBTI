@@ -124,6 +124,27 @@
   <data name="Questions" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\questions.en.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="SAbout" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="SBack" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="SBackToResults" xml:space="preserve">
+    <value>Back to results</value>
+  </data>
+  <data name="SChangeLanguage" xml:space="preserve">
+    <value>Change language</value>
+  </data>
+  <data name="SChoosePersonalityType" xml:space="preserve">
+    <value>Choose another personality type</value>
+  </data>
+  <data name="SContinue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="SExit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
   <data name="SExtrovert" xml:space="preserve">
     <value>Extrovert</value>
   </data>
@@ -132,6 +153,9 @@
   </data>
   <data name="SHomeTooltip" xml:space="preserve">
     <value>Go back to home screen</value>
+  </data>
+  <data name="SInput" xml:space="preserve">
+    <value>Your input:</value>
   </data>
   <data name="SInstruction1" xml:space="preserve">
     <value>Click on the sentence that best describes you</value>
@@ -169,6 +193,15 @@
   <data name="SQuiz" xml:space="preserve">
     <value>take a quiz</value>
   </data>
+  <data name="SReadMoreAtWikipedia" xml:space="preserve">
+    <value>Read more at Wikipedia in a browser</value>
+  </data>
+  <data name="SSelect1" xml:space="preserve">
+    <value>Select (1)</value>
+  </data>
+  <data name="SSelect2" xml:space="preserve">
+    <value>Select (2)</value>
+  </data>
   <data name="SSensing" xml:space="preserve">
     <value>Sensing</value>
   </data>
@@ -189,5 +222,8 @@
   </data>
   <data name="STitleNormal" xml:space="preserve">
     <value>MBTI</value>
+  </data>
+  <data name="STryAgain" xml:space="preserve">
+    <value>Please try again</value>
   </data>
 </root>

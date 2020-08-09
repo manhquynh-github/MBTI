@@ -16,7 +16,7 @@ namespace MBTI.ConsoleApp.Screens
       _commands = new List<ICommand>()
       {
         new Command(
-        "Read more at Wikipedia in a browser",
+        Content.SReadMoreAtWikipedia,
         () =>
         {
           HelperClass.OpenBrowser("https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator");
@@ -31,7 +31,7 @@ namespace MBTI.ConsoleApp.Screens
     protected override void WriteDescriptionToConsole()
     {
       WriteDecoratedMessage(Content.STitle);
-      WriteBeautifulMessage(Content.SMBTIDescription + " (Wikipedia)");
+      WriteBeautifulMessage($"{Content.SMBTIDescription} (Wikipedia)");
       Console.WriteLine();
     }
   }

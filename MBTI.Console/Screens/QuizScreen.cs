@@ -83,9 +83,9 @@ namespace MBTI.ConsoleApp.Screens
 
       _commands = new List<ICommand>()
       {
-        new Command("Select (1)", SelectFirst),
-        new Command("Select (2)", SelectSecond),
-        new Command("Back", MoveBack),
+        new Command(Content.SSelect1, SelectFirst),
+        new Command(Content.SSelect2, SelectSecond),
+        new Command(Content.SBack, MoveBack),
         new Command(Content.SHomeTooltip, () => new WelcomeScreen()),
       };
     }

@@ -24,13 +24,13 @@ namespace MBTI.ConsoleApp.Screens
           Content.SStudy.CapitalizeFirstLetter(),
           () => new StudyScreen()),
         new Command(
-          "Change language",
+          Content.SChangeLanguage,
           () => new ChangeLanguageScreen()),
         new Command(
-          "About",
+          Content.SAbout,
           () => new AboutScreen()),
         new Command(
-          "Exit",
+          Content.SExit,
           () => null),
       };
     }

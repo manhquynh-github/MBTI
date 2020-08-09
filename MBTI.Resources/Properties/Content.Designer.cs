@@ -81,6 +81,69 @@ namespace MBTI.Resources.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        public static string SAbout {
+            get {
+                return ResourceManager.GetString("SAbout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        public static string SBack {
+            get {
+                return ResourceManager.GetString("SBack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back to results.
+        /// </summary>
+        public static string SBackToResults {
+            get {
+                return ResourceManager.GetString("SBackToResults", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change language.
+        /// </summary>
+        public static string SChangeLanguage {
+            get {
+                return ResourceManager.GetString("SChangeLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose another personality type.
+        /// </summary>
+        public static string SChoosePersonalityType {
+            get {
+                return ResourceManager.GetString("SChoosePersonalityType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Continue.
+        /// </summary>
+        public static string SContinue {
+            get {
+                return ResourceManager.GetString("SContinue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exit.
+        /// </summary>
+        public static string SExit {
+            get {
+                return ResourceManager.GetString("SExit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Extrovert.
         /// </summary>
         public static string SExtrovert {
@@ -104,6 +167,15 @@ namespace MBTI.Resources.Properties {
         public static string SHomeTooltip {
             get {
                 return ResourceManager.GetString("SHomeTooltip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your input:.
+        /// </summary>
+        public static string SInput {
+            get {
+                return ResourceManager.GetString("SInput", resourceCulture);
             }
         }
         
@@ -216,6 +288,33 @@ namespace MBTI.Resources.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Read more at Wikipedia in a browser.
+        /// </summary>
+        public static string SReadMoreAtWikipedia {
+            get {
+                return ResourceManager.GetString("SReadMoreAtWikipedia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select (1).
+        /// </summary>
+        public static string SSelect1 {
+            get {
+                return ResourceManager.GetString("SSelect1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select (2).
+        /// </summary>
+        public static string SSelect2 {
+            get {
+                return ResourceManager.GetString("SSelect2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sensing.
         /// </summary>
         public static string SSensing {
@@ -275,6 +374,15 @@ namespace MBTI.Resources.Properties {
         public static string STitleNormal {
             get {
                 return ResourceManager.GetString("STitleNormal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please try again.
+        /// </summary>
+        public static string STryAgain {
+            get {
+                return ResourceManager.GetString("STryAgain", resourceCulture);
             }
         }
     }

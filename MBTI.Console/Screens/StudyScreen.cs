@@ -45,7 +45,7 @@ namespace MBTI.ConsoleApp.Screens
 
       var commands = new List<ICommand>()
       {
-        new Command("Choose another personality type", () => new ChoosePersonalityTypeScreen(this)),
+        new Command(Content.SChoosePersonalityType, () => new ChoosePersonalityTypeScreen(this)),
         new Command(Content.SHomeTooltip, () => new WelcomeScreen()),
       };
 
@@ -53,7 +53,7 @@ namespace MBTI.ConsoleApp.Screens
       {
         commands.Insert(
           commands.Count - 2,
-          new BackCommand("Back to results", ResultScreen));
+          new BackCommand(Content.SBackToResults, ResultScreen));
       }
 
       _commands = commands;

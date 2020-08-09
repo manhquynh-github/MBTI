@@ -17,7 +17,7 @@ namespace MBTI.ConsoleApp.Screens
       _commands = new List<ICommand>()
       {
         new Command(
-          "Continue",
+          Content.SContinue,
           nextScreen),
       };
     }

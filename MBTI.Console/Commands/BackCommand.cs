@@ -1,4 +1,5 @@
 ﻿using MBTI.ConsoleApp.Screens;
+using MBTI.Resources.Properties;
 
 namespace MBTI.ConsoleApp.Commands
 {
@@ -10,7 +11,9 @@ namespace MBTI.ConsoleApp.Commands
     {
     }
 
-    public BackCommand(ScreenBase toScreen) : this("Back", toScreen)
+    public BackCommand(ScreenBase toScreen) : this(
+      Content.SBack,
+      toScreen)
     {
     }
   }

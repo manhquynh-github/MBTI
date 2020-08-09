@@ -5,6 +5,7 @@ using System.Text;
 
 using MBTI.ConsoleApp.Commands;
 using MBTI.Logic;
+using MBTI.Resources.Properties;
 
 namespace MBTI.ConsoleApp.Screens
 {
@@ -28,7 +29,7 @@ namespace MBTI.ConsoleApp.Screens
 
         if (invalidSelection)
         {
-          Console.WriteLine($"{new string(' ', PaddingLeft)}Please try again.");
+          Console.WriteLine($"{new string(' ', PaddingLeft)}{Content.STryAgain}");
         }
 
         var selection = ReadSelection();
@@ -110,7 +111,7 @@ namespace MBTI.ConsoleApp.Screens
 
     private int ReadSelection()
     {
-      Console.Write($"{new string(' ', PaddingLeft)}Your input: ");
+      Console.Write($"{new string(' ', PaddingLeft)}{Content.SInput} ");
       var input = Console.ReadLine();
       int selection;
       try
