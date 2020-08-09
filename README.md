@@ -7,10 +7,12 @@ This app will guide you through a quiz of 80 questions to determine your MBTI. A
 The app currently supports two languages: Vietnamese (original), and English (translated). You are welcome if you'd like to contribute your own language translation by creating a new [pull request](https://github.com/manhquynh-github/MBTI/pulls) or [issue](https://github.com/manhquynh-github/MBTI/issues).
 
 ## Technology
-This app is built upon .NET Core 3.1 WPF, Visual Studio 2019. Currently supports Windows platform only.
+This app is built upon .NET Core 3.1, WPF, Visual Studio 2019.
+- Windows has a dedicated GUI (using WPF).
+- Linux/MacOS has a Console GUI.
 
 ## Installation
-An installer for pre-release version can be found [here](https://github.com/manhquynh-github/MBTI/releases/tag/v1.0-beta). There are likely still a few bugs left. You can help report a bug by creating a new [issue](https://github.com/manhquynh-github/MBTI/issues).
+Pre-built executables can be found in [Releases](https://github.com/manhquynh-github/MBTI/releases/). There are likely still a few bugs left. You can help report a bug by creating a new [issue](https://github.com/manhquynh-github/MBTI/issues).
 
 ## Contributor(s)
 See [contributors](https://github.com/manhquynh-github/MBTI/graphs/contributors).
