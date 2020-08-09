@@ -162,6 +162,15 @@ namespace MBTI.Resources.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Go to source on GitHub.
+        /// </summary>
+        public static string SGoToGitHubSource {
+            get {
+                return ResourceManager.GetString("SGoToGitHubSource", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Go back to home screen.
         /// </summary>
         public static string SHomeTooltip {

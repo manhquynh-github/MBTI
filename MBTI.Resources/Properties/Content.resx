@@ -151,6 +151,9 @@
   <data name="SFeeling" xml:space="preserve">
     <value>Feeling</value>
   </data>
+  <data name="SGoToGitHubSource" xml:space="preserve">
+    <value>Go to source on GitHub</value>
+  </data>
   <data name="SHomeTooltip" xml:space="preserve">
     <value>Go back to home screen</value>
   </data>

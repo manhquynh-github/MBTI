@@ -151,6 +151,9 @@
   <data name="SFeeling" xml:space="preserve">
     <value>Tình cảm</value>
   </data>
+  <data name="SGoToGitHubSource" xml:space="preserve">
+    <value>Xem source ở GitHub</value>
+  </data>
   <data name="SHomeTooltip" xml:space="preserve">
     <value>Trở về màn hình chính</value>
   </data>
@@ -222,6 +225,9 @@
   </data>
   <data name="STitleNormal" xml:space="preserve">
     <value>Chỉ số MBTI</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
   </data>
   <data name="STryAgain" xml:space="preserve">
     <value>Vui lòng thử lại</value>
